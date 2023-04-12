@@ -1,0 +1,28 @@
+{
+  "name": "dae-frontpage",
+  "version": "1.0.0",
+  "description": "DaleAlEnter Frontpage",
+  "source": "src/rendered/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "npm-run-all --sequential clean renderTemplates --parallel watchFiles parcel:dev",
+    "build": "npm-run-all --sequential clean renderTemplates --parallel watchFiles parcel:build",
+    "parcel:dev": "parcel --no-cache",
+    "parcel:build": "parcel build --no-cache",
+    "clean": "rimraf dist .parcel-cache",
+    "renderTemplates": "node renderTemplates.js",
+    "watchFiles": "node watchFiles.js"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "concurrently": "^7.6.0",
+    "ejs": "^3.1.9",
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "rimraf": "^4.3.1"
+  },
+  "dependencies": {
+    "iframe-resizer": "^4.3.5",
+    "watch": "^1.0.2"
+  }
+}

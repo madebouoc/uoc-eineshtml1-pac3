@@ -1,0 +1,78 @@
+{
+  "titulo": "Ruta de Gaudí en Barcelona",
+  "subtitulo": "El legado arquitectónico de un genio",
+  "descripcion": "Explora la ciudad de Barcelona con nuestro sitio web turístico de Gaudí, descubre la arquitectura modernista del arquitecto catalán y aprende sobre su legado cultural e histórico en la ciudad",
+  "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernismo catalán, Sagrada Familia, Parque Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turismo en Barcelona, Guía turística de Barcelona, Arte y arquitectura en Barcelona, Atracciones turísticas en Barcelona, Diseño arquitectónico en Barcelona",
+  "contacto": {
+    "nombre": "Marc Delgado",
+    "email": "madebo@uoc.edu",
+    "copyright": "Este contenido está protegido por derechos de autor bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+  },
+
+  "parqueGuell": {
+    "nombre" : "Parque Güell",
+    "descripcion": {
+      "intro" : "El Parque Güell es uno de los parques más famosos e icónicos de Barcelona, España. Diseñado por el renombrado arquitecto modernista Antoni Gaudí en el siglo XIX, el parque es un ejemplo impresionante de la creatividad y la visión artística del arquitecto. El parque se encuentra en una colina con vistas panorámicas de la ciudad y cuenta con jardines hermosos, esculturas extravagantes y edificios impresionantes. La arquitectura del parque se caracteriza por sus formas orgánicas y sinuosas, y su mezcla única de estilos arquitectónicos, que incluyen influencias del gótico, el románico y el islámico. El Parque Güell es una atracción turística popular y un símbolo distintivo de la ciudad de Barcelona.",
+      "entrada_title": "La entrada",
+      "entrada_text": "La entrada del Parque Güell es una impresionante puerta de hierro forjado con la inscripción \"Park Güell\" en la parte superior. Desde aquí, los visitantes pueden admirar la vista panorámica de la ciudad y la impresionante escalinata que lleva a la famosa terraza del dragón, donde pueden encontrar la famosa escultura de la salamandra. En la entrada, también se encuentran las taquillas y el punto de información turística.",
+      "pabellones_title": "Los pabellones",
+      "pabellones_text": "Los pabellones del Parque Güell son dos estructuras de piedra ubicadas en la entrada del parque. Estos pabellones fueron diseñados por el arquitecto Antoni Gaudí para albergar a los trabajadores que construyeron el parque. Uno de ellos se ha convertido en un centro de interpretación donde se exhiben maquetas y objetos relacionados con el parque y su construcción, mientras que el otro es un espacio utilizado para exposiciones temporales. Ambos pabellones presentan elementos decorativos únicos y ofrecen vistas impresionantes del parque y la ciudad.",
+      "escalinata_title": "Escalinata",
+      "escalinata_text": "La escalinata del Parque Güell es una impresionante obra de arte que conduce a la terraza del dragón. Está construida con piedra y se divide en dos tramos de escaleras adornadas con mosaicos de cerámica y vidrio de colores. En el centro de la escalinata, hay una fuente decorativa que presenta una figura de un lagarto hecho de mosaico, que se ha convertido en uno de los símbolos más reconocibles del parque. La escalinata también ofrece vistas impresionantes de la ciudad y es un lugar popular para tomar fotos y disfrutar del ambiente del parque.",
+      "salaHipostila_title": "Sala Hipóstila",
+      "salaHipostila_text": "La Sala Hipóstila es una de las áreas más impresionantes del Parque Güell, diseñada por el arquitecto Antoni Gaudí en el siglo XIX. Esta sala se encuentra bajo la Plaza de la Naturaleza y cuenta con 86 columnas de piedra tallada, que sostienen el techo de la estructura. Cada columna es única y presenta detalles decorativos únicos que reflejan la visión artística de Gaudí. En la Sala Hipóstila, también se encuentra un banco ondulado hecho de mosaicos de cerámica, que ofrece un lugar para sentarse y disfrutar del impresionante ambiente del parque.",
+      "laPlaza_title": "La plaza",
+      "laPlaza_text": "La Plaza del Parque Güell es una de las áreas más emblemáticas del parque. Está situada en el corazón del parque y cuenta con una gran explanada con vistas impresionantes de la ciudad. En el centro de la plaza, hay una fuente decorativa rodeada de bancos ondulados, también hechos de mosaicos de cerámica, que ofrecen un lugar para descansar y disfrutar del ambiente del parque. La Plaza del Parque Güell es un lugar popular para tomar fotos y relajarse en medio del impresionante paisaje urbano de Barcelona.",
+      "caminosYviaductos_title": "Los caminos y viaductos",
+      "caminosYviaductos_text": "Los caminos y viaductos del Parque Güell son una obra impresionante de la ingeniería y el diseño arquitectónico. Los caminos se construyeron con piedra tallada a mano y serpentean a través del parque, ofreciendo impresionantes vistas de la ciudad y del paisaje natural que lo rodea. Los viaductos son puentes elevados que se extienden a través de los caminos, permitiendo a los visitantes disfrutar del parque sin interrupciones. Los caminos y viaductos también están adornados con detalles decorativos elaborados, incluyendo mosaicos de cerámica y vidrio de colores, que reflejan la visión artística única de Antoni Gaudí.",
+      "elCalvaio_title": "El Calvario",
+      "elCalvario_text": "El Calvario es una sección del Parque Güell situada en la parte más alta del parque, que ofrece vistas impresionantes de la ciudad y del paisaje natural que lo rodea. Es una colina que cuenta con una estructura escalonada adornada con mosaicos de cerámica y una cruz en la cima, que simboliza la crucifixión de Jesús. Para llegar al Calvario, los visitantes deben subir una empinada colina que ofrece una experiencia de senderismo única en el corazón de la ciudad. Una vez en la cima, pueden disfrutar de las impresionantes vistas panorámicas de Barcelona y los alrededores, así como de la tranquilidad del paisaje natural del parque.",
+      "casaMuseo_title": "La Casa-Museo Gaudí",
+      "casaMuseo_text": "La Casa-Museo Gaudí es una sección del Parque Güell que se encuentra en la casa donde Antoni Gaudí vivió durante casi 20 años. Esta casa histórica cuenta con una colección única de objetos personales y artísticos del arquitecto, que incluyen fotografías, muebles y modelos arquitectónicos. Los visitantes pueden explorar las diferentes habitaciones de la casa, cada una con su propia decoración y estilo únicos, y aprender más sobre la vida y el legado de Gaudí. La Casa-Museo Gaudí es un destino popular para los aficionados a la arquitectura y el arte, y ofrece una visión fascinante de la vida y obra de uno de los arquitectos más importantes de la historia de Barcelona."
+    }
+  },
+  "palacioGuell": {
+    "nombre" : "Palacio Güell",
+    "descripcion": {
+      "intro" : "El Palacio Güell es una obra maestra de la arquitectura modernista ubicada en el barrio de El Raval en Barcelona, España. Diseñado por Antoni Gaudí en el siglo XIX, el palacio es un impresionante ejemplo de la creatividad y la visión artística del arquitecto catalán. El edificio cuenta con detalles extravagantes y una mezcla única de estilos arquitectónicos, incluyendo influencias góticas, mudéjares y bizantinas. El interior del palacio también es impresionante, con techos ornamentados y una gran cantidad de detalles decorativos elaborados. El Palacio Güell es un símbolo distintivo de la ciudad de Barcelona y es una de las atracciones turísticas más populares de la ciudad."
+    }
+
+  },
+  "casaMila": {
+    "nombre" : "Casa Milà",
+    "descripcion": {
+      "intro" : "La Casa Milà, también conocida como La Pedrera, es una de las obras más icónicas del famoso arquitecto catalán Antoni Gaudí en Barcelona, España. Construida en el siglo XIX, la Casa Milà es un impresionante ejemplo de la arquitectura modernista y una de las obras más innovadoras del arquitecto. El edificio cuenta con formas ondulantes y curvas, así como con detalles decorativos elaborados, como las chimeneas y la fachada de piedra tallada a mano. El interior de la casa es igual de impresionante, con una mezcla única de elementos arquitectónicos y decorativos que reflejan la visión artística única de Gaudí. La Casa Milà es una de las atracciones turísticas más visitadas de Barcelona y un símbolo distintivo de la ciudad."
+    }
+
+  },
+  "casaVicens": {
+    "nombre" : "Casa Vicens",
+    "descripcion": {
+      "intro" : "La Casa Vicens es una obra arquitectónica única situada en el barrio de Gracia en Barcelona, España. Fue diseñada por el arquitecto catalán Antoni Gaudí en 1883 como la residencia de verano de la familia Vicens y es considerada una de las primeras obras maestras del arquitecto. La casa es un impresionante ejemplo de la arquitectura modernista, con una fachada colorida y ornamentada que combina elementos tradicionales españoles con influencias del arte islámico. El interior de la casa también es impresionante, con una mezcla de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Vicens es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad."
+    }
+
+  },
+  "sagradaFamilia": {
+    "nombre" : "Templo de la Sagrada Familia",
+    "descripcion": {
+      "intro" : "La Sagrada Familia es la obra cumbre del arquitecto Antoni Gaudí y uno de los monumentos más emblemáticos de Barcelona, España. La construcción comenzó en 1882 y todavía está en proceso de construcción, lo que la convierte en uno de los proyectos de construcción más largos del mundo. La iglesia es un impresionante ejemplo de la arquitectura modernista y combina elementos religiosos con una visión artística única de Gaudí. La fachada de la iglesia es extremadamente detallada y presenta escenas bíblicas y figuras religiosas talladas a mano. El interior de la iglesia es igual de impresionante, con una mezcla de elementos arquitectónicos y decorativos que reflejan la visión artística única de Gaudí. La Sagrada Familia es una atracción turística popular en Barcelona y un símbolo distintivo de la ciudad."
+    }
+
+  },
+  "casaBatllo": {
+    "nombre" : "Casa Batlló",
+    "descripcion": {
+      "intro" : "La Casa Batlló es una de las obras más conocidas del arquitecto Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la casa es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y curva, que se asemeja a un lago de color azul intenso. La fachada está adornada con una mezcla de mosaicos de vidrio y cerámica, y las ventanas tienen una forma irregular y orgánica. El interior de la casa es igualmente impresionante, con una mezcla única de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Batlló es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad."
+    }
+  },
+
+  "laPedrera": {
+    "nombre" : "La Pedrera",
+    "descripcion": {
+      "intro" : "La Pedrera, también conocida como Casa Milà, es una de las obras más icónicas del famoso arquitecto catalán Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la Pedrera es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y su techo adornado con impresionantes chimeneas de piedra. El edificio cuenta con detalles extravagantes y una mezcla única de estilos arquitectónicos, incluyendo influencias góticas, mudéjares y bizantinas. El interior de La Pedrera también es impresionante, con una mezcla única de elementos arquitectónicos y decorativos que reflejan la visión artística única de Gaudí. La Pedrera es una de las atracciones turísticas más populares de Barcelona y un símbolo distintivo de la ciudad."
+    }
+
+  }
+
+
+}

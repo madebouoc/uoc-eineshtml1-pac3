@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <title><%= titulo %></title>
+    <meta charset="utf-8"/>
+    <!-- SEO -->
+    <meta name="description" content="<%= titulo %>">
+    <meta name="keywords" content="P<%= keywords %>">
+    <meta name="author" content="<%= contacto.nombre %>">
+    <meta name="robots" content="index, follow">
+    <!-- Recursos -->
+    <script type="module" src="../../assets/app.js"></script>
+    <link rel="stylesheet" href="../../assets/styles.scss" />
+</head>
+<body>
+    <header>
+        <h1><%= titulo %></h1>
+        <p><%= subtitulo %></p>
+        <hr>
+        <nav>
+            <ul>
+                <li>INICIO</li>
+                <li>Obras en Barcelona</li>
+                <li>Otras obras</li>
+                <li>Acerca de Antoni Gaudí</li>
+            </ul>
+        </nav>
+
+        <div class="languageSelector"></div>
+        <ul>
+            <li><a href="../ca/index.html">CA</a></li>
+            <li><a href="../es/index.html">ES</a></li>
+            <li><a href="../en/index.html">EN</a></li>
+        </ul>
+
+        <div class="banner">
+            <img src="../../assets/bg.jpg"/>
+        </div>
+    </header>

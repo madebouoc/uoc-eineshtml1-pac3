@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirección de idioma</title>
+    <script>
+        var idioma = navigator.language || navigator.userLanguage;
+        if (idioma.startsWith('en')) {
+            window.location.href = 'en/index.html';
+        } else if (idioma.startsWith('es')) {
+            window.location.href = 'es/index.html';
+        } else if (idioma.startsWith('ca')) {
+            window.location.href = 'ca/index.html';
+        } else {
+            window.location.href = 'es/index.html'; // Redirige al español por defecto si no se detecta ningún idioma
+        }
+    </script>
+</head>
+<body>
+<!-- Para que Parcel pueda indexar el resto del contenido -->
+<a href="ca/index.html">CA</a>
+<a href="es/index.html">ES</a>
+<a href="en/index.html">EN</a>
+</body>
+</html>
