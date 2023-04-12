@@ -1,7 +1,12 @@
 {
-  "name": "dae-frontpage",
+  "name": "uoc-eineshtml1-pac1",
   "version": "1.0.0",
-  "description": "DaleAlEnter Frontpage",
+  "description": "UOC Eines HTML 1 - PAC1",
+  
+  "name" : "Marc Delgado",
+  "email" : "marcdelgado@gmail.com",
+  "url" : "https://www.dalealenter.com",
+
   "source": "src/rendered/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
