@@ -1,13 +1,17 @@
 {
-  "titulo": "Ruta de Gaudí en Barcelona",
-  "subtitulo": "El legado arquitectónico de un genio",
-  "descripcion": "Explora la ciudad de Barcelona con nuestro sitio web turístico de Gaudí, descubre la arquitectura modernista del arquitecto catalán y aprende sobre su legado cultural e histórico en la ciudad",
-  "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernismo catalán, Sagrada Familia, Parque Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turismo en Barcelona, Guía turística de Barcelona, Arte y arquitectura en Barcelona, Atracciones turísticas en Barcelona, Diseño arquitectónico en Barcelona",
-  "currentLanguage" : "es",
-  "contacto": {
-    "nombre": "Marc Delgado",
-    "email": "madebo@uoc.edu",
-    "copyright": "Este contenido está protegido por derechos de autor bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+  "currentLanguage": "es",
+
+  "header" : {
+    "titulo": "Ruta de Gaudí en Barcelona",
+    "subtitulo": "El legado arquitectónico de un genio",
+    "descripcion": "Explora la ciudad de Barcelona con nuestro sitio web turístico de Gaudí, descubre la arquitectura modernista del arquitecto catalán y aprende sobre su legado cultural e histórico en la ciudad",
+    "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernismo catalán, Sagrada Familia, Parque Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turismo en Barcelona, Guía turística de Barcelona, Arte y arquitectura en Barcelona, Atracciones turísticas en Barcelona, Diseño arquitectónico en Barcelona",
+  },
+
+  "footer" : {
+      "autor": "Marc Delgado",
+      "email": "madebo@uoc.edu",
+      "copyright": "Este contenido está protegido por derechos de autor bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
   },
 
   "parqueGuell": {

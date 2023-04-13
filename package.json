@@ -11,7 +11,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "npm-run-all --sequential clean renderTemplates --parallel watchFiles parcel:dev",
-    "build": "npm-run-all --sequential clean renderTemplates --parallel watchFiles parcel:build",
+    "build": "npm-run-all --sequential clean renderTemplates parcel:build",
     "parcel:dev": "parcel --no-cache",
     "parcel:build": "parcel build --no-cache",
     "clean": "rimraf dist .parcel-cache",
