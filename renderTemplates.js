@@ -26,8 +26,8 @@ function render(templateFilePath){
                 filename: templateFilePath,
                 root: path.join(__dirname, 'src/templates')
             };
-            console.log(renderedFilePath);
-            console.log(JSON.stringify(literalFile).substring(0,100));
+            //console.debug(renderedFilePath);
+            //console.debug(JSON.stringify(literalFile).substring(0,100));
             ejs.renderFile(templateFilePath, literalFile, options, (err, renderedTemplate) => {
                 if (err) throw err;
                 //console.log(renderedFilePath);
