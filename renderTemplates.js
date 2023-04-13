@@ -16,9 +16,9 @@ function render(templateFilePath){
         languages.forEach(function(lang){
             let literalFile = JSON.parse(fs.readFileSync(`./src/locales/messages_${lang}.json`, 'utf8'));
             //...si es español, sáltate esto
-            //if(lang != defaultLanguage){
+            if(lang != defaultLanguage){
                 literalFile = deepMerge(literalFile, defaultliteralFile);
-            //}
+            }
 
             const renderedFilePath = templateFilePath.replace(".ejs",".html")
                 .replace(path.sep+"templates"+path.sep, path.sep+"rendered"+path.sep+lang+path.sep);

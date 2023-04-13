@@ -7,12 +7,44 @@ body {
         margin: 0;
         padding: 0;
     }
+    background-image: url("bg.jpg");
 
     header {
         background-color: red;
         width: 1200px;
         margin: 0 auto;
         padding: 0;
+        display: flex;
+
+        .mainMenu, .childMenu, .languageSelector{
+            list-style: none;
+        }
+
+        .mainMenu > li, .languageSelector > li{
+            display: inline-block;
+            margin-right: 10px; /* Añade un espacio entre elementos */
+            vertical-align: top;
+            position: relative; /* Añade position: relative al elemento padre */
+        }
+
+        .childMenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+
+        .mainMenu > li:hover .childMenu {
+            display: block;
+        }
+
+
+        .mainMenu > li{
+            display: inline-block;
+            margin-right: 10px; /* Añade un espacio entre elementos */
+            vertical-align: top;
+            position: relative; /* Añade position: relative al elemento padre */
+        }
     }
 
     footer {

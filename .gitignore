@@ -103,6 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
-.parcel-cache
-node_modules
-.idea
+# Node + Parcel + WebStorm
+.parcel-cache/
+node_modules/
+.idea/
