@@ -1,64 +1,20 @@
+@import 'styles_desktop.scss';
+@import 'styles_mobile.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-    p, h1, h2, h3, h4, h5{
-        margin: 0;
-        padding: 0;
-    }
-    background-image: url("bg.jpg");
-
-    header {
-        background-color: red;
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0;
-        display: flex;
-
-        .mainMenu, .childMenu, .languageSelector{
-            list-style: none;
-        }
-
-        .mainMenu > li, .languageSelector > li{
-            display: inline-block;
-            margin-right: 10px; /* Añade un espacio entre elementos */
-            vertical-align: top;
-            position: relative; /* Añade position: relative al elemento padre */
-        }
-
-        .childMenu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            display: none;
-        }
-
-        .mainMenu > li:hover .childMenu {
-            display: block;
-        }
-
-
-        .mainMenu > li{
-            display: inline-block;
-            margin-right: 10px; /* Añade un espacio entre elementos */
-            vertical-align: top;
-            position: relative; /* Añade position: relative al elemento padre */
-        }
-    }
-
-    footer {
-        background-color: green;
-        width: 1200px;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-
+#mainMenuCheckbox, #langSelectorCheckbox{
+  display: none;
 }
 
-    h1 {
-        color: hotpink;
-        font-family: cursive;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+
+  }
+  font-family: 'Noto Serif JP', serif;
+}

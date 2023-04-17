@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        p, h1, h2, h3, h4, h5{
+            margin: 0;
+            padding: 0;
+        }
+        background-image: url("bg.jpg");
+        font-family: 'Noto Serif JP', serif;
+
+        header {
+            background-color: red;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+
+            .mainMenu, .childMenu, .langSelector{
+                list-style: none;
+            }
+
+            .mainMenu > li, .langSelector > li{
+                display: inline-block;
+                margin-right: 10px; /* Añade un espacio entre elementos */
+                vertical-align: top;
+                position: relative; /* Añade position: relative al elemento padre */
+            }
+
+            .childMenu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: none;
+            }
+
+            .mainMenu > li:hover .childMenu {
+                display: block;
+            }
+
+
+            .mainMenu > li{
+                display: inline-block;
+                margin-right: 10px; /* Añade un espacio entre elementos */
+                vertical-align: top;
+                position: relative; /* Añade position: relative al elemento padre */
+            }
+        }
+
+        footer {
+            background-color: green;
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+
+    }
+
+    h1 {
+        color: black;
+    }
+}

@@ -1,0 +1,98 @@
+@media (max-width: 1199px) {
+
+  html {
+    font-size: 14px;
+
+    h1{
+      font-size: 1.3rem;
+      text-align: center;
+      color: darkorange;
+    }
+    h2{
+      font-size: 1rem;
+      text-align: center;
+      color: navajowhite;
+    }
+
+    header {
+
+    }
+
+    .banner{
+      height: 400px;
+      background-image: url("banner_mobile.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-bottom: -50px;
+    }
+
+    .horizMenu{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0px;
+      z-index: 999;
+      height: 50px;
+    }
+
+    .titles{
+      order: 2;
+      background-color: rgba(0, 0, 0, 0.7);
+      flex-grow: 4;
+    }
+    .titles{
+      order: 2;
+      background-color: rgba(0, 0, 0, 0.7);
+      flex-grow: 4;
+    }
+
+    #mainMenuButton {
+      order: 0;
+      height: 50px;
+      width: 50px;
+    }
+
+    #mainMenuCheckbox:checked ~ .mainMenuContent {
+      display: block !important;
+    }
+
+    .mainMenuContent {
+      order: 1;
+      display: none;
+      position: absolute;
+      height: 70%;
+      width: 100%;
+      top: 80px;
+      margin: 0;
+      background-color: gray;
+      vertical-align: bottom;
+    }
+
+    #langSelectorButton {
+      order: 3;
+      width: 50px;
+      height: 50px;
+    }
+
+    #langSelectorCheckbox:checked ~ .langSelectorContent {
+      display: block !important;
+    }
+
+    .langSelectorContent {
+      order: 2;
+      display: none;
+      position: absolute;
+      height: 70%;
+      width: 100%;
+      top: 80px;
+      margin: 0;
+      background-color: gray;
+      vertical-align: bottom;
+    }
+
+  }
+}

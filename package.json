@@ -2,11 +2,9 @@
   "name": "uoc-eineshtml1-pac1",
   "version": "1.0.0",
   "description": "UOC Eines HTML 1 - PAC1",
-  
-  "author" : "Marc Delgado",
-  "email" : "marcdelgado@gmail.com",
-  "url" : "https://www.dalealenter.com",
-
+  "author": "Marc Delgado",
+  "email": "marcdelgado@gmail.com",
+  "url": "https://www.dalealenter.com",
   "source": "src/rendered/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -14,7 +12,7 @@
     "build": "npm-run-all --sequential clean renderTemplates parcel:build",
     "parcel:dev": "parcel --no-cache",
     "parcel:build": "parcel build --no-cache",
-    "clean": "rimraf dist .parcel-cache",
+    "clean": "rimraf dist .parcel-cache src/rendered/es src/rendered/ca src/rendered/en",
     "renderTemplates": "node renderTemplates.js",
     "watchFiles": "node watchFiles.js"
   },
