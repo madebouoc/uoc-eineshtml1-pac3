@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-<head>
 
+<head>
     <title>Ruta Gaudí en Barcelona</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,54 +14,53 @@
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
 </head>
+
 <body>
     <header>
-        <input type="checkbox" id="mainMenuCheckbox">
-        <input type="checkbox" id="langSelectorCheckbox">
-
-        <div class="banner">
+        <!--Aquí movemos el título en modo sticky-->
+        <div class="title">
             <h1>Ruta Gaudí en Barcelona</h1>
             <h2>El legado arquitectónico de un genio</h2>
         </div>
 
-        <div class="horizMenu">
-            <div class="titles ">
+        <!--Botones MENU y LANG para mobile-->
+        <button id="mainMenuButton">MENU</button>
+        <input type="checkbox" id="mainMenuCheckbox">
+        <button id="langSelectorButton">LANG</button>
+        <input type="checkbox" id="langSelectorCheckbox">
 
-            </div>
+        <!--Cuerpo del menu principal-->
+        <nav class="mainMenuContent">
+            <ul>
+                <li><a href="/en">INICIO</a></li>
+                <li>
+                    Obras en Barcelona
+                    <ul class="childMenu">
+                        <li><a href="parque_guell.html">Parque Güell</a></li>
+                        <li><a href="palacio_guell.html">Palacio Güell</a></li>
+                        <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                        <li><a href="casa_vicens.html">Casa Vicens</a></li>
+                        <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
+                        <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                    </ul>
+                </li>
+                <li><a href="otras_obras.html">Otras obras</a></li>
+                <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+            </ul>
+        </nav>
 
-            <button id="mainMenuButton">MENU</button>
-            <nav class="mainMenuContent">
-                <ul>
-                    <li><a href="/en">INICIO</a></li>
-                    <li>
-                        Obras en Barcelona
-                        <ul class="childMenu">
-                            <li><a href="parque_guell.html">Parque Güell</a></li>
-                            <li><a href="palacio_guell.html">Palacio Güell</a></li>
-                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="otras_obras.html">Otras obras</a></li>
-                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
-                </ul>
-            </nav>
-
-            <button id="langSelectorButton">LANG</button>
-            <nav class="langSelectorContent">
-                <ul >
-                    <li><a href="../ca/index.html">CA</a></li>
-                    <li><a href="../es/index.html">ES</a></li>
-                    <li><a href="../en/index.html">EN</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!--Cuerpo del menu de idioma-->
+        <nav class="langSelectorContent">
+            <ul >
+                <li><a href="../ca/index.html">CA</a></li>
+                <li><a href="../es/index.html">ES</a></li>
+                <li><a href="../en/index.html">EN</a></li>
+            </ul>
+        </nav>
     </header>
-<div class="content">
+<main class="location">
     <h3>Casa Vicens</h3>
-</div>
+</main>
             <footer>
                 <p>madebo@uoc.edu</p>
             </footer>

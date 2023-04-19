@@ -11,32 +11,36 @@ const defaultLanguage = 'es';
 
 function render(templateFilePath){
     if (templateFilePath.endsWith('.ejs')) {
-        const defaultliteralFile = JSON.parse(fs.readFileSync(`./src/locales/messages_${defaultLanguage}.json`, 'utf8'));
-        //Por cada plantilla, por cada idioma...
-        languages.forEach(function(lang){
-            let literalFile = JSON.parse(fs.readFileSync(`./src/locales/messages_${lang}.json`, 'utf8'));
-            //...si es español, sáltate esto
-            if(lang != defaultLanguage){
-                literalFile = deepMerge(literalFile, defaultliteralFile);
-            }
+        try{
+            const defaultliteralFile = JSON.parse(fs.readFileSync(`./src/locales/messages_${defaultLanguage}.json`, 'utf8'));
+            //Por cada plantilla, por cada idioma...
+            languages.forEach(function(lang){
+                let literalFile = JSON.parse(fs.readFileSync(`./src/locales/messages_${lang}.json`, 'utf8'));
+                //...si es español, sáltate esto
+                if(lang != defaultLanguage){
+                    literalFile = deepMerge(literalFile, defaultliteralFile);
+                }
 
-            const renderedFilePath = templateFilePath.replace(".ejs",".html")
-                .replace(path.sep+"templates"+path.sep, path.sep+"rendered"+path.sep+lang+path.sep);
-            const options = {
-                filename: templateFilePath,
-                root: path.join(__dirname, 'src/templates')
-            };
-            //console.debug(renderedFilePath);
-            //console.debug(JSON.stringify(literalFile).substring(0,100));
-            ejs.renderFile(templateFilePath, literalFile, options, (err, renderedTemplate) => {
-                if (err) throw err;
-                //console.log(renderedFilePath);
-                fs.writeFile(renderedFilePath, renderedTemplate, (err) => {
-                    if (err) throw err;
+                const renderedFilePath = templateFilePath.replace(".ejs",".html")
+                    .replace(path.sep+"templates"+path.sep, path.sep+"rendered"+path.sep+lang+path.sep);
+                const options = {
+                    filename: templateFilePath,
+                    root: path.join(__dirname, 'src/templates')
+                };
+                //console.debug(renderedFilePath);
+                //console.debug(JSON.stringify(literalFile).substring(0,100));
+                ejs.renderFile(templateFilePath, literalFile, options, (err, renderedTemplate) => {
+                    if (err) console.error(renderedFilePath + " error! " + err.toString());
+                    //console.log(renderedFilePath);
+                    else fs.writeFile(renderedFilePath, renderedTemplate, (err) => {
+                        if (err) throw err;
+                    });
                 });
-            });
 
-        });
+            });
+        }catch(error){
+            console.warn(templateFilePath.replace(__dirname, "") + " --> " + error.toString());
+        }
     }
 }
 

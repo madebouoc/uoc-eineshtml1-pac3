@@ -7,6 +7,12 @@
   display: none;
 }
 
+#mainMenuCheckbox:checked ~ .mainMenuContent,
+#langSelectorCheckbox:checked ~ .langSelectorContent{
+  display: block;
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
