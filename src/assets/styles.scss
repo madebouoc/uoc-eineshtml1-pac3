@@ -3,15 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
 
+@import "icons/bootstrap-icons.scss";
+
 #mainMenuCheckbox, #langSelectorCheckbox{
   display: none;
 }
-
-#mainMenuCheckbox:checked ~ .mainMenuContent,
-#langSelectorCheckbox:checked ~ .langSelectorContent{
-  display: block;
-}
-
 
 html, body {
   margin: 0;

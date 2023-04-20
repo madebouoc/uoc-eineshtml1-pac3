@@ -3,7 +3,27 @@
   html {
     font-size: 14px;
 
+    #mainMenuCheckbox:checked ~ .mainMenuContent{
+      height: 50vh;
+      transition: height 0.2s ease-in-out;
+    }
+    #langSelectorCheckbox:checked ~ .langSelectorContent{
+      height: 20vh;
+      transition: height 0.2s ease-in-out;
+    }
+
+    #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
+    #langSelectorCheckbox:not(:checked) ~ .langSelectorContent{
+      height: 0;
+      transition: height 0.2s ease-in-out;
+      box-shadow: none;
+      border: none;
+    }
+
     header {
+      background-color: rgba(100, 0, 0, 1);
+      box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
+      border-bottom: 4px solid red;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -11,7 +31,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%;
-      z-index: 999;
+      z-index: 900;
       height: 50px;
       h1 {
         font-size: 1.3rem;
@@ -28,73 +48,103 @@
         order: 0;
         height: 50px;
         width: 50px;
+        background: none;
+        border: none;
+        i{
+          font-size: 2.8rem;
+          color: lightgray;
+        }
+        i:active, i:hover{
+          color: white;
+        }
+      }
+
+      .title {
+        order: 2;
+        flex-grow: 4;
       }
 
       #langSelectorButton {
         order: 3;
         width: 50px;
         height: 50px;
+        background: none;
+        border: none;
+        i{
+          font-size: 2.2rem;
+          color: lightgray;
+        }
+        i:active, i:hover{
+          color: white;
+        }
       }
 
       .mainMenuContent {
-        display: none;
         position: fixed;
-        top: 0;
+        top: 50px;
         left: 0;
-        height: 70%;
-        width: 100%;
+        width: 80vw;
         margin: 0;
-        background-color: gray;
         vertical-align: bottom;
+        height: 0;
+        overflow: hidden;
+        background-color: rgba(60, 0, 0, 1);
+        box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+        z-index: 950;
+        border-right: 4px solid red;
+        border-bottom: 4px solid red;
       }
 
       .langSelectorContent {
-        order: 2;
-        display: none;
-        position: absolute;
-        height: 70%;
-        width: 100%;
-        top: 80px;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        width: 80vw;
+        background-color: rgba(60, 0, 0, 1);
+        box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+        border-left: 4px solid red;
+        border-bottom: 4px solid red;
+        z-index: 950;
         margin: 0;
-        background-color: gray;
         vertical-align: bottom;
+        height: 0;
+        overflow: hidden;
       }
 
+    }
 
+    .banner {
+      margin-top: 50px !important;
+      height: 40vh;
+      background-image: url("banner_mobile.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        color: darkorange;
+      }
+      h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: navajowhite;
+      }
+    }
+
+    /* No es necesario margin donde haya banner. */
+    :not(.banner) ~ main {
+      margin-top: 10px !important;
     }
 
     main{
-      .banner {
-        height: 400px;
-        background-image: url("banner_mobile.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        margin-bottom: -50px;
-        h1 {
-          font-size: 1.3rem;
-          text-align: center;
-          color: darkorange;
-        }
-        h2 {
-          font-size: 1rem;
-          text-align: center;
-          color: navajowhite;
-        }
-      }
+      margin: 50px 4px 0px 4px;
+
     }
 
-
-    .title {
-      order: 2;
-      background-color: rgba(0, 0, 0, 0.7);
-      flex-grow: 4;
-    }
-
-    .title {
-      order: 2;
-      background-color: rgba(0, 0, 0, 0.7);
-      flex-grow: 4;
+    footer{
+      color: lightgrey;
+      background-color: rgba(60, 30, 30, 1);
     }
 
 
