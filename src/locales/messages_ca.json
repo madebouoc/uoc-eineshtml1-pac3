@@ -13,6 +13,9 @@
   },
 
   "footer" : {
+    "nota1" : "Dissenyat per ",
+    "nota2" : " com a treball acadèmic per a la Universitat Oberta de Catalunya (UOC).",
+    "contacta" : "Contacta amb mi:",
     "autor": "Marc Delgado",
     "email": "madebo@uoc.edu",
     "copyright": "Aquest contingut està protegit per drets d'autor sota la llicència Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
@@ -39,6 +42,10 @@
       "elCalvario_text": "El Calvari és una secció del Parc Güell situada a la part més alta del parc, que ofereix vistes impressionants de la ciutat i del paisatge natural que l'envolta. És una colina que compta amb una estructura escalonada adornada amb rajoles de ceràmica i una creu al cim, que simbolitza la crucifixió de Jesús. Per arribar al Calvari, els visitants han de pujar una empinada pujada que ofereix una experiència d'excursionisme única al cor de la ciutat. Una vegada a dalt, poden gaudir de les impresionants vistes panoràmiques de Barcelona i els voltants, així com de la tranquil·litat del paisatge natural del parc.",
       "casaMuseo_title": "Casa-Museu Gaudí",
       "casaMuseo_text": "La Casa-Museu Gaudí és una secció del Parc Güell que es troba a la casa on Antoni Gaudí va viure durant gairebé 20 anys. Aquesta casa històrica compta amb una col·lecció única d'objectes personals i artístics de l'arquitecte, que inclouen fotografies, mobles i models arquitectònics. Els visitants poden explorar les diferents habitacions de la casa, cada una amb la seva pròpia decoració i estil únics, i aprendre més sobre la vida i el llegat de Gaudí. La Casa-Museu Gaudí és un destí popular per als aficionats a l'arquitectura i l'art, i ofereix una visió fascinant de la vida i obra d'un dels arquitectes més importants de la història de Barcelona."
+    },
+    "referencias": {
+      "sitioOficial_url": "Park Güell - Web Oficial",
+      "sitioOficial_url": "https://parkguell.barcelona/ca"
     }
   },
   "palacioGuell": {

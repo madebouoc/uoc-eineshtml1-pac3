@@ -12,7 +12,7 @@
     "build": "npm-run-all --sequential clean renderTemplates parcel:build",
     "parcel:dev": "parcel --no-cache",
     "parcel:build": "parcel build --no-cache",
-    "clean": "rimraf dist .parcel-cache src/rendered/es src/rendered/ca src/rendered/en",
+    "clean": "rimraf dist .parcel-cache src/rendered/es src/rendered/ca src/rendered/en src/rendered/fr",
     "renderTemplates": "node renderTemplates.js",
     "watchFiles": "node watchFiles.js"
   },
@@ -22,11 +22,11 @@
     "ejs": "^3.1.9",
     "npm-run-all": "^4.1.5",
     "parcel": "latest",
-    "rimraf": "^4.3.1"
+    "rimraf": "^4.3.1",
+    "watch": "^1.0.2"
   },
   "dependencies": {
     "bootstrap-icons": "^1.10.4",
-    "iframe-resizer": "^4.3.5",
-    "watch": "^1.0.2"
+    "iframe-resizer": "^4.3.5"
   }
 }

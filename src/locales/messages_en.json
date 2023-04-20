@@ -13,6 +13,9 @@
   },
 
   "footer" : {
+    "nota1" : "Designed by",
+    "nota2" : " as an academic project for the Open University of Catalonia (UOC).",
+    "contacta" : "Contact me:",
     "autor": "Marc Delgado",
     "email": "madebo@uoc.edu",
     "copyright": "This content is protected by copyright under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license."
@@ -39,6 +42,10 @@
       "elCalvario_text": "The Calvary is a section of Park Güell located at the highest point of the park, offering impressive views of the city and the natural landscape that surrounds it. It is a hill that features a stepped structure adorned with ceramic mosaics and a cross at the top, symbolizing the crucifixion of Jesus. To reach the Calvary, visitors must climb a steep hill that offers a unique hiking experience in the heart of the city. Once at the top, they can enjoy the impressive panoramic views of Barcelona and the surroundings, as well as the tranquility of the park's natural landscape.",
       "casaMuseo_title": "Gaudí House-Museum",
       "casaMuseo_text": "The Gaudí House-Museum is a section of Park Güell located in the house where Antoni Gaudí lived for almost 20 years. This historic house features a unique collection of personal and artistic objects of the architect, including photographs, furniture, and architectural models. Visitors can explore the different rooms of the house, each with its own unique decoration and style, and learn more about the life and legacy of Gaudí. The Gaudí House-Museum is a popular destination for architecture and art enthusiasts, offering a fascinating insight into the life and work of one of the most important architects in the history of Barcelona."
+    },
+    "referencias": {
+      "sitioOficial_text": "Park Güell - Official Website",
+      "sitioOficial_url": "https://parkguell.barcelona/en"
     }
   },
   "palacioGuell": {
@@ -56,8 +63,11 @@
       "patioCentral_text": "The central courtyard of the Güell Palace is the heart of the building and is decorated with columns, mosaics, and sculptures. The courtyard is an outdoor space surrounded by the different floors of the palace and is one of the most impressive parts of the building. The courtyard features carved stone columns and a central fountain decorated with colorful mosaics. Additionally, there are several sculptures throughout the courtyard that add an artistic and unique touch to the decoration.",
       "terraza_title": "Terrace",
       "terraza_text": "The terrace of the Güell Palace is a spacious rooftop terrace that offers panoramic views of the city of Barcelona. The terrace is an ideal place to enjoy the sun and the views of the city, and features a series of chimney stacks decorated in the shape of mushrooms that have become an icon of the building. Additionally, there is an iron structure designed by Gaudí on the terrace that allows natural light to penetrate into the interior of the palace."
+    },
+    "referencias": {
+      "sitioOficial_text": "Palau Güell - Official Website",
+      "sitioOficial_url": "https://inici.palauguell.cat/en/"
     }
-
   },
   "casaMila": {
     "titulo": "La Pedrera - Casa Milà",
@@ -74,8 +84,11 @@
       "patio_text": "The interior courtyard of La Pedrera is a space filled with light and color, with a beautiful spiral staircase that leads to the different floors of the building. Visitors can appreciate the modernist architecture and its elegance in every detail. There is also an interactive exhibition that allows visitors to learn more about the history and architecture of the building.",
       "plantaBaja_title": "The Ground Floor",
       "plantaBaja_text": "The ground floor of La Pedrera houses a gift shop and an exhibition dedicated to the work of Gaudí, as well as a projection room that shows a documentary about the history of the building and its creator. The exhibition features objects and models that allow visitors to learn more about Gaudí's work and his legacy in modern architecture."
+    },
+    "referencias": {
+      "sitioOficial_text": "La Pedrera (Casa Milà) - Official Website",
+      "sitioOficial_url": "https://www.lapedrera.com/en/"
     }
-
   },
   "casaVicens": {
     "titulo": "Casa Vicens",
@@ -90,8 +103,11 @@
       "segundaPlanta_text": "The second floor is the private area of the Vicens family. Visitors can explore the family's private rooms, including the master bedroom and a children's room. The rooms are decorated with elegant details and unique architectural elements.",
       "terraza_title": "Terrace",
       "terraza_text": "The terrace of Casa Vicens is one of the highlights of the building. With a panoramic view of the city of Barcelona, visitors can appreciate the unique mix of decorative and architectural elements that characterize Gaudí's work. Ceramics are a distinctive feature of the terrace, with unique mosaics that tell the story of the house and its construction."
+    },
+    "referencias": {
+      "sitioOficial_text": "Casa Vicens - Official Website",
+      "sitioOficial_url": "https://casavicens.org/en/"
     }
-
   },
   "sagradaFamilia": {
     "title": "Sagrada Familia Temple",
@@ -108,8 +124,11 @@
       "museo_text" : "The Sagrada Familia museum features a wide range of objects related to the building's construction, including original models and plans.",
       "crypts_title": "Crypts",
       "crypts_text": "The crypts of the Sagrada Familia are the final resting place of several illustrious figures from Barcelona, including Antoni Gaudí himself. Visitors can explore the crypts and learn more about the history of the basilica."
+    },
+    "referencias": {
+      "sitioOficial_text": "La Sagrada Familia - Official Website",
+      "sitioOficial_url": "https://sagradafamilia.org/en/"
     }
-
   },
   "casaBatllo": {
     "titulo" : "Casa Batlló",
@@ -126,6 +145,10 @@
       "atico_text" : "El ático de la Casa Batlló es un espacio único con una arquitectura impresionante. Los visitantes pueden apreciar los elementos decorativos únicos del ático y aprender sobre la obra de Gaudí.",
       "terraza_title" : "Terraza",
       "terraza_text" : "La terraza de la Casa Batlló es una de las partes más impresionantes de la casa, con vistas panorámicas de la ciudad de Barcelona. Los visitantes pueden explorar la terraza y apreciar los detalles decorativos únicos y la arquitectura impresionante de Gaudí."
+    },
+    "referencias": {
+      "sitioOficial_text": "Casa Batlló - Web Oficial",
+      "sitioOficial_url": "https://www.casabatllo.es/en/"
     }
   },
 

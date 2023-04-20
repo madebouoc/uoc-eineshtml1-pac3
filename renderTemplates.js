@@ -6,7 +6,7 @@ const path = require('path');
 ejs.views = './src/templates/';
 ejs.views.partials = './src/templates/partials/';
 
-const languages = ['es','en','ca'];
+const languages = ['ca','es','en','fr'];
 const defaultLanguage = 'es';
 
 function render(templateFilePath){
