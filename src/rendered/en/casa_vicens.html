@@ -10,87 +10,98 @@
     <meta name="keywords" content="PAntoni Gaudí, Barcelona, Modernist architecture, Catalan modernism, Sagrada Familia, Park Güell, Casa Batlló, Casa Milà, Casa Vicens, Gaudí Route, Tourism in Barcelona, Barcelona Tourist Guide, Art and architecture in Barcelona, Tourist attractions in Barcelona, Architectural design in Barcelona">
     <meta name="author" content="">
     <meta name="robots" content="index, follow">
+
+    <!-- Color de barra de estado para móviles -->
+    <meta name="msapplication-navbutton-color" content="#320000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#320000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
-        <!--Aquí movemos el título en modo sticky-->
-        <div class="title">
-            <h1>Gaudí Route in Barcelona</h1>
-            <h2>The Architectural Legacy of a Genius</h2>
+        <div class="container">
+            <div class="title">
+                <h1>Gaudí Route in Barcelona</h1>
+            </div>
+
+            <!--Botones MENU y LANG para mobile-->
+            <!-- https://icons.getbootstrap.com/ -->
+            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <input type="checkbox" id="mainMenuCheckbox">
+            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <input type="checkbox" id="langSelectorCheckbox">
+
+            <!--Cuerpo del menu principal-->
+            <nav class="mainMenuContent">
+                <ul>
+                    <li><a href="/en">INICIO</a></li>
+                    <li>
+                        Obras en Barcelona
+                        <ul class="childMenu">
+                            <li><a href="parque_guell.html">Park Güell</a></li>
+                            <li><a href="palacio_guell.html">Palau Güell</a></li>
+                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
+                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
+                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="otras_obras.html">Otras obras</a></li>
+                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                </ul>
+            </nav>
+
+            <!--Cuerpo del menu de idioma-->
+            <nav class="langSelectorContent">
+                <ul >
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!--Botones MENU y LANG para mobile-->
-        <!-- https://icons.getbootstrap.com/ -->
-        <button id="mainMenuButton"><i class="bi bi-list"/></button>
-        <input type="checkbox" id="mainMenuCheckbox">
-        <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-        <input type="checkbox" id="langSelectorCheckbox">
-
-        <!--Cuerpo del menu principal-->
-        <nav class="mainMenuContent">
-            <ul>
-                <li><a href="/en">INICIO</a></li>
-                <li>
-                    Obras en Barcelona
-                    <ul class="childMenu">
-                        <li><a href="parque_guell.html">Park Güell</a></li>
-                        <li><a href="palacio_guell.html">Palau Güell</a></li>
-                        <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                        <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                        <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                        <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                    </ul>
-                </li>
-                <li><a href="otras_obras.html">Otras obras</a></li>
-                <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
-            </ul>
-        </nav>
-
-        <!--Cuerpo del menu de idioma-->
-        <nav class="langSelectorContent">
-            <ul >
-                <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
-            </ul>
-        </nav>
     </header>
+
+    <a href="#top" id="scroll-to-top"><button><i class="bi bi-arrow-up"/></button></a>
+
 <main class="location">
+    <div class="container">
+        <h3>Casa Vicens</h3>
 
-    <h3>Casa Vicens</h3>
+        <p>Casa Vicens is a unique architectural work located in the Gracia neighborhood of Barcelona, Spain. It was designed by the Catalan architect Antoni Gaudí in 1883 as the summer residence for the Vicens family and is considered one of the architect&#39;s first masterpieces. The house is an impressive example of modernist architecture, with a colorful and ornate facade that combines traditional Spanish elements with influences from Islamic art. The interior of the house is also impressive, with a blend of decorative and architectural elements that reflect Gaudí&#39;s unique artistic vision. Casa Vicens is a popular tourist attraction in Barcelona and a distinctive symbol of the city&#39;s modernist architectural style.</p>
 
-    <p>Casa Vicens is a unique architectural work located in the Gracia neighborhood of Barcelona, Spain. It was designed by the Catalan architect Antoni Gaudí in 1883 as the summer residence for the Vicens family and is considered one of the architect&#39;s first masterpieces. The house is an impressive example of modernist architecture, with a colorful and ornate facade that combines traditional Spanish elements with influences from Islamic art. The interior of the house is also impressive, with a blend of decorative and architectural elements that reflect Gaudí&#39;s unique artistic vision. Casa Vicens is a popular tourist attraction in Barcelona and a distinctive symbol of the city&#39;s modernist architectural style.</p>
+        <h4>Ground Floor</h4>
+        <p>On the ground floor, visitors can enjoy the entrance hall with its impressive decoration and architectural elements. The temporary exhibition room offers a broader view of Gaudí&#39;s work and Casa Vicens in particular. The gift shop is a perfect place to find souvenirs and mementos inspired by the house and Gaudí&#39;s work. In the exterior gardens, visitors can relax and enjoy the beautiful surroundings.</p>
 
-    <h4>Ground Floor</h4>
-    <p>On the ground floor, visitors can enjoy the entrance hall with its impressive decoration and architectural elements. The temporary exhibition room offers a broader view of Gaudí&#39;s work and Casa Vicens in particular. The gift shop is a perfect place to find souvenirs and mementos inspired by the house and Gaudí&#39;s work. In the exterior gardens, visitors can relax and enjoy the beautiful surroundings.</p>
+        <h4>First floor</h4>
+        <p>The first floor is the area of the house where guests were received. Visitors can admire the living room, dining room, music room, and an art gallery that exhibits works by artists who influenced Gaudí&#39;s work. The decoration is rich and opulent, with unique details and precious materials.</p>
 
-    <h4>First floor</h4>
-    <p>The first floor is the area of the house where guests were received. Visitors can admire the living room, dining room, music room, and an art gallery that exhibits works by artists who influenced Gaudí&#39;s work. The decoration is rich and opulent, with unique details and precious materials.</p>
+        <h4>Second floor</h4>
+        <p>The second floor is the private area of the Vicens family. Visitors can explore the family&#39;s private rooms, including the master bedroom and a children&#39;s room. The rooms are decorated with elegant details and unique architectural elements.</p>
 
-    <h4>Second floor</h4>
-    <p>The second floor is the private area of the Vicens family. Visitors can explore the family&#39;s private rooms, including the master bedroom and a children&#39;s room. The rooms are decorated with elegant details and unique architectural elements.</p>
-
-    <h4>Terrace</h4>
-    <p>The terrace of Casa Vicens is one of the highlights of the building. With a panoramic view of the city of Barcelona, visitors can appreciate the unique mix of decorative and architectural elements that characterize Gaudí&#39;s work. Ceramics are a distinctive feature of the terrace, with unique mosaics that tell the story of the house and its construction.</p>
-
+        <h4>Terrace</h4>
+        <p>The terrace of Casa Vicens is one of the highlights of the building. With a panoramic view of the city of Barcelona, visitors can appreciate the unique mix of decorative and architectural elements that characterize Gaudí&#39;s work. Ceramics are a distinctive feature of the terrace, with unique mosaics that tell the story of the house and its construction.</p>
+    </div>
 </main>
             <footer>
-                <h5>Enlaces de interés</h5>
-                <h6>Enlaces de interés</h6>
+                <div class="container">
+                    <h5>Enlaces de interés</h5>
+                    <h6>Enlaces de interés</h6>
 
 
-                <p>Trabajo académico elaborado para la UOC</p>
-                <p>Diseñado por marcdelgado</p>
-                <p>madebo@uoc.edu</p>
+                    <p>Trabajo académico elaborado para la UOC</p>
+                    <p>Diseñado por marcdelgado</p>
+                    <p>madebo@uoc.edu</p>
 
-                <p></p><i class="bi bi-globe2"/>
-
-
+                    <p></p><i class="bi bi-globe2"/>
+                </div>
             </footer>
             </body>
 </html>

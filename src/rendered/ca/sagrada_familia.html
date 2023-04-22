@@ -10,90 +10,101 @@
     <meta name="keywords" content="PAntoni Gaudí, Barcelona, Arquitectura modernista, Modernisme català, Sagrada Família, Parc Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turisme a Barcelona, Guia turística de Barcelona, Art i arquitectura a Barcelona, Atraccions turístiques a Barcelona, Disseny arquitectònic a Barcelona">
     <meta name="author" content="">
     <meta name="robots" content="index, follow">
+
+    <!-- Color de barra de estado para móviles -->
+    <meta name="msapplication-navbutton-color" content="#320000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#320000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
-        <!--Aquí movemos el título en modo sticky-->
-        <div class="title">
-            <h1>Ruta Gaudí a Barcelona</h1>
-            <h2>El llegat arquitectònic d&#39;un geni</h2>
+        <div class="container">
+            <div class="title">
+                <h1>Ruta Gaudí a Barcelona</h1>
+            </div>
+
+            <!--Botones MENU y LANG para mobile-->
+            <!-- https://icons.getbootstrap.com/ -->
+            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <input type="checkbox" id="mainMenuCheckbox">
+            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <input type="checkbox" id="langSelectorCheckbox">
+
+            <!--Cuerpo del menu principal-->
+            <nav class="mainMenuContent">
+                <ul>
+                    <li><a href="/ca">INICIO</a></li>
+                    <li>
+                        Obras en Barcelona
+                        <ul class="childMenu">
+                            <li><a href="parque_guell.html">Parc Güell</a></li>
+                            <li><a href="palacio_guell.html">Palau Güell</a></li>
+                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
+                            <li><a href="sagrada_familia.html">Temple de la Sagrada Família</a></li>
+                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="otras_obras.html">Altres obres</a></li>
+                    <li><a href="acerca_de.html">Sobre l&#39;arquitecte</a></li>
+                </ul>
+            </nav>
+
+            <!--Cuerpo del menu de idioma-->
+            <nav class="langSelectorContent">
+                <ul >
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!--Botones MENU y LANG para mobile-->
-        <!-- https://icons.getbootstrap.com/ -->
-        <button id="mainMenuButton"><i class="bi bi-list"/></button>
-        <input type="checkbox" id="mainMenuCheckbox">
-        <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-        <input type="checkbox" id="langSelectorCheckbox">
-
-        <!--Cuerpo del menu principal-->
-        <nav class="mainMenuContent">
-            <ul>
-                <li><a href="/ca">INICIO</a></li>
-                <li>
-                    Obras en Barcelona
-                    <ul class="childMenu">
-                        <li><a href="parque_guell.html">Parc Güell</a></li>
-                        <li><a href="palacio_guell.html">Palau Güell</a></li>
-                        <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                        <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                        <li><a href="sagrada_familia.html">Temple de la Sagrada Família</a></li>
-                        <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                    </ul>
-                </li>
-                <li><a href="otras_obras.html">Altres obres</a></li>
-                <li><a href="acerca_de.html">Sobre l&#39;arquitecte</a></li>
-            </ul>
-        </nav>
-
-        <!--Cuerpo del menu de idioma-->
-        <nav class="langSelectorContent">
-            <ul >
-                <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
-            </ul>
-        </nav>
     </header>
+
+    <a href="#top" id="scroll-to-top"><button><i class="bi bi-arrow-up"/></button></a>
+
 <main class="location">
+    <div class="container">
+        <h3>Temple de la Sagrada Família</h3>
 
-    <h3>Temple de la Sagrada Família</h3>
+        <p>La Sagrada Família és l&#39;obra culminant de l&#39;arquitecte Antoni Gaudí i un dels monuments més emblemàtics de Barcelona, Espanya. La construcció va començar el 1882 i encara està en procés de construcció, la qual cosa la converteix en un dels projectes de construcció més llargs del món. L&#39;església és un impressionant exemple de l&#39;arquitectura modernista i combina elements religiosos amb una visió artística única de Gaudí. La façana de l&#39;església és extremadament detallada i presenta escenes bíbliques i figures religioses tallades a mà. L&#39;interior de l&#39;església és igualment impressionant, amb una barreja d&#39;elements arquitectònics i decoratius que reflecteixen la visió artística única de Gaudí. La Sagrada Família és una atracció turística popular a Barcelona i un símbol distintiu de la ciutat.</p>
 
-    <p>La Sagrada Família és l&#39;obra culminant de l&#39;arquitecte Antoni Gaudí i un dels monuments més emblemàtics de Barcelona, Espanya. La construcció va començar el 1882 i encara està en procés de construcció, la qual cosa la converteix en un dels projectes de construcció més llargs del món. L&#39;església és un impressionant exemple de l&#39;arquitectura modernista i combina elements religiosos amb una visió artística única de Gaudí. La façana de l&#39;església és extremadament detallada i presenta escenes bíbliques i figures religioses tallades a mà. L&#39;interior de l&#39;església és igualment impressionant, amb una barreja d&#39;elements arquitectònics i decoratius que reflecteixen la visió artística única de Gaudí. La Sagrada Família és una atracció turística popular a Barcelona i un símbol distintiu de la ciutat.</p>
+        <h4>Nau central</h4>
+        <p>La nau central de la Sagrada Família és impressionant, amb una alçada de més de 45 metres i una sèrie de columnes úniques que s&#39;assemblen a arbres. Els visitants poden admirar la rica decoració i la llum natural que entra per les finestres de colors.</p>
 
-    <h4>Nau central</h4>
-    <p>La nau central de la Sagrada Família és impressionant, amb una alçada de més de 45 metres i una sèrie de columnes úniques que s&#39;assemblen a arbres. Els visitants poden admirar la rica decoració i la llum natural que entra per les finestres de colors.</p>
+        <h4>Absis</h4>
+        <p>L&#39;absis de la Sagrada Família és la part posterior de la basílica i compta amb diversos altars i capelles. Els visitants poden apreciar la rica decoració i les escultures que representen escenes bíbliques.</p>
 
-    <h4>Absis</h4>
-    <p>L&#39;absis de la Sagrada Família és la part posterior de la basílica i compta amb diversos altars i capelles. Els visitants poden apreciar la rica decoració i les escultures que representen escenes bíbliques.</p>
+        <h4>Torres</h4>
+        <p>Les torres de la Sagrada Família són impressionants, amb una alçada de més de 100 metres. Els visitants poden pujar a les torres i gaudir d&#39;una vista panoràmica de la ciutat.</p>
 
-    <h4>Torres</h4>
-    <p>Les torres de la Sagrada Família són impressionants, amb una alçada de més de 100 metres. Els visitants poden pujar a les torres i gaudir d&#39;una vista panoràmica de la ciutat.</p>
+        <h4>Museu</h4>
+        <p>El museu de la Sagrada Família compta amb una àmplia gamma d&#39;objectes relacionats amb la construcció de l&#39;edifici, incloent maquetes i plànols originals.</p>
 
-    <h4>Museu</h4>
-    <p>El museu de la Sagrada Família compta amb una àmplia gamma d&#39;objectes relacionats amb la construcció de l&#39;edifici, incloent maquetes i plànols originals.</p>
-
-    <h4>Criptes</h4>
-    <p>Les criptes de la Sagrada Família són l&#39;última morada de diversos personatges il·lustres de Barcelona, incloent-hi el mateix Antoni Gaudí. Els visitants poden explorar les criptes i conèixer més sobre la història de la basílica.</p>
-
+        <h4>Criptes</h4>
+        <p>Les criptes de la Sagrada Família són l&#39;última morada de diversos personatges il·lustres de Barcelona, incloent-hi el mateix Antoni Gaudí. Els visitants poden explorar les criptes i conèixer més sobre la història de la basílica.</p>
+    </div>
 </main>
             <footer>
-                <h5>Enlaces de interés</h5>
-                <h6>Enlaces de interés</h6>
+                <div class="container">
+                    <h5>Enlaces de interés</h5>
+                    <h6>Enlaces de interés</h6>
 
 
-                <p>Trabajo académico elaborado para la UOC</p>
-                <p>Diseñado por marcdelgado</p>
-                <p>madebo@uoc.edu</p>
+                    <p>Trabajo académico elaborado para la UOC</p>
+                    <p>Diseñado por marcdelgado</p>
+                    <p>madebo@uoc.edu</p>
 
-                <p></p><i class="bi bi-globe2"/>
-
-
+                    <p></p><i class="bi bi-globe2"/>
+                </div>
             </footer>
             </body>
 </html>

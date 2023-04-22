@@ -10,104 +10,114 @@
     <meta name="keywords" content="PAntoni Gaudí, Barcelona, Modernist architecture, Catalan modernism, Sagrada Familia, Park Güell, Casa Batlló, Casa Milà, Casa Vicens, Gaudí Route, Tourism in Barcelona, Barcelona Tourist Guide, Art and architecture in Barcelona, Tourist attractions in Barcelona, Architectural design in Barcelona">
     <meta name="author" content="">
     <meta name="robots" content="index, follow">
+
+    <!-- Color de barra de estado para móviles -->
+    <meta name="msapplication-navbutton-color" content="#320000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#320000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
-        <!--Aquí movemos el título en modo sticky-->
-        <div class="title">
-            <h1>Gaudí Route in Barcelona</h1>
-            <h2>The Architectural Legacy of a Genius</h2>
+        <div class="container">
+            <div class="title">
+                <h1>Gaudí Route in Barcelona</h1>
+            </div>
+
+            <!--Botones MENU y LANG para mobile-->
+            <!-- https://icons.getbootstrap.com/ -->
+            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <input type="checkbox" id="mainMenuCheckbox">
+            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <input type="checkbox" id="langSelectorCheckbox">
+
+            <!--Cuerpo del menu principal-->
+            <nav class="mainMenuContent">
+                <ul>
+                    <li><a href="/en">INICIO</a></li>
+                    <li>
+                        Obras en Barcelona
+                        <ul class="childMenu">
+                            <li><a href="parque_guell.html">Park Güell</a></li>
+                            <li><a href="palacio_guell.html">Palau Güell</a></li>
+                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
+                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
+                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="otras_obras.html">Otras obras</a></li>
+                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                </ul>
+            </nav>
+
+            <!--Cuerpo del menu de idioma-->
+            <nav class="langSelectorContent">
+                <ul >
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!--Botones MENU y LANG para mobile-->
-        <!-- https://icons.getbootstrap.com/ -->
-        <button id="mainMenuButton"><i class="bi bi-list"/></button>
-        <input type="checkbox" id="mainMenuCheckbox">
-        <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-        <input type="checkbox" id="langSelectorCheckbox">
-
-        <!--Cuerpo del menu principal-->
-        <nav class="mainMenuContent">
-            <ul>
-                <li><a href="/en">INICIO</a></li>
-                <li>
-                    Obras en Barcelona
-                    <ul class="childMenu">
-                        <li><a href="parque_guell.html">Park Güell</a></li>
-                        <li><a href="palacio_guell.html">Palau Güell</a></li>
-                        <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                        <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                        <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                        <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                    </ul>
-                </li>
-                <li><a href="otras_obras.html">Otras obras</a></li>
-                <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
-            </ul>
-        </nav>
-
-        <!--Cuerpo del menu de idioma-->
-        <nav class="langSelectorContent">
-            <ul >
-                <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
-            </ul>
-        </nav>
     </header>
+
+    <a href="#top" id="scroll-to-top"><button><i class="bi bi-arrow-up"/></button></a>
+
 
 <div class="banner"></div>
 
 <main class="frontpage">
+    <div class="container">
+        <p>Let yourself be captivated by the magic of Catalan Modernism as you delve into Gaudí&#39;s architectural universe, a genius whose unique vision and limitless creativity transformed the urban landscape and turned it into a symbol of the city.</p>
+        <p>Are you ready to explore the Gaudí Route in Barcelona? Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!</p>
 
-    <p>Let yourself be captivated by the magic of Catalan Modernism as you delve into Gaudí&#39;s architectural universe, a genius whose unique vision and limitless creativity transformed the urban landscape and turned it into a symbol of the city.</p>
-    <p>Are you ready to explore the Gaudí Route in Barcelona? Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!</p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2993.0216928054697!2d2.1614592740757987!3d41.395335260040646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1681949775849!5m2!1ses!2ses" style="width: 100%; height: 400px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <article>
-        <h3>Park Güell</h3>
-        <p>Located in Barcelona, Park Güell is a masterpiece of the famous modernist architect Antoni Gaudí. With its unique combination of natural and architectural elements, the park offers a magical experience to visitors.</p>
-    </article>
-    <article>
-        <h3>Palau Güell</h3>
-        <p>Located in Barcelona, Park Güell is a masterpiece of the famous modernist architect Antoni Gaudí. With its unique combination of natural and architectural elements, the park offers a magical experience to visitors.</p>
-    </article>
-    <article>
-        <h3>La Pedrera - Casa Milà</h3>
-        <p>Casa Milà, also known as La Pedrera, is a modernist building in Barcelona designed by Gaudí. Its undulating facade and rooftop with impressive chimneys make La Pedrera one of Gaudí&#39;s most recognized works.</p>
-    </article>
-    <article>
-        <h3>Casa Vicens</h3>
-        <p>Casa Vicens, the first major work of Gaudí, is a residential house located in the Gracia neighborhood of Barcelona. With its original design and beautiful garden, Casa Vicens is an exceptional example of Catalan modernist architecture.</p>
-    </article>
-    <article>
-        <h3>Templo de la Sagrada Familia</h3>
-        <p>La Sagrada Familia es la obra más conocida y emblemática de Gaudí. Esta impresionante iglesia católica, aún en construcción, es una obra maestra de la arquitectura modernista. Su diseño único y su enorme tamaño la convierten en uno de los lugares más visitados de Barcelona</p>
-    </article>
-    <article>
-        <h3>Casa Batlló</h3>
-        <p>La Casa Batlló es un edificio modernista ubicado en el centro de Barcelona. Con su fachada colorida y orgánica y su diseño innovador, es una de las obras más famosas de Gaudí. La Casa Batlló es un ejemplo impresionante de la creatividad y la originalidad del arquitecto catalán</p>
-    </article>
-
+        <article>
+            <h3>Park Güell</h3>
+            <p>Located in Barcelona, Park Güell is a masterpiece of the famous modernist architect Antoni Gaudí. With its unique combination of natural and architectural elements, the park offers a magical experience to visitors.</p>
+        </article>
+        <article>
+            <h3>Palau Güell</h3>
+            <p>Located in Barcelona, Park Güell is a masterpiece of the famous modernist architect Antoni Gaudí. With its unique combination of natural and architectural elements, the park offers a magical experience to visitors.</p>
+        </article>
+        <article>
+            <h3>La Pedrera - Casa Milà</h3>
+            <p>Casa Milà, also known as La Pedrera, is a modernist building in Barcelona designed by Gaudí. Its undulating facade and rooftop with impressive chimneys make La Pedrera one of Gaudí&#39;s most recognized works.</p>
+        </article>
+        <article>
+            <h3>Casa Vicens</h3>
+            <p>Casa Vicens, the first major work of Gaudí, is a residential house located in the Gracia neighborhood of Barcelona. With its original design and beautiful garden, Casa Vicens is an exceptional example of Catalan modernist architecture.</p>
+        </article>
+        <article>
+            <h3>Templo de la Sagrada Familia</h3>
+            <p>La Sagrada Familia es la obra más conocida y emblemática de Gaudí. Esta impresionante iglesia católica, aún en construcción, es una obra maestra de la arquitectura modernista. Su diseño único y su enorme tamaño la convierten en uno de los lugares más visitados de Barcelona</p>
+        </article>
+        <article>
+            <h3>Casa Batlló</h3>
+            <p>La Casa Batlló es un edificio modernista ubicado en el centro de Barcelona. Con su fachada colorida y orgánica y su diseño innovador, es una de las obras más famosas de Gaudí. La Casa Batlló es un ejemplo impresionante de la creatividad y la originalidad del arquitecto catalán</p>
+        </article>
+    </div>
 </main>
             <footer>
-                <h5>Enlaces de interés</h5>
-                <h6>Enlaces de interés</h6>
+                <div class="container">
+                    <h5>Enlaces de interés</h5>
+                    <h6>Enlaces de interés</h6>
 
 
-                <p>Trabajo académico elaborado para la UOC</p>
-                <p>Diseñado por marcdelgado</p>
-                <p>madebo@uoc.edu</p>
+                    <p>Trabajo académico elaborado para la UOC</p>
+                    <p>Diseñado por marcdelgado</p>
+                    <p>madebo@uoc.edu</p>
 
-                <p></p><i class="bi bi-globe2"/>
-
-
+                    <p></p><i class="bi bi-globe2"/>
+                </div>
             </footer>
             </body>
 </html>

@@ -35,3 +35,16 @@ document.addEventListener("click", function(event) {
         }
     }
 });
+
+
+
+window.onscroll = function(){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scroll-to-top").classList.add("show");
+    } else {
+        document.getElementById("scroll-to-top").classList.remove("show");
+    }
+};
+
+
+

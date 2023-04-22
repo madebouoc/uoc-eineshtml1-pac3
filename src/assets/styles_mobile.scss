@@ -1,23 +1,36 @@
 @media (max-width: 1199px) {
 
+  @media (max-aspect-ratio: 1/2) {
+    .banner {
+      background-image: url("banner_lagarto.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  @media (min-aspect-ratio: 1/2) {
+    .banner {
+      background-image: url("banner_balcon.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
   html {
     font-size: 14px;
 
-    #mainMenuCheckbox:checked ~ .mainMenuContent{
-      height: 50vh;
-      transition: height 0.5s ease-in-out;
-      border-right: 3px solid red;
-      border-bottom: 3px solid red;
-    }
-    #langSelectorCheckbox:checked ~ .langSelectorContent{
+    #mainMenuCheckbox:checked ~ .mainMenuContent,
+    #langSelectorCheckbox:checked ~ .langSelectorContent {
       height: 50vh;
       transition: height 0.5s ease-in-out;
       border-left: 3px solid red;
+      border-right: 3px solid red;
       border-bottom: 3px solid red;
     }
 
     #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
-    #langSelectorCheckbox:not(:checked) ~ .langSelectorContent{
+    #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
       height: 0;
       border-left: 0px solid red;
       border-right: 0px solid red;
@@ -26,28 +39,36 @@
       box-shadow: none;
     }
 
-    header {
+    header > .container {
       background-color: rgba(100, 0, 0, 1);
       box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
       border-bottom: 3px solid red;
+      z-index: 900;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      z-index: 900;
-      height: 50px;
-      h1 {
-        font-size: 1.3rem;
-        text-align: center;
-        color: darkorange;
-      }
-      h2 {
-        font-size: 1rem;
-        text-align: center;
-        color: red;
+
+      div.title {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+          font-size: 1.4rem;
+          text-align: center;
+          color: lightgrey;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, calc(-50% - 3px));
+          margin: 0;
+        }
       }
 
       #mainMenuButton {
@@ -56,11 +77,13 @@
         width: 50px;
         background: none;
         border: none;
-        i{
+
+        i {
           font-size: 2.8rem;
           color: lightgray;
         }
-        i:active, i:hover{
+
+        i:active, i:hover {
           color: white;
         }
       }
@@ -76,11 +99,13 @@
         height: 50px;
         background: none;
         border: none;
-        i{
+
+        i {
           font-size: 2.2rem;
           color: lightgray;
         }
-        i:active, i:hover{
+
+        i:active, i:hover {
           color: white;
         }
       }
@@ -111,45 +136,81 @@
         vertical-align: bottom;
         height: 0;
         overflow: hidden;
-       ul{
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-         margin: 0;
-         list-style: none;
-         padding: 0;
-         li{
-           width: 75px;
-           margin: 0;
-           padding: 0;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: space-evenly;
-           img{
-             width: 100%;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 0;
+          list-style: none;
+          padding: 0;
+
+          li {
+            width: 75px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            img {
+              width: 100%;
             }
           }
         }
-
       }
+    }
 
+    #scroll-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      border-radius: 50%; /* establece el radio de borde a 50% para hacer el botón redondo */
+      width: 60px; /* ajusta el ancho del botón */
+      height: 60px; /* ajusta la altura del botón */
+      background-color: #fff; /* establece el color de fondo del botón */
+      border: none; /* elimina el borde del botón */
+      background-color: rgba(100, 0, 0, 1);
+      box-shadow: 0px 0px 8px rgba(100, 0, 0, 0.9); /* agrega una sombra al botón para darle profundidad */
+      z-index: 999; /* establece la posición del botón por encima de otros elementos */
+      button {
+        height: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+
+        i {
+          font-size: 42px;
+          color: lightgrey;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    #scroll-to-top:hover {
+      cursor: pointer;
+    }
+
+    #scroll-to-top.show {
+      opacity: 1;
     }
 
     .banner {
       margin-top: 50px !important;
       height: 40vh;
-      background-image: url("banner_mobile.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      width: 100vw;
+      width: 100%;
+
       h1 {
         font-size: 1.3rem;
         text-align: center;
         color: darkorange;
       }
+
       h2 {
         font-size: 1rem;
         text-align: center;
@@ -162,16 +223,18 @@
       margin-top: 50px;
     }
 
-    .banner ~ main{
+    .banner ~ main {
       margin-top: 10px;
     }
 
-    main{
+    main > .container {
       margin-left: 4px;
       margin-right: 4px;
+
+
     }
 
-    footer{
+    footer > .container {
       color: lightgrey;
       background-color: rgba(60, 30, 30, 1);
     }

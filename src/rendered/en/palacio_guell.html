@@ -10,90 +10,101 @@
     <meta name="keywords" content="PAntoni Gaudí, Barcelona, Modernist architecture, Catalan modernism, Sagrada Familia, Park Güell, Casa Batlló, Casa Milà, Casa Vicens, Gaudí Route, Tourism in Barcelona, Barcelona Tourist Guide, Art and architecture in Barcelona, Tourist attractions in Barcelona, Architectural design in Barcelona">
     <meta name="author" content="">
     <meta name="robots" content="index, follow">
+
+    <!-- Color de barra de estado para móviles -->
+    <meta name="msapplication-navbutton-color" content="#320000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#320000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
-        <!--Aquí movemos el título en modo sticky-->
-        <div class="title">
-            <h1>Gaudí Route in Barcelona</h1>
-            <h2>The Architectural Legacy of a Genius</h2>
+        <div class="container">
+            <div class="title">
+                <h1>Gaudí Route in Barcelona</h1>
+            </div>
+
+            <!--Botones MENU y LANG para mobile-->
+            <!-- https://icons.getbootstrap.com/ -->
+            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <input type="checkbox" id="mainMenuCheckbox">
+            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <input type="checkbox" id="langSelectorCheckbox">
+
+            <!--Cuerpo del menu principal-->
+            <nav class="mainMenuContent">
+                <ul>
+                    <li><a href="/en">INICIO</a></li>
+                    <li>
+                        Obras en Barcelona
+                        <ul class="childMenu">
+                            <li><a href="parque_guell.html">Park Güell</a></li>
+                            <li><a href="palacio_guell.html">Palau Güell</a></li>
+                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
+                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
+                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="otras_obras.html">Otras obras</a></li>
+                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                </ul>
+            </nav>
+
+            <!--Cuerpo del menu de idioma-->
+            <nav class="langSelectorContent">
+                <ul >
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!--Botones MENU y LANG para mobile-->
-        <!-- https://icons.getbootstrap.com/ -->
-        <button id="mainMenuButton"><i class="bi bi-list"/></button>
-        <input type="checkbox" id="mainMenuCheckbox">
-        <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-        <input type="checkbox" id="langSelectorCheckbox">
-
-        <!--Cuerpo del menu principal-->
-        <nav class="mainMenuContent">
-            <ul>
-                <li><a href="/en">INICIO</a></li>
-                <li>
-                    Obras en Barcelona
-                    <ul class="childMenu">
-                        <li><a href="parque_guell.html">Park Güell</a></li>
-                        <li><a href="palacio_guell.html">Palau Güell</a></li>
-                        <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                        <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                        <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                        <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                    </ul>
-                </li>
-                <li><a href="otras_obras.html">Otras obras</a></li>
-                <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
-            </ul>
-        </nav>
-
-        <!--Cuerpo del menu de idioma-->
-        <nav class="langSelectorContent">
-            <ul >
-                <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
-            </ul>
-        </nav>
     </header>
+
+    <a href="#top" id="scroll-to-top"><button><i class="bi bi-arrow-up"/></button></a>
+
 <main class="location">
+    <div class="container">
+        <h3>Palau Güell</h3>
 
-    <h3>Palau Güell</h3>
+        <p>The Palau Güell is a masterpiece of modernist architecture located in the El Raval neighborhood of Barcelona, Spain. Designed by Antoni Gaudí in the 19th century, the palace is an impressive example of the creativity and artistic vision of the Catalan architect. The building features extravagant details and a unique blend of architectural styles, including Gothic, Mudéjar, and Byzantine influences. The interior of the palace is also impressive, with ornate ceilings and a wealth of elaborately decorated details. The Palau Güell is a distinctive symbol of the city of Barcelona and is one of the most popular tourist attractions in the city.</p>
 
-    <p>The Palau Güell is a masterpiece of modernist architecture located in the El Raval neighborhood of Barcelona, Spain. Designed by Antoni Gaudí in the 19th century, the palace is an impressive example of the creativity and artistic vision of the Catalan architect. The building features extravagant details and a unique blend of architectural styles, including Gothic, Mudéjar, and Byzantine influences. The interior of the palace is also impressive, with ornate ceilings and a wealth of elaborately decorated details. The Palau Güell is a distinctive symbol of the city of Barcelona and is one of the most popular tourist attractions in the city.</p>
+        <h4>Vestibule</h4>
+        <p>The vestibule of the Güell Palace in Barcelona is the main entrance of the building and an impressive architectural artwork designed by Antoni Gaudí. The vestibule features a large glass dome, which floods the room with natural light. The floor is covered with colorful mosaics, and the walls are lined with noble marbles and stones, creating a bright and elegant atmosphere. In addition, there is a monumental staircase that leads to the upper floors of the palace.</p>
 
-    <h4>Vestibule</h4>
-    <p>The vestibule of the Güell Palace in Barcelona is the main entrance of the building and an impressive architectural artwork designed by Antoni Gaudí. The vestibule features a large glass dome, which floods the room with natural light. The floor is covered with colorful mosaics, and the walls are lined with noble marbles and stones, creating a bright and elegant atmosphere. In addition, there is a monumental staircase that leads to the upper floors of the palace.</p>
+        <h4>Ballroom</h4>
+        <p>The Ballroom of the Güell Palace is a large room decorated with frescoes and mosaics that used to be used for dances and receptions. The room features an impressive skylight that floods the space with natural light, creating a cozy and elegant atmosphere. The walls are decorated with frescoes, and the floor is covered with an elaborate mosaic design. There is also a gallery overlooking the ballroom that offers unique views of the room.</p>
 
-    <h4>Ballroom</h4>
-    <p>The Ballroom of the Güell Palace is a large room decorated with frescoes and mosaics that used to be used for dances and receptions. The room features an impressive skylight that floods the space with natural light, creating a cozy and elegant atmosphere. The walls are decorated with frescoes, and the floor is covered with an elaborate mosaic design. There is also a gallery overlooking the ballroom that offers unique views of the room.</p>
+        <h4>Music Room</h4>
+        <p>The Music Room of the Güell Palace is a room with exceptional acoustics designed for chamber music and other concerts. The room features impressive wood and glass decorations, with stained glass windows and carved furniture. The walls are lined with stucco, and there is an elaborate fresco decorating the ceiling. The room has exceptional acoustics due to its rounded shape, which allows for better sound propagation.</p>
 
-    <h4>Music Room</h4>
-    <p>The Music Room of the Güell Palace is a room with exceptional acoustics designed for chamber music and other concerts. The room features impressive wood and glass decorations, with stained glass windows and carved furniture. The walls are lined with stucco, and there is an elaborate fresco decorating the ceiling. The room has exceptional acoustics due to its rounded shape, which allows for better sound propagation.</p>
+        <h4>Central Courtyard</h4>
+        <p>The central courtyard of the Güell Palace is the heart of the building and is decorated with columns, mosaics, and sculptures. The courtyard is an outdoor space surrounded by the different floors of the palace and is one of the most impressive parts of the building. The courtyard features carved stone columns and a central fountain decorated with colorful mosaics. Additionally, there are several sculptures throughout the courtyard that add an artistic and unique touch to the decoration.</p>
 
-    <h4>Central Courtyard</h4>
-    <p>The central courtyard of the Güell Palace is the heart of the building and is decorated with columns, mosaics, and sculptures. The courtyard is an outdoor space surrounded by the different floors of the palace and is one of the most impressive parts of the building. The courtyard features carved stone columns and a central fountain decorated with colorful mosaics. Additionally, there are several sculptures throughout the courtyard that add an artistic and unique touch to the decoration.</p>
-
-    <h4>Terrace</h4>
-    <p>The terrace of the Güell Palace is a spacious rooftop terrace that offers panoramic views of the city of Barcelona. The terrace is an ideal place to enjoy the sun and the views of the city, and features a series of chimney stacks decorated in the shape of mushrooms that have become an icon of the building. Additionally, there is an iron structure designed by Gaudí on the terrace that allows natural light to penetrate into the interior of the palace.</p>
-
+        <h4>Terrace</h4>
+        <p>The terrace of the Güell Palace is a spacious rooftop terrace that offers panoramic views of the city of Barcelona. The terrace is an ideal place to enjoy the sun and the views of the city, and features a series of chimney stacks decorated in the shape of mushrooms that have become an icon of the building. Additionally, there is an iron structure designed by Gaudí on the terrace that allows natural light to penetrate into the interior of the palace.</p>
+    </div>
 </main>
             <footer>
-                <h5>Enlaces de interés</h5>
-                <h6>Enlaces de interés</h6>
+                <div class="container">
+                    <h5>Enlaces de interés</h5>
+                    <h6>Enlaces de interés</h6>
 
 
-                <p>Trabajo académico elaborado para la UOC</p>
-                <p>Diseñado por marcdelgado</p>
-                <p>madebo@uoc.edu</p>
+                    <p>Trabajo académico elaborado para la UOC</p>
+                    <p>Diseñado por marcdelgado</p>
+                    <p>madebo@uoc.edu</p>
 
-                <p></p><i class="bi bi-globe2"/>
-
-
+                    <p></p><i class="bi bi-globe2"/>
+                </div>
             </footer>
             </body>
 </html>

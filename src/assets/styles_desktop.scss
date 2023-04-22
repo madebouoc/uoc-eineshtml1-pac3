@@ -1,64 +1,250 @@
 @media (min-width: 1200px) {
-    body {
-        margin: 0;
-        padding: 0;
-        p, h1, h2, h3, h4, h5{
-            margin: 0;
-            padding: 0;
+
+    html {
+        font-size: 18px;
+
+        #mainMenuCheckbox:checked ~ .mainMenuContent,
+        #langSelectorCheckbox:checked ~ .langSelectorContent {
+            height: 50vh;
+            transition: height 0.5s ease-in-out;
+            border-left: 3px solid red;
+            border-right: 3px solid red;
+            border-bottom: 3px solid red;
         }
-        background-image: url("bg.jpg");
-        font-family: 'Noto Serif JP', serif;
+
+        #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
+        #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
+            height: 0;
+            border-left: 0px solid red;
+            border-right: 0px solid red;
+            border-bottom: 0px solid red;
+            transition: height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
+            box-shadow: none;
+        }
 
         header {
-            background-color: red;
-            width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-            display: flex;
+            background-color: rgba(100, 0, 0, 1);
+            box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
+            border-bottom: 3px solid red;
+            z-index: 900;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
 
-            .mainMenu, .childMenu, .langSelector{
-                list-style: none;
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                div.title {
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    h1 {
+                        font-size: 1.4rem;
+                        text-align: center;
+                        color: lightgrey;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, calc(-50% - 3px));
+                        margin: 0;
+                    }
+                }
+
+                #mainMenuButton {
+                    order: 0;
+                    width: 50px;
+                    background: none;
+                    border: none;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    i {
+                        font-size: 2.8rem;
+                        color: lightgray;
+                    }
+
+                    i:active, i:hover {
+                        color: white;
+                    }
+                }
+
+                .title {
+                    order: 2;
+                    flex-grow: 4;
+                }
+
+                #langSelectorButton {
+                    order: 3;
+                    width: 50px;
+                    background: none;
+                    border: none;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    i {
+                        font-size: 2.2rem;
+                        color: lightgray;
+                    }
+
+                    i:active, i:hover {
+                        color: white;
+                    }
+                }
+
+                .mainMenuContent {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 80vw;
+                    margin: 0;
+                    vertical-align: bottom;
+                    height: 0;
+                    overflow: hidden;
+                    background-color: rgba(60, 0, 0, 1);
+                    box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+                    z-index: 950;
+                }
+
+                .langSelectorContent {
+                    position: fixed;
+                    top: 80px;
+                    right: 0;
+                    width: 180px;
+                    background-color: rgba(60, 0, 0, 1);
+                    box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+                    z-index: 950;
+                    margin: 0;
+                    vertical-align: bottom;
+                    height: 0;
+                    overflow: hidden;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        margin: 0;
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            width: 75px;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        #scroll-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            border-radius: 50%; /* establece el radio de borde a 50% para hacer el botón redondo */
+            width: 60px; /* ajusta el ancho del botón */
+            height: 60px; /* ajusta la altura del botón */
+            background-color: #fff; /* establece el color de fondo del botón */
+            border: none; /* elimina el borde del botón */
+            background-color: rgba(100, 0, 0, 1);
+            box-shadow: 0px 0px 8px rgba(100, 0, 0, 0.9); /* agrega una sombra al botón para darle profundidad */
+            z-index: 999; /* establece la posición del botón por encima de otros elementos */
+            button {
+                height: 100%;
+                width: 100%;
+                background: none;
+                border: none;
+
+                i {
+                    font-size: 42px;
+                    color: lightgrey;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        #scroll-to-top:hover {
+            cursor: pointer;
+        }
+
+        #scroll-to-top.show {
+            opacity: 1;
+        }
+
+        .banner {
+            margin-top: 50px !important;
+            height: 50vh;
+            width: 100%;
+            background-image: url("banner_balcon.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+
+            h1 {
+                font-size: 1.3rem;
+                text-align: center;
+                color: darkorange;
             }
 
-            .mainMenu > li, .langSelector > li{
-                display: inline-block;
-                margin-right: 10px; /* Añade un espacio entre elementos */
-                vertical-align: top;
-                position: relative; /* Añade position: relative al elemento padre */
+            h2 {
+                font-size: 1rem;
+                text-align: center;
+                color: navajowhite;
             }
+        }
 
-            .childMenu {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                display: none;
-            }
+        /* No es necesario margin donde haya banner. */
+        :not(.banner) ~ main {
+            margin-top: 50px;
+        }
 
-            .mainMenu > li:hover .childMenu {
-                display: block;
-            }
+        .banner ~ main {
+            margin-top: 10px;
+        }
 
+        main {
+            margin-left: 4px;
+            margin-right: 4px;
 
-            .mainMenu > li{
-                display: inline-block;
-                margin-right: 10px; /* Añade un espacio entre elementos */
-                vertical-align: top;
-                position: relative; /* Añade position: relative al elemento padre */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
             }
         }
 
         footer {
-            background-color: green;
-            width: 1200px;
-            height: 100px;
-            margin: 0 auto;
-            padding: 0;
+            color: lightgrey;
+            background-color: #333333;
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
         }
 
 
-    }
-
-    h1 {
-        color: black;
     }
 }

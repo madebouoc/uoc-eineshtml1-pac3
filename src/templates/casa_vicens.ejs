@@ -1,21 +1,21 @@
 <%- include('partials/header') %>
 <main class="location">
+    <div class="container">
+        <h3><%= casaVicens.titulo %></h3>
 
-    <h3><%= casaVicens.titulo %></h3>
+        <p><%= casaVicens.descripcion.intro %></p>
 
-    <p><%= casaVicens.descripcion.intro %></p>
+        <h4><%= casaVicens.descripcion.plantaBaja_title %></h4>
+        <p><%= casaVicens.descripcion.plantaBaja_text %></p>
 
-    <h4><%= casaVicens.descripcion.plantaBaja_title %></h4>
-    <p><%= casaVicens.descripcion.plantaBaja_text %></p>
+        <h4><%= casaVicens.descripcion.primeraPlanta_title %></h4>
+        <p><%= casaVicens.descripcion.primeraPlanta_text %></p>
 
-    <h4><%= casaVicens.descripcion.primeraPlanta_title %></h4>
-    <p><%= casaVicens.descripcion.primeraPlanta_text %></p>
+        <h4><%= casaVicens.descripcion.segundaPlanta_title %></h4>
+        <p><%= casaVicens.descripcion.segundaPlanta_text %></p>
 
-    <h4><%= casaVicens.descripcion.segundaPlanta_title %></h4>
-    <p><%= casaVicens.descripcion.segundaPlanta_text %></p>
-
-    <h4><%= casaVicens.descripcion.terraza_title %></h4>
-    <p><%= casaVicens.descripcion.terraza_text %></p>
-
+        <h4><%= casaVicens.descripcion.terraza_title %></h4>
+        <p><%= casaVicens.descripcion.terraza_text %></p>
+    </div>
 </main>
 <%- include('partials/footer') %>
