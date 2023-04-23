@@ -1,26 +1,56 @@
-$color-sistema: #320000;
-$color-secundario: #FFC107;
+
+/* -- CONFIGURACION DE COLORES --------------------------------------------- */
+/* Header */
+$color-header-fg: rgb(200, 200, 200);
+$color-header-fg-hover: rgb(255, 255, 255);
+$color-header-bg: rgba(100, 0, 0, 1);
+$color-header-line: rgba(100, 0, 0, 1);
+$color-header-menus-bg: rgba(60, 0, 0, 1);
+/* Banner */
+$color-banner-h1: rgb(164, 0, 0);
+$color-banner-h2: rgb(164, 71, 0);
+/* general, main */
+$color-body-fg: rgb(40, 40, 40);
+$color-body-bg: rgba(200, 180, 160, 1);
+/* Botones independientes */
+$color-botones-fg: rgb(0, 0, 0);
+$color-botones-bg: rgba(204, 86, 0, 1);
+/* Footer */
+$color-footer-fg: rgb(200, 200, 200);
+$color-footer-link: rgb(255, 255, 255);
+$color-footer-bg: rgba(30, 30, 30, 1);
+
+
 $fuente-primaria: 'Roboto', sans-serif;
 
+/* -- HOJAS POR MEDIA ------------------------------------------------------ */
 @import 'styles_desktop.scss';
 @import 'styles_mobile.scss';
 
+/* -- ASSETS --------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
-
 @import "icons/bootstrap-icons.scss";
 
-#mainMenuCheckbox, #langSelectorCheckbox{
-  display: none;
-}
-
+/* -- ATRIBUTOS GENERALES -------------------------------------------------- */
 html, body {
+  scroll-behavior: smooth;
+}
+body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: $color-body-bg;
+  color: $color-body-fg;
+  font-family: 'Noto Serif JP', serif;
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 
   }
-  font-family: 'Noto Serif JP', serif;
+  #mainMenuCheckbox, #langSelectorCheckbox{
+    display: none;
+  }
 }

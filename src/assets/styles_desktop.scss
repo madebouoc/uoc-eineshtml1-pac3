@@ -42,19 +42,29 @@
                 max-width: 1200px;
                 margin: 0 auto;
 
-                div.title {
-                    justify-content: center;
-                    align-items: center;
+                .title {
+                    order: 0;
+                    flex-grow: 4;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: start;
                     height: 100%;
+                    a, img{
+                        color: lightgrey;
+                        position: relative;
+                        height: 100%;
+                        top: 50%;
+                        transform: translate(0, calc(-50% - 3px));
+                        margin: 0;
+                    }
 
                     h1 {
-                        font-size: 1.4rem;
-                        text-align: center;
+                        font-size: 2rem;
                         color: lightgrey;
                         position: relative;
                         top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, calc(-50% - 3px));
+                        transform: translate(0, calc(-50% - 3px));
                         margin: 0;
                     }
                 }
@@ -76,11 +86,6 @@
                     i:active, i:hover {
                         color: white;
                     }
-                }
-
-                .title {
-                    order: 2;
-                    flex-grow: 4;
                 }
 
                 #langSelectorButton {
@@ -157,7 +162,7 @@
             }
         }
 
-        #scroll-to-top {
+        #boton-top {
             position: fixed;
             bottom: 40px;
             right: 20px;
@@ -168,7 +173,7 @@
             height: 60px; /* ajusta la altura del botón */
             background-color: #fff; /* establece el color de fondo del botón */
             border: none; /* elimina el borde del botón */
-            background-color: rgba(100, 0, 0, 1);
+            background-color: rgba(255, 0, 0, 1);
             box-shadow: 0px 0px 8px rgba(100, 0, 0, 0.9); /* agrega una sombra al botón para darle profundidad */
             z-index: 999; /* establece la posición del botón por encima de otros elementos */
             button {
@@ -186,11 +191,11 @@
             }
         }
 
-        #scroll-to-top:hover {
+        #boton-top:hover {
             cursor: pointer;
         }
 
-        #scroll-to-top.show {
+        #boton-top.show {
             opacity: 1;
         }
 
@@ -218,7 +223,7 @@
 
         /* No es necesario margin donde haya banner. */
         :not(.banner) ~ main {
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         .banner ~ main {
@@ -228,10 +233,11 @@
         main {
             margin-left: 4px;
             margin-right: 4px;
-
+            flex-grow: 1;
             .container {
                 max-width: 1200px;
                 margin: 0 auto;
+                height: 100%;
             }
         }
 

@@ -9,7 +9,12 @@
   },
   "frontpage": {
     "intro1" : "Déjate cautivar por la magia del Modernismo catalán mientras te adentras en el universo arquitectónico de Gaudí, un genio cuya visión única y creatividad sin límites transformaron el paisaje urbano y lo convirtieron en un símbolo de la ciudad.",
-    "intro2" : "¿Estás listo para explorar la Ruta Gaudí en Barcelona? ¡Acompáñanos en este viaje mágico y maravilloso que cambiará para siempre tu perspectiva sobre el arte, la arquitectura y el legado de un genio inmortal!"
+    "intro2" : "¿Estás listo para explorar la Ruta Gaudí en Barcelona? ¡Acompáñanos en este viaje mágico y maravilloso que cambiará para siempre tu perspectiva sobre el arte, la arquitectura y el legado de un genio inmortal!",
+    "vamosAlla" : "¡Vamos allá!"
+  },
+
+  "locations" : {
+
   },
 
   "footer" : {

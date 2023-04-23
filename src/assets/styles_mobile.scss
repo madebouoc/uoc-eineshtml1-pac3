@@ -1,242 +1,257 @@
 @media (max-width: 1199px) {
 
-  @media (max-aspect-ratio: 1/2) {
-    .banner {
-      background-image: url("banner_lagarto.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
-  @media (min-aspect-ratio: 1/2) {
-    .banner {
-      background-image: url("banner_balcon.jpeg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
 
   html {
     font-size: 14px;
 
-    #mainMenuCheckbox:checked ~ .mainMenuContent,
-    #langSelectorCheckbox:checked ~ .langSelectorContent {
-      height: 50vh;
-      transition: height 0.5s ease-in-out;
-      border-left: 3px solid red;
-      border-right: 3px solid red;
-      border-bottom: 3px solid red;
+    .container{
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
     }
 
-    #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
-    #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
-      height: 0;
-      border-left: 0px solid red;
-      border-right: 0px solid red;
-      border-bottom: 0px solid red;
-      transition: height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
-      box-shadow: none;
-    }
-
-    header > .container {
-      background-color: rgba(100, 0, 0, 1);
-      box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
-      border-bottom: 3px solid red;
-      z-index: 900;
+    /* ===================================================================== */
+    /* == HEADER =========================================================== */
+    /* ===================================================================== */
+    header {
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
       height: 50px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      div.title {
-        justify-content: center;
-        align-items: center;
+      z-index: 900;
+      background-color: $color-header-bg;
+      box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
+      border-bottom: 3px solid red;
+      .container {
+        /* Formateo del aspecto general, posicionamiento y flexbox */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         height: 100%;
-
-        h1 {
-          font-size: 1.4rem;
-          text-align: center;
-          color: lightgrey;
-          position: relative;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, calc(-50% - 3px));
-          margin: 0;
+        /* Checkboxes ocultos para controlar el switch MENU y LANG en mobile */
+        #mainMenuCheckbox:checked ~ .mainMenuContent,
+        #langSelectorCheckbox:checked ~ .langSelectorContent {
+          height: 50vh;
+          transition: height 0.5s ease-in-out;
+          border-left: 3px solid red;
+          border-right: 3px solid red;
+          border-bottom: 3px solid red;
         }
-      }
 
-      #mainMenuButton {
-        order: 0;
-        height: 50px;
-        width: 50px;
-        background: none;
-        border: none;
+        #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
+        #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
+          height: 0;
+          border-left: 0px solid red;
+          border-right: 0px solid red;
+          border-bottom: 0px solid red;
+          transition: height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
+          box-shadow: none;
+        }
 
-        i {
+        /* Color titulos, botones */
+        h1, i, a {
+          color: $color-header-fg;
+          text-decoration: none;
+        }
+
+        i:active, i:hover, a:active, a:hover {
+          color: $color-header-fg-hover;
+        }
+
+        /* -- 1. BOTON MENU -------------------------------------------------- */
+        #mainMenuButton {
+          order: 0;
+          height: 50px;
+          width: 50px;
+          background: none;
+          border: none;
           font-size: 2.8rem;
-          color: lightgray;
         }
 
-        i:active, i:hover {
-          color: white;
-        }
-      }
+        /* -- 2. TITULO ------------------------------------------------------ */
+        div.title {
+          order: 2;
+          flex-grow: 4;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
 
-      .title {
-        order: 2;
-        flex-grow: 4;
-      }
+          img {
+            display: none; /* logo deshabilitado en mobile */
+          }
 
-      #langSelectorButton {
-        order: 3;
-        width: 50px;
-        height: 50px;
-        background: none;
-        border: none;
-
-        i {
-          font-size: 2.2rem;
-          color: lightgray;
-        }
-
-        i:active, i:hover {
-          color: white;
-        }
-      }
-
-      .mainMenuContent {
-        position: fixed;
-        top: 50px;
-        left: 0;
-        width: 80vw;
-        margin: 0;
-        vertical-align: bottom;
-        height: 0;
-        overflow: hidden;
-        background-color: rgba(60, 0, 0, 1);
-        box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
-        z-index: 950;
-      }
-
-      .langSelectorContent {
-        position: fixed;
-        top: 50px;
-        right: 0;
-        width: 180px;
-        background-color: rgba(60, 0, 0, 1);
-        box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
-        z-index: 950;
-        margin: 0;
-        vertical-align: bottom;
-        height: 0;
-        overflow: hidden;
-
-        ul {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          margin: 0;
-          list-style: none;
-          padding: 0;
-
-          li {
-            width: 75px;
+          h1 {
+            font-size: 1.4rem;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, calc(-50% - 3px));
             margin: 0;
-            padding: 0;
+          }
+        }
+
+        /* -- 3. BOTON IDIOMA ------------------------------------------------ */
+        #langSelectorButton {
+          order: 3;
+          width: 50px;
+          height: 50px;
+          background: none;
+          border: none;
+          font-size: 2.2rem;
+        }
+
+        /* -- 1.1 MENU PRINCIPAL (flotante) ----------------------------------- */
+        .mainMenuContent {
+          position: fixed;
+          top: 50px;
+          left: 0;
+          width: 80vw;
+          margin: 0;
+          vertical-align: bottom;
+          height: 0;
+          overflow: hidden;
+          background-color: $color-header-bg;
+          box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+          z-index: 950;
+        }
+
+        /* -- 3.1 SELECTOR IDIOMA (flotante) ---------------------------------- */
+        .langSelectorContent {
+          position: fixed;
+          top: 50px;
+          right: 0;
+          width: 180px;
+          background-color: $color-header-bg;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+          z-index: 950;
+          margin: 0;
+          vertical-align: bottom;
+          height: 0;
+          overflow: hidden;
+
+          ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            margin: 0;
+            list-style: none;
+            padding: 0;
 
-            img {
-              width: 100%;
+            li {
+              width: 75px;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+
+              img {
+                width: 100%;
+              }
             }
           }
         }
       }
     }
 
-    #scroll-to-top {
+    #boton-top {
       position: fixed;
-      bottom: 40px;
-      right: 20px;
+      bottom: 120px;
+      right: 40px;
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
-      border-radius: 50%; /* establece el radio de borde a 50% para hacer el botón redondo */
-      width: 60px; /* ajusta el ancho del botón */
-      height: 60px; /* ajusta la altura del botón */
-      background-color: #fff; /* establece el color de fondo del botón */
-      border: none; /* elimina el borde del botón */
-      background-color: rgba(100, 0, 0, 1);
-      box-shadow: 0px 0px 8px rgba(100, 0, 0, 0.9); /* agrega una sombra al botón para darle profundidad */
-      z-index: 999; /* establece la posición del botón por encima de otros elementos */
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      border: none;
+      background-color: $color-botones-bg;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+      z-index: 999;
       button {
         height: 100%;
         width: 100%;
         background: none;
         border: none;
-
         i {
           font-size: 42px;
-          color: lightgrey;
+          color: $color-botones-fg;
           margin: 0;
           padding: 0;
         }
       }
     }
 
-    #scroll-to-top:hover {
+    #boton-top:hover {
       cursor: pointer;
     }
 
-    #scroll-to-top.show {
+    #boton-top.show {
       opacity: 1;
     }
 
+
+    /* ===================================================================== */
+    /* == BANNER =========================================================== */
+    /* ===================================================================== */
+    /* Diferentes imágenes según si el viewport es landscape o portrait */
+    @media (max-aspect-ratio: 0.999/2) {
+      .banner {
+        background-image: url("banner_lagarto.jpeg");
+      }
+    }
+    @media (min-aspect-ratio: 1/2) {
+      .banner {
+        background-image: url("banner_balcon.jpeg");
+      }
+    }
     .banner {
       margin-top: 50px !important;
-      height: 40vh;
+      height: 360px;
       width: 100%;
-
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
       h1 {
         font-size: 1.3rem;
         text-align: center;
-        color: darkorange;
+        color: $color-banner-h1;
       }
-
       h2 {
         font-size: 1rem;
         text-align: center;
-        color: navajowhite;
+        color: $color-banner-h2;
       }
     }
 
-    /* No es necesario margin donde haya banner. */
-    :not(.banner) ~ main {
-      margin-top: 50px;
+
+    /* ===================================================================== */
+    /* == MAIN ============================================================= */
+    /* ===================================================================== */
+    /* Margen del main es diferente según si el hermano precendente
+       es un banner o el header flotante (depende de la página) */
+    main {
+      width: 100%;
+      flex-grow: 1;
+      .container {
+        padding: 24px 8px 36px 8px;
+      }
+      & > :not(.container.frontage){
+        margin-top: 50px;
+      }
     }
 
-    .banner ~ main {
-      margin-top: 10px;
-    }
 
-    main > .container {
-      margin-left: 4px;
-      margin-right: 4px;
-
-
-    }
+    /* ===================================================================== */
+    /* == FOOTER =========================================================== */
+    /* ===================================================================== */
 
     footer > .container {
-      color: lightgrey;
-      background-color: rgba(60, 30, 30, 1);
+      color: $color-footer-fg;
+      background-color: $color-footer-bg;
     }
 
 

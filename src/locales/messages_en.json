@@ -9,7 +9,12 @@
   },
   "frontpage": {
     "intro1": "Let yourself be captivated by the magic of Catalan Modernism as you delve into Gaudí's architectural universe, a genius whose unique vision and limitless creativity transformed the urban landscape and turned it into a symbol of the city.",
-    "intro2": "Are you ready to explore the Gaudí Route in Barcelona? Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!"
+    "intro2": "Are you ready to explore the Gaudí Route in Barcelona? Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!",
+    "vamosAlla" : "Let's go!"
+  },
+
+  "locations": {
+
   },
 
   "footer" : {
