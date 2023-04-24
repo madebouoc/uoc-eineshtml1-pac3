@@ -32,8 +32,8 @@
         /* Checkboxes ocultos para controlar el switch MENU y LANG en mobile */
         #mainMenuCheckbox:checked ~ .mainMenuContent,
         #langSelectorCheckbox:checked ~ .langSelectorContent {
-          height: 50vh;
-          transition: height 0.5s ease-in-out;
+          max-height: 500px;
+          transition: max-height 0.5s ease-in-out;
           border-left: 3px solid red;
           border-right: 3px solid red;
           border-bottom: 3px solid red;
@@ -41,12 +41,11 @@
 
         #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
         #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
-          height: 0;
+          max-height: 0;
           border-left: 0px solid red;
           border-right: 0px solid red;
           border-bottom: 0px solid red;
-          transition: height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
-          box-shadow: none;
+          transition: max-height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
         }
 
         /* Color titulos, botones */
@@ -110,7 +109,6 @@
           width: 80vw;
           margin: 0;
           vertical-align: bottom;
-          height: 0;
           overflow: hidden;
           background-color: $color-header-bg;
           box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
@@ -128,7 +126,6 @@
           z-index: 950;
           margin: 0;
           vertical-align: bottom;
-          height: 0;
           overflow: hidden;
 
           ul {
