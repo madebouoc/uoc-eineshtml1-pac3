@@ -29,6 +29,12 @@
 
         <h4><%= parqueGuell.descripcion.casaMuseo_title %></h4>
         <p><%= parqueGuell.descripcion.casaMuseo_text %></p>
+
+
+        <div class="googlemaps">
+            <iframe src="<%= parqueGuell.referencias.direccion_mapa %>" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
 </main>
 

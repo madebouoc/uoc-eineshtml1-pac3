@@ -20,6 +20,11 @@
 
         <h4><%= sagradaFamilia.descripcion.criptas_title %></h4>
         <p><%= sagradaFamilia.descripcion.criptas_text %></p>
+
+        <div class="googlemaps">
+            <iframe src="<%= sagradaFamilia.referencias.direccion_mapa %>" class="googlemaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
 </main>
 

@@ -51,7 +51,7 @@
     "referencias": {
       "sitioOficial_text": "Park Güell - Web Oficial",
       "sitioOficial_url": "https://parkguell.barcelona/es",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2992.1370717930354!2d2.1510744457549977!3d41.41454307612308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20guell!5e0!3m2!1ses!2ses!4v1682351117884!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2992.1370717930354!2d2.1510744457549977!3d41.41454307612308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20guell!5e0!3m2!1ses!2ses!4v1682351117884!5m2!1ses!2ses"
     }
   },
   "palacioGuell": {
@@ -73,7 +73,7 @@
     "referencias": {
       "sitioOficial_text": "Palau Güell - Web Oficial",
       "sitioOficial_url": "https://inici.palauguell.cat/es/",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0560044472566!2d2.173552454538609!3d41.37887266915887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25820d3f1dd%3A0x96a03ff19fc2a5a4!2sPalau%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1682351058845!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0560044472566!2d2.173552454538609!3d41.37887266915887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25820d3f1dd%3A0x96a03ff19fc2a5a4!2sPalau%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1682351058845!5m2!1ses!2ses"
     }
   },
   "casaMila": {
@@ -95,7 +95,7 @@
     "referencias": {
       "sitioOficial_text": "La Pedrera (Casa Milà) - Web Oficial",
       "sitioOficial_url": "https://www.lapedrera.com/es/",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.418373306874!2d2.1606595457877242!3d41.3949340647628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a293998ae1d5%3A0xc49fa3624f371e6a!2sLa%20Pedrera%20-%20Casa%20Mil%C3%A0!5e0!3m2!1ses!2ses!4v1682351035073!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.418373306874!2d2.1606595457877242!3d41.3949340647628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a293998ae1d5%3A0xc49fa3624f371e6a!2sLa%20Pedrera%20-%20Casa%20Mil%C3%A0!5e0!3m2!1ses!2ses!4v1682351035073!5m2!1ses!2ses"
     }
   },
   "casaVicens": {
@@ -115,7 +115,7 @@
     "referencias": {
       "sitioOficial_text": "Casa Vicens - Web Oficial",
       "sitioOficial_url": "https://casavicens.org/es/",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7203346090907!2d2.149858570602608!3d41.40339457690929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2a2323480a1%3A0xcef2071fd9460247!2sCasa%20Vicens%20Gaud%C3%AD!5e0!3m2!1ses!2ses!4v1682351001526!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7203346090907!2d2.149858570602608!3d41.40339457690929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2a2323480a1%3A0xcef2071fd9460247!2sCasa%20Vicens%20Gaud%C3%AD!5e0!3m2!1ses!2ses!4v1682351001526!5m2!1ses!2ses"
     }
   },
   "sagradaFamilia": {
@@ -137,7 +137,7 @@
     "referencias": {
       "sitioOficial_text": "Sagrada Familia - Web Oficial",
       "sitioOficial_url": "https://sagradafamilia.org/es/",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4232.236597705912!2d2.1687384071487124!3d41.40355443256409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2ses!4v1682350962945!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4232.236597705912!2d2.1687384071487124!3d41.40355443256409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2ses!4v1682350962945!5m2!1ses!2ses"
     }
   },
   "casaBatllo": {
@@ -159,7 +159,7 @@
     "referencias": {
       "sitioOficial_text": "Casa Batlló - Web Oficial",
       "sitioOficial_url": "https://www.casabatllo.es/es/",
-      "direccion_mapa": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2993.187774572256!2d2.160442918539037!3d41.39172830464679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCasa%20Batll%C3%B3!5e0!3m2!1ses!2ses!4v1682350848294!5m2!1ses!2ses\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "direccion_mapa": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2993.187774572256!2d2.160442918539037!3d41.39172830464679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCasa%20Batll%C3%B3!5e0!3m2!1ses!2ses!4v1682350848294!5m2!1ses!2ses"
     }
   },
 
