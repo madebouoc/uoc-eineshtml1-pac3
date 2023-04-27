@@ -13,10 +13,6 @@
     "vamosAlla" : "¡Vamos allá!"
   },
 
-  "locations" : {
-
-  },
-
   "footer" : {
     "nota1" : "Diseñado por ",
     "nota2" : " como trabajo académico para la Universitat Oberta de Catalunya (UOC).",
@@ -48,6 +44,32 @@
       "casaMuseo_title": "Casa-Museo Gaudí",
       "casaMuseo_text": "La Casa-Museo Gaudí es una sección del Parque Güell que se encuentra en la casa donde Antoni Gaudí vivió durante casi 20 años. Esta casa histórica cuenta con una colección única de objetos personales y artísticos del arquitecto, que incluyen fotografías, muebles y modelos arquitectónicos. Los visitantes pueden explorar las diferentes habitaciones de la casa, cada una con su propia decoración y estilo únicos, y aprender más sobre la vida y el legado de Gaudí. La Casa-Museo Gaudí es un destino popular para los aficionados a la arquitectura y el arte, y ofrece una visión fascinante de la vida y obra de uno de los arquitectos más importantes de la historia de Barcelona."
     },
+    "imagenes": {
+      "intro_img": "intro.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Parc_G%C3%BCell_27-2-12.jpg",
+      "entrada_img": "entrada.jpg",
+      "entrada_about": "Wikimedia - Canaan",
+      "entrada_link": "https://commons.wikimedia.org/wiki/File:Entrada_Park_G%C3%BCell.jpg",
+      "pabellones_img": "pabellones.jpg",
+      "pabellones_about": "Wikimedia - Canaan",
+      "pabellones_link": "https://commons.wikimedia.org/wiki/File:G%C3%BCell_Pavellons_entrada.jpg",
+      "salaHipostila_img":"salaHipostila.jpg",
+      "salaHipostila_about":"Wikimedia - Canaan",
+      "salaHipostila_link":"https://commons.wikimedia.org/wiki/File:Sala_hip%C3%B2stila_G%C3%BCell.jpg",
+      "laPlaza_img": "plaza.jpg",
+      "laPlaza_about": "Wikimedia - Amadalvarez",
+      "laPlaza_link": "https://commons.wikimedia.org/wiki/File:BCN-ParcGuell-4898.jpg",
+      "caminosYviaductos_img":"viaductoAlgarrobo.jpg",
+      "caminosYviaductos_about":"Wikimedia - Canaan",
+      "caminosYviaductos_link":"https://commons.wikimedia.org/wiki/File:Viaducto_del_Algarrobo.jpg",
+      "elCalvario_img":"calvario.jpg",
+      "elCalvario_about":"Wikimedia - Canaan",
+      "elCalvario_link":"https://commons.wikimedia.org/wiki/File:Tres_Creus.jpg",
+      "casaMuseo_img":"casaMuseo.jpg",
+      "casaMuseo_about":"Wikimedia - Canaan",
+      "casaMuseo_link":"https://commons.wikimedia.org/wiki/File:Casa-Museo_Gaud%C3%AD.jpg"
+    },
     "referencias": {
       "sitioOficial_text": "Park Güell - Web Oficial",
       "sitioOficial_url": "https://parkguell.barcelona/es",
@@ -61,14 +83,29 @@
       "intro" : "El Palacio Güell es una obra maestra de la arquitectura modernista ubicada en el barrio de El Raval en Barcelona, España. Diseñado por Antoni Gaudí en el siglo XIX, el palacio es un impresionante ejemplo de la creatividad y la visión artística del arquitecto catalán. El edificio cuenta con detalles extravagantes y una mezcla única de estilos arquitectónicos, incluyendo influencias góticas, mudéjares y bizantinas. El interior del palacio también es impresionante, con techos ornamentados y una gran cantidad de detalles decorativos elaborados. El Palacio Güell es un símbolo distintivo de la ciudad de Barcelona y es una de las atracciones turísticas más populares de la ciudad.",
       "vestibulo_title": "Vestíbulo",
       "vestibulo_text": "El vestíbulo del Palacio Güell de Barcelona es la entrada principal del edificio y una impresionante obra de arte arquitectónica diseñada por Antoni Gaudí. El vestíbulo cuenta con una gran bóveda de cristal, que inunda la sala con luz natural. El suelo está cubierto de mosaicos de colores y las paredes están revestidas con mármoles y piedras nobles, creando un ambiente luminoso y elegante. Además, hay una escalera monumental que conduce a las plantas superiores del palacio.",
-      "salonBaile_title": "Salón de baile",
-      "salonBaile_text": " El Salón de Baile del Palacio Güell es una gran sala decorada con frescos y mosaicos que solía ser utilizada para bailes y recepciones. La sala cuenta con una impresionante claraboya que ilumina el espacio con luz natural, lo que crea un ambiente acogedor y elegante. Las paredes están decoradas con frescos, y el suelo está cubierto con un elaborado diseño de mosaicos. También hay una galería con vistas al salón que ofrece vistas únicas de la habitación.",
-      "salaMusica_title": "Sala de música",
-      "salaMusica_text": "La Sala de Música del Palacio Güell es una sala con una acústica excepcional diseñada para la música de cámara y otros conciertos. La sala cuenta con una impresionante decoración en madera y vidrio, con vitrales y muebles tallados. Las paredes están revestidas con estuco y hay un elaborado fresco que decora el techo. La sala tiene una acústica excepcional debido a su forma redondeada, que permite una mejor propagación del sonido.",
+      "salaConfianza_title": "Sala de la Confianza",
+      "salaConfianza_text": "La Sala de la Confianza en el Palacio Güell es un espacio privado diseñado por Antoni Gaudí para que Eusebi Güell y sus invitados pudieran hablar en confianza. Está en el segundo piso del palacio, es de forma circular, está revestida con madera tallada y una bóveda de ladrillo visto. En su interior, hay un banco de madera tallada en la pared, pequeñas ventanas que permiten ver el exterior sin ser visto, así como una mesa con una campana para llamar a los criados.",
       "patioCentral_title": "Patio central",
       "patioCentral_text": "El patio central del Palacio Güell es el corazón del edificio y está decorado con columnas, mosaicos y esculturas. El patio es un espacio al aire libre rodeado por las diferentes plantas del palacio, y es una de las partes más impresionantes del edificio. El patio cuenta con columnas de piedra talladas y una fuente central decorada con mosaicos de colores. Además, hay varias esculturas en todo el patio que añaden un toque artístico y único a la decoración.",
       "terraza_title": "Terraza",
       "terraza_text": "La terraza del Palacio Güell es una amplia terraza ubicada en la azotea del edificio, que ofrece vistas panorámicas de la ciudad de Barcelona. La terraza es un lugar ideal para disfrutar del sol y las vistas de la ciudad, y cuenta con una serie de chimeneas decoradas en forma de setas que se han convertido en un icono del edificio. Además, hay una estructura de hierro diseñada por Gaudí en la terraza que permite que la luz natural penetre en el interior del palacio."
+    },
+    "imagenes": {
+      "intro_img": "intro.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Palau_G%C3%BCell_Gaud%C3%AD.jpg",
+      "vestibulo_img": "vestibulo.jpg",
+      "vestibulo_about": "Wikimedia - Canaan",
+      "vestibulo_link": "https://commons.wikimedia.org/wiki/File:C%C3%BApula_Palau_G%C3%BCell.JPG",
+      "salaConfianza_img": "sala_confianza.jpg",
+      "salaConfianza_about": "Wikimedia - Canaan",
+      "salaConfianza_link": "https://commons.wikimedia.org/wiki/File:Vitrall_Palau_G%C3%BCell.JPG",
+      "patioCentral_img": "patio.jpg",
+      "patioCentral_about": "Wikimedia - Turol Jones",
+      "patioCentral_link": "https://commons.wikimedia.org/wiki/File:WLM14ES_-_Barcelona_Interior_1205_06_de_julio_de_2011_-_.jpg",
+      "terraza_img": "azotea.jpg",
+      "terraza_about": "Wikimedia - Canaan",
+      "terraza_link": "https://commons.wikimedia.org/wiki/File:Azotea_G%C3%BCell.JPG"
     },
     "referencias": {
       "sitioOficial_text": "Palau Güell - Web Oficial",
@@ -92,6 +129,27 @@
       "plantaBaja_title" : "La Planta Baja",
       "plantaBaja_text" : "La planta baja de La Pedrera alberga una tienda de regalos y una exposición dedicada a la obra de Gaudí, así como también una sala de proyecciones que muestra un documental sobre la historia del edificio y su creador. La exposición cuenta con objetos y maquetas que permiten conocer más sobre la obra de Gaudí y su legado en la arquitectura moderna."
     },
+    "imagenes": {
+      "intro_img": "intro.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Mil%C3%A0_28-2-12.jpg",
+      "azotea_img": "azotea.jpg",
+      "azotea_about": "Wikimedia - Jaume Meneses",
+      "azotea_link": "https://commons.wikimedia.org/wiki/File:La_Pedrera_003.jpg",
+      "atico_img": "atico.jpg",
+      "atico_about": "Wikimedia - Matthias Ott",
+      "atico_link": "https://commons.wikimedia.org/wiki/File:CasaMila-Voltes2.jpg",
+      "piso_img": "piso.jpg",
+      "piso_about": "Wikimedia - Wohnzimmer",
+      "piso_link": "https://commons.wikimedia.org/wiki/File:CasaMila-Menjador.jpg",
+      "patio_img": "patio.jpg",
+      "patio_about": "Wikimedia - Centymetr",
+      "patio_link": "https://commons.wikimedia.org/wiki/File:Dziedziniec_mila.jpg",
+      "plantaBaja_img": "planta_baja.jpg",
+      "plantaBaja_about": "Wikimedia - José Luiz Bernardes Ribeiro",
+      "plantaBaja_link": "https://commons.wikimedia.org/wiki/File:Front_gate_-_Casa_Mil%C3%A0_-_Barcelona_2014.jpg"
+
+    },
     "referencias": {
       "sitioOficial_text": "La Pedrera (Casa Milà) - Web Oficial",
       "sitioOficial_url": "https://www.lapedrera.com/es/",
@@ -111,6 +169,23 @@
       "segundaPlanta_text" : "La segunda planta es la zona privada de la familia Vicens. Los visitantes pueden explorar las habitaciones privadas de la familia, incluyendo el dormitorio principal y una habitación infantil. Las habitaciones están decoradas con detalles elegantes y elementos arquitectónicos únicos.",
       "terraza_title" : "Terraza",
       "terraza_text" : "La terraza de la Casa Vicens es uno de los aspectos más destacados del edificio. Con una vista panorámica de la ciudad de Barcelona, los visitantes pueden apreciar la mezcla única de elementos decorativos y arquitectónicos que caracterizan la obra de Gaudí. La cerámica es una característica distintiva de la terraza, con mosaicos únicos que cuentan la historia de la casa y su construcción."
+    },
+    "imagenes": {
+      "intro_img": "casa_vicens.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Vicens.JPG",
+      "plantaBaja_img": "planta_baja.jpg",
+      "plantaBaja_about": "Wikimedia - Canaan",
+      "plantaBaja_link": "https://commons.wikimedia.org/wiki/File:Casa_Vicens_(2).jpg",
+      "primeraPlanta_img": "primera_planta.jpg",
+      "primeraPlanta_about": "Wikimedia - Canaan",
+      "primeraPlanta_link": "https://commons.wikimedia.org/wiki/File:Vicens_BCN_(10).jpg",
+      "segundaPlanta_img": "segunda_planta.jpg",
+      "segundaPlanta_about": "Wikimedia - Canaan",
+      "segundaPlanta_link": "https://commons.wikimedia.org/wiki/File:Vicens_BCN_(9).jpg",
+      "terraza_img": "terraza.jpg",
+      "terraza_about": "Wikimedia - Canaan",
+      "terraza_link": "https://commons.wikimedia.org/wiki/File:Vicens_BCN_(14).jpg"
     },
     "referencias": {
       "sitioOficial_text": "Casa Vicens - Web Oficial",
@@ -134,6 +209,23 @@
       "criptas_title" : "Criptas",
       "criptas_text" : "Las criptas de la Sagrada Familia son la última morada de varios personajes ilustres de Barcelona, incluyendo al propio Antoni Gaudí. Los visitantes pueden explorar las criptas y conocer más sobre la historia de la basílica."
     },
+    "imagenes": {
+      "intro_img": "intro.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_8-12-21_(1).jpg",
+      "naveCentral_img": "nave_central.jpg",
+      "naveCentral_about": "Wikimedia - Canaan",
+      "naveCentral_link": "https://commons.wikimedia.org/wiki/File:SF_-_Detalle_de_la_b%C3%B3veda.JPG",
+      "abside_img": "abside.jpg",
+      "abside_about": "Wikimedia - Canaan",
+      "abside_link": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_8-12-21_(6).jpg",
+      "torres_img": "torre.jpg",
+      "torres_about": "Wikimedia - C messier",
+      "torres_link": "https://commons.wikimedia.org/wiki/File:%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_3382.jpg",
+      "criptas_img": "cripta.jpg",
+      "criptas_about": "Wikimedia - Canaan",
+      "criptas_link": "https://commons.wikimedia.org/wiki/File:Cripta_SF.jpg"
+    },
     "referencias": {
       "sitioOficial_text": "Sagrada Familia - Web Oficial",
       "sitioOficial_url": "https://sagradafamilia.org/es/",
@@ -144,17 +236,37 @@
     "titulo" : "Casa Batlló",
     "cabezal": "La Casa Batlló es un edificio modernista ubicado en el centro de Barcelona. Con su fachada colorida y orgánica y su diseño innovador, es una de las obras más famosas de Gaudí. La Casa Batlló es un ejemplo impresionante de la creatividad y la originalidad del arquitecto catalán",
     "descripcion": {
-      "intro" : "La Casa Batlló es una de las obras más conocidas del arquitecto Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la casa es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y curva, que se asemeja a un lago de color azul intenso. La fachada está adornada con una mezcla de mosaicos de vidrio y cerámica, y las ventanas tienen una forma irregular y orgánica. El interior de la casa es igualmente impresionante, con una mezcla única de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Batlló es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad.",
-      "fachada_title" : "Fachada",
-      "fachada_text" : "La fachada de la Casa Batlló es una de las más impresionantes del mundo, con un diseño ondulado y formas orgánicas. Los visitantes pueden apreciar los detalles únicos de la fachada y conocer más sobre la historia de la casa.",
-      "vestibulo_title" : "Vestíbulo",
-      "vestibulo_text" : "El vestíbulo de la Casa Batlló cuenta con una escalera impresionante y elementos decorativos únicos. Los visitantes pueden explorar el vestíbulo y aprender sobre la obra de Gaudí y su visión artística.",
-      "patioLuces_title" : "Patio de luces",
-      "patioLuces_text" : "El patio de luces de la Casa Batlló es un impresionante espacio que cuenta con una claraboya única que permite la entrada de luz natural en la casa. Los visitantes pueden admirar los detalles decorativos del patio de luces y aprender sobre su importancia en el diseño de la casa.",
-      "atico_title" : "Ático",
-      "atico_text" : "El ático de la Casa Batlló es un espacio único con una arquitectura impresionante. Los visitantes pueden apreciar los elementos decorativos únicos del ático y aprender sobre la obra de Gaudí.",
-      "terraza_title" : "Terraza",
-      "terraza_text" : "La terraza de la Casa Batlló es una de las partes más impresionantes de la casa, con vistas panorámicas de la ciudad de Barcelona. Los visitantes pueden explorar la terraza y apreciar los detalles decorativos únicos y la arquitectura impresionante de Gaudí."
+      "intro": "La Casa Batlló es una de las obras más conocidas del arquitecto Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la casa es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y curva, que se asemeja a un lago de color azul intenso. La fachada está adornada con una mezcla de mosaicos de vidrio y cerámica, y las ventanas tienen una forma irregular y orgánica. El interior de la casa es igualmente impresionante, con una mezcla única de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Batlló es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad.",
+      "fachada_title": "Fachada",
+      "fachada_text": "La fachada de la Casa Batlló es una de las más impresionantes del mundo, con un diseño ondulado y formas orgánicas. Los visitantes pueden apreciar los detalles únicos de la fachada y conocer más sobre la historia de la casa.",
+      "pisoPrincipal_title": "Piso principal",
+      "pisoPrincipal_text": "El piso principal de la Casa Batlló es la joya de la arquitectura modernista catalana. Destaca por su impresionante fachada y sorprendentes detalles en su interior, como la escalera principal, la chimenea en la sala de estar y el techo en forma de arco. La mezcla de estilos modernistas y clásicos en las elegantes habitaciones son un ejemplo de la visión creativa de Gaudí. En resumen, el piso principal es una exhibición impresionante del ingenio de Gaudí en la creación de espacios únicos e inolvidables.",
+      "patioLuces_title": "Patio de luces",
+      "patioLuces_text": "El patio de luces de la Casa Batlló es un impresionante espacio que cuenta con una claraboya única que permite la entrada de luz natural en la casa. Los visitantes pueden admirar los detalles decorativos del patio de luces y aprender sobre su importancia en el diseño de la casa.",
+      "atico_title": "Ático",
+      "atico_text": "En la Casa Batlló, el ático es una de las partes más interesantes de la casa, ya que cuenta con una estructura de arcos catenarios y ventanales que permiten la entrada de luz natural. Además, el ático también cuenta con una terraza con vistas a la ciudad de Barcelona.",
+      "terraza_title": "Terraza",
+      "terraza_text": "La terraza de la Casa Batlló es una de las partes más impresionantes de la casa, con vistas panorámicas de la ciudad de Barcelona. Los visitantes pueden explorar la terraza y apreciar los detalles decorativos únicos y la arquitectura impresionante de Gaudí."
+    },
+    "imagenes": {
+      "intro_img": "intro.jpg",
+      "intro_about": "Wikimedia - Canaan",
+      "intro_link": "https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Batll%C3%B3.jpg",
+      "fachada_img": "fachada.jpg",
+      "fachada_about": "Wikimedia - Bernard Gagnon",
+      "fachada_link": "https://upload.wikimedia.org/Wikimedia/commons/9/96/Casa_Batll%C3%B3_01.jpg",
+      "pisoPrincipal_img": "primer_piso.jpg",
+      "pisoPrincipal_about": "Wikimedia - Sara Terrones",
+      "pisoPrincipal_link": "https://commons.wikimedia.org/wiki/File:CasaBatll%C3%B3_NobleFloor_saloon_stainedglass.jpg",
+      "patioLuces_img": "patio_luces.jpg",
+      "patioLuces_about": "Wikimedia - Canaan",
+      "patioLuces_link": "https://commons.wikimedia.org/wiki/File:Pati_Batll%C3%B32.jpg",
+      "atico_img": "atico.jpg",
+      "atico_about": "Wikimedia - Michael Stallbaum",
+      "atico_link": "https://upload.wikimedia.org/Wikimedia/commons/3/3d/Barcelona%2C_Casa_Batll%C3%B3%2C_innen%2C_Dachboden.jpg",
+      "terraza_img": "terraza.jpg",
+      "terraza_about": "Wikimedia - Canaan",
+      "terraza_link": "https://commons.wikimedia.org/wiki/File:Xemeneies_Batll%C3%B32.jpg"
     },
     "referencias": {
       "sitioOficial_text": "Casa Batlló - Web Oficial",

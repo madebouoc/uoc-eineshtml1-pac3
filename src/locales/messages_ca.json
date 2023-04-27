@@ -55,10 +55,8 @@
       "intro": "El Palau Güell és una obra mestra de l'arquitectura modernista situada al barri del Raval de Barcelona, Espanya. Dissenyat per Antoni Gaudí al segle XIX, el palau és un impressionant exemple de la creativitat i la visió artística de l'arquitecte català. L'edifici compta amb detalls extravagants i una barreja única d'estils arquitectònics, incloent influències gòtiques, mudèjars i bizantines. L'interior del palau també és impressionant, amb sostres ornamentats i una gran quantitat de detalls decoratius elaborats. El Palau Güell és un símbol distintiu de la ciutat de Barcelona i és una de les atraccions turístiques més populars de la ciutat.",
       "vestibulo_title": "Vestíbul",
       "vestibulo_text": "El vestíbul del Palau Güell de Barcelona és l'entrada principal de l'edifici i una impressionant obra d'art arquitectònica dissenyada per Antoni Gaudí. El vestíbul compta amb una gran volta de vidre, que inunda la sala amb llum natural. El sòl està cobert de mosaic de colors i les parets estan revestides amb marbres i pedres nobles, creant un ambient lluminós i elegant. A més, hi ha una escala monumental que condueix a les plantes superiors del palau.",
-      "salonBaile_title": "Sala de ball",
-      "salonBaile_text": "La Sala de Ball del Palau Güell és una gran sala decorada amb frescos i mosaic que solia ser utilitzada per a balls i recepcions. La sala compta amb una impressionant claraboia que il·lumina l'espai amb llum natural, el que crea un ambient acollidor i elegant. Les parets estan decorades amb frescos, i el sòl està cobert amb un elaborat disseny de mosaic. També hi ha una galeria amb vistes a la sala que ofereix vistes úniques de l'habitació.",
-      "salaMusica_title": "Sala de música",
-      "salaMusica_text": "La Sala de Música del Palau Güell és una sala amb una acústica excepcional dissenyada per a la música de cambra i altres concerts. La sala compta amb una impressionant decoració en fusta i vidre, amb vitralls i mobles tallats. Les parets estan revestides amb estuc i hi ha un elaborat fresc que decora el sostre. La sala té una acústica excepcional degut a la seva forma arrodonida, que permet una millor propagació del so.",
+      "salaConfianza_title": "Sala de la Confiança",
+      "salaConfianza_text": "La Sala de la Confiança al Palau Güell és un espai privat dissenyat per Antoni Gaudí perquè Eusebi Güell i els seus convidats poguessin parlar en confiança. Es troba al segon pis del palau, és de forma circular, està revestida amb fusta tallada i una volta de maó vist. Al seu interior, hi ha un banc de fusta tallada a la paret, petites finestres que permeten veure l'exterior sense ser vist, així com una taula amb una campana per cridar als criats.",
       "patioCentral_title": "Patí central",
       "patioCentral_text": "El pati central del Palau Güell és el cor de l'edifici i està decorat amb columnes, mosaic i escultures. El pati és un espai a l'aire lliure envoltat per les diferents plantes del palau, i és una de les parts més impressionants de l'edifici. El pati compta amb columnes de pedra tallades i una font central decorada amb mosaic de colors. A més, hi ha diverses escultures arreu del pati que afegeixen un toc artístic i únic a la decoració.",
       "terraza_title": "Terrassa",
@@ -108,8 +106,6 @@
       "abside_text": "L'absis de la Sagrada Família és la part posterior de la basílica i compta amb diversos altars i capelles. Els visitants poden apreciar la rica decoració i les escultures que representen escenes bíbliques.",
       "torres_title": "Torres",
       "torres_text": "Les torres de la Sagrada Família són impressionants, amb una alçada de més de 100 metres. Els visitants poden pujar a les torres i gaudir d'una vista panoràmica de la ciutat.",
-      "museo_title": "Museu",
-      "museo_text": "El museu de la Sagrada Família compta amb una àmplia gamma d'objectes relacionats amb la construcció de l'edifici, incloent maquetes i plànols originals.",
       "criptas_title": "Criptes",
       "criptas_text": "Les criptes de la Sagrada Família són l'última morada de diversos personatges il·lustres de Barcelona, incloent-hi el mateix Antoni Gaudí. Els visitants poden explorar les criptes i conèixer més sobre la història de la basílica."
     }
@@ -121,12 +117,12 @@
       "intro": "La Casa Batlló és una de les obres més conegudes de l'arquitecte Antoni Gaudí a Barcelona, Espanya. Construïda a principis del segle XX, la casa és un impressionant exemple de l'arquitectura modernista i és coneguda per la seva façana ondulant i corba, que s'assembla a un llac de color blau intens. La façana està adornada amb una barreja de mosaic de vidre i ceràmica, i les finestres tenen una forma irregular i orgànica. L'interior de la casa és igualment impressionant, amb una barreja única d'elements decoratius i arquitectònics que reflecteixen la visió artística única de Gaudí. La Casa Batlló és una atracció turística popular a Barcelona i un símbol distintiu de l'estil arquitectònic modernista de la ciutat.",
       "fachada_title": "Façana",
       "fachada_text": "La façana de la Casa Batlló és una de les més impressionants del món, amb un disseny ondulat i formes orgàniques. Els visitants poden apreciar els detalls únics de la façana i conèixer més sobre la història de la casa.",
-      "vestibulo_title": "Vestíbul",
-      "vestibulo_text": "El vestíbul de la Casa Batlló compta amb una escala impressionant i elements decoratius únics. Els visitants poden explorar el vestíbul i aprendre sobre l'obra de Gaudí i la seva visió artística.",
+      "pisoPrincipal_title": "Pis principal",
+      "pisoPrincipal_text": "El pis principal de la Casa Batlló és la joia de l'arquitectura modernista catalana. Destaca per la seva impressionant façana i sorprenents detalls en el seu interior, com l'escala principal, la xemeneia a la sala d'estar i el sostre en forma d'arc. La barreja d'estils modernistes i clàssics a les elegants habitacions són un exemple de la visió creativa de Gaudí. En resum, el pis principal és una exhibició impressionant de l'enginy de Gaudí en la creació d'espais únics i inoblidables.",
       "patioLuces_title": "Pati de llums",
       "patioLuces_text": "El pati de llums de la Casa Batlló és un impressionant espai que compta amb una claraboia única que permet l'entrada de llum natural a la casa. Els visitants poden admirar els detalls decoratius del pati de llums i aprendre sobre la seva importància en el disseny de la casa.",
       "atico_title": "Àtic",
-      "atico_text": "L'àtic de la Casa Batlló és un espai únic amb una arquitectura impressionant. Els visitants poden apreciar els elements decoratius únics de l'àtic i aprendre sobre l'obra de Gaudí.",
+      "atico_text": "A la Casa Batlló, l'àtic és una de les parts més interessants de la casa, ja que compta amb una estructura d'arcs catenaris i finestrals que permeten l'entrada de llum natural. A més, l'àtic també té una terrassa amb vistes a la ciutat de Barcelona.",
       "terraza_title": "Terrassa",
       "terraza_text": "La terrassa de la Casa Batlló és una de les parts més impressionants de la casa, amb vistes panoràmiques de la ciutat de Barcelona. Els visitants poden explorar la terrassa i apreciar els detalls decoratius únics i la arquitectura impressionant de Gaudí."
     }

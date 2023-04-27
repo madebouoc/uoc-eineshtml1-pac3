@@ -1,270 +1,289 @@
 @media (min-width: 1200px) {
 
-    html {
-        font-size: 18px;
+	html {
+		font-size: 18px;
 
-        #mainMenuCheckbox:checked ~ .mainMenuContent,
-        #langSelectorCheckbox:checked ~ .langSelectorContent {
-            height: 50vh;
-            transition: height 0.5s ease-in-out;
-            border-left: 3px solid red;
-            border-right: 3px solid red;
-            border-bottom: 3px solid red;
-        }
+		/* ===================================================================== */
+		/* == HEADER =========================================================== */
+		/* ===================================================================== */
 
-        #mainMenuCheckbox:not(:checked) ~ .mainMenuContent,
-        #langSelectorCheckbox:not(:checked) ~ .langSelectorContent {
-            height: 0;
-            border-left: 0px solid red;
-            border-right: 0px solid red;
-            border-bottom: 0px solid red;
-            transition: height 0.5s ease-in-out, border 0s ease-in-out 0.5s;
-            box-shadow: none;
-        }
+		header {
+			background-color: rgba(100, 0, 0, 1);
+			box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
+			border-bottom: 3px solid red;
+			z-index: 900;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
 
-        header {
-            background-color: rgba(100, 0, 0, 1);
-            box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
-            border-bottom: 3px solid red;
-            z-index: 900;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80px;
+			.container {
+				/* Formateo del aspecto general, posicionamiento y flexbox */
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				height: 100%;
+				margin: 0 auto;
+				max-width: 1200px;
 
-            .container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                height: 100%;
-                max-width: 1200px;
-                margin: 0 auto;
+				/* Color titulos, botones */
+				h1, i, a {
+					color: $color-header-fg;
+					text-decoration: none;
+				}
 
-                .title {
-                    order: 0;
-                    flex-grow: 4;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: start;
-                    height: 100%;
-                    a, img{
-                        color: lightgrey;
-                        position: relative;
-                        height: 100%;
-                        top: 50%;
-                        transform: translate(0, calc(-50% - 3px));
-                        margin: 0;
-                    }
+				i:active, i:hover, a:active, a:hover {
+					color: $color-header-fg-hover;
+				}
 
-                    h1 {
-                        font-size: 2rem;
-                        color: lightgrey;
-                        position: relative;
-                        top: 50%;
-                        transform: translate(0, calc(-50% - 3px));
-                        margin: 0;
-                    }
-                }
+				/* Botones mobile ocultos!! */
+				#mainMenuButton, #langSelectorButton {
+					display: none;
+				}
 
-                #mainMenuButton {
-                    order: 0;
-                    width: 50px;
-                    background: none;
-                    border: none;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
+				/* -- 1. TITULO ------------------------------------------------------ */
+				div.title {
+					order: 1;
+					flex-grow: 4;
+					display: flex;
+					flex-direction: row;
+					justify-content: start;
+					align-items: start;
+					height: 100%;
 
-                    i {
-                        font-size: 2.8rem;
-                        color: lightgray;
-                    }
+					a, img {
+						color: lightgrey;
+						position: relative;
+						height: 100%;
+						top: 50%;
+						transform: translate(0, calc(-50% - 3px));
+						margin: 0;
+					}
 
-                    i:active, i:hover {
-                        color: white;
-                    }
-                }
+					h1 {
+						font-size: 2rem;
+						color: lightgrey;
+						position: relative;
+						top: 50%;
+						transform: translate(0, calc(-50% - 3px));
+						margin: 0;
+					}
+				}
 
-                #langSelectorButton {
-                    order: 3;
-                    width: 50px;
-                    background: none;
-                    border: none;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
+				/* -- 2. SELECTOR IDIOMA ----------------------------------- */
+				.langSelectorContent {
+					order: 2;
+					background-color: rgba(60, 0, 0, 1);
+					box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+					margin: 0;
+					vertical-align: bottom;
+					overflow: hidden;
+					ul {
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: space-evenly;
+						margin: 0;
+						list-style: none;
+						padding: 0;
 
-                    i {
-                        font-size: 2.2rem;
-                        color: lightgray;
-                    }
+						li {
+							width: 75px;
+							margin: 0;
+							padding: 0;
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							justify-content: space-evenly;
 
-                    i:active, i:hover {
-                        color: white;
-                    }
-                }
+							img {
+								width: 100%;
+							}
+						}
+					}
 
-                .mainMenuContent {
-                    position: absolute;
-                    top: 80px;
-                    left: 0;
-                    width: 80vw;
-                    margin: 0;
-                    vertical-align: bottom;
-                    height: 0;
-                    overflow: hidden;
-                    background-color: rgba(60, 0, 0, 1);
-                    box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
-                    z-index: 950;
-                }
+				}
 
-                .langSelectorContent {
-                    position: fixed;
-                    top: 80px;
-                    right: 0;
-                    width: 180px;
-                    background-color: rgba(60, 0, 0, 1);
-                    box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
-                    z-index: 950;
-                    margin: 0;
-                    vertical-align: bottom;
-                    height: 0;
-                    overflow: hidden;
+				/* -- 3. MENU PRINCIPAL ----------------------------------- */
+				.mainMenuContent {
+					order: 3;
+					width: 80vw;
+					margin: 0;
+					vertical-align: bottom;
+					overflow: hidden;
+					background-color: rgba(60, 0, 0, 1);
+					box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+					ul{
+						list-style-type: none;
+						display: inline-block;
+						li{
+							margin-right: 10px;
+							list-style-type: none;
+							display: inline-block;
+							ul{
+								li{
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
 
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        margin: 0;
-                        list-style: none;
-                        padding: 0;
+			}
+		}
 
-                        li {
-                            width: 75px;
-                            margin: 0;
-                            padding: 0;
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: space-evenly;
+		/* -- BOTON TOP FLOTANTE ----------------------------------------------- */
+		#boton-top {
+			position: fixed;
+			top: 83px;
+			right: 30px;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			border: none;
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+			background-color: $color-botones-bg;
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+			z-index: 999;
 
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
+			i {
+				font-size: 44px;
+				color: $color-botones-fg;
+				margin: 0;
+				padding: 0;
+			}
+		}
 
-                }
-            }
-        }
+		#boton-top:hover {
+			cursor: pointer;
+		}
 
-        #boton-top {
-            position: fixed;
-            bottom: 40px;
-            right: 20px;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            border-radius: 50%; /* establece el radio de borde a 50% para hacer el botón redondo */
-            width: 60px; /* ajusta el ancho del botón */
-            height: 60px; /* ajusta la altura del botón */
-            background-color: #fff; /* establece el color de fondo del botón */
-            border: none; /* elimina el borde del botón */
-            background-color: rgba(255, 0, 0, 1);
-            box-shadow: 0px 0px 8px rgba(100, 0, 0, 0.9); /* agrega una sombra al botón para darle profundidad */
-            z-index: 999; /* establece la posición del botón por encima de otros elementos */
-            button {
-                height: 100%;
-                width: 100%;
-                background: none;
-                border: none;
+		#boton-top.show {
+			opacity: 1;
+		}
 
-                i {
-                    font-size: 42px;
-                    color: lightgrey;
-                    margin: 0;
-                    padding: 0;
-                }
-            }
-        }
+		/* ===================================================================== */
+		/* == BANNER =========================================================== */
+		/* ===================================================================== */
+		/* Diferentes imágenes según si el viewport es landscape o portrait */
+		@media (max-aspect-ratio: 0.999/2) {
+			.banner {
+				background-image: url("banner_lagarto.jpeg");
+			}
+		}
+		@media (min-aspect-ratio: 1/2) {
+			.banner {
+				background-image: url("banner_balcon.jpeg");
+			}
+		}
 
-        #boton-top:hover {
-            cursor: pointer;
-        }
+		.banner {
+			margin-top: 50px !important;
+			height: 360px;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
 
-        #boton-top.show {
-            opacity: 1;
-        }
+			h1 {
+				font-size: 1.3rem;
+				text-align: center;
+				color: $color-banner-h1;
+			}
 
-        .banner {
-            margin-top: 50px !important;
-            height: 50vh;
-            width: 100%;
-            background-image: url("banner_balcon.jpeg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom center;
-
-            h1 {
-                font-size: 1.3rem;
-                text-align: center;
-                color: darkorange;
-            }
-
-            h2 {
-                font-size: 1rem;
-                text-align: center;
-                color: navajowhite;
-            }
-        }
-
-        /* No es necesario margin donde haya banner. */
-        :not(.banner) ~ main {
-            margin-top: 100px;
-        }
-
-        .banner ~ main {
-            margin-top: 10px;
-        }
-
-        main {
-            margin-left: 4px;
-            margin-right: 4px;
-            flex-grow: 1;
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                height: 100%;
-            }
-
-            div.googlemaps {
-                position: relative;
-                width: 50%;
-                height: 50%;
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                }
-            }
-        }
-
-        footer {
-            color: lightgrey;
-            background-color: #333333;
-
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-        }
+			h2 {
+				font-size: 1rem;
+				text-align: center;
+				color: $color-banner-h2;
+			}
+		}
 
 
-    }
+		/* ===================================================================== */
+		/* == MAIN ============================================================= */
+		/* ===================================================================== */
+		/* Margen del main es diferente según si el hermano precendente
+           es un banner o el header flotante (depende de la página) */
+		main {
+			width: 100%;
+			flex-grow: 1;
+
+			.container {
+				padding: 24px 12px 36px 12px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				gap: 24px;
+				height: 100%;
+				margin: 0 auto;
+				max-width: 1200px;
+
+				article {
+					position: relative;
+					height: calc(100vw - 12px - 12px);
+
+					img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						z-index: -1; /* Coloca la imagen detrás del contenido */
+					}
+
+					div {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						height: 70%;
+						background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+						padding: 10px;
+						box-sizing: border-box;
+						color: white;
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-end;
+					}
+				}
+
+				div.googlemaps {
+					position: relative;
+					width: 100%;
+					height: 100%;
+
+					iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						border: none;
+					}
+				}
+			}
+
+			& > :not(.container.frontage) {
+				margin-top: 50px;
+			}
+		}
+
+		/* ===================================================================== */
+		/* == FOOTER =========================================================== */
+		/* ===================================================================== */
+
+		footer {
+			color: $color-footer-fg;
+			background-color: $color-footer-bg;
+
+			.container {
+				height: 100%;
+				margin: 0 auto;
+				max-width: 1200px;
+			}
+		}
+
+	}
 }

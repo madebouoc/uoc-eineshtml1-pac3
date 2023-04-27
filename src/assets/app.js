@@ -46,5 +46,19 @@ window.onscroll = function(){
     }
 };
 
+function omitirTopDelHistorico(){
+    history.pushState({top: true}, document.title, window.location.href);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const botonTop = document.getElementById("boton-top");
+
+    botonTop.addEventListener("click", scrollToTop);
+});
+
+function scrollToTop() {
+    const topElement = document.getElementById("top");
+    topElement.scrollIntoView({behavior: "smooth"});
+}
 
 
