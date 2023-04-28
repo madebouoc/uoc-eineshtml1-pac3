@@ -21,13 +21,12 @@
   },
 
   "footer" : {
-    "nota1" : "Designed by",
-    "nota2" : " as an academic project for the Open University of Catalonia (UOC).",
-    "contacta" : "Contact me:",
+    "queEs": "Academic work prepared for UOC",
+    "por": "Designed by",
     "autor": "Marc Delgado",
+    "legal": "Legal notice and bibliography",
     "email": "madebo@uoc.edu",
-    "copyright": "This content is protected by copyright under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license."
-  },
+    "copyright": "This content is protected by copyright under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license"  },
 
   "parqueGuell": {
     "titulo": "Park Güell",

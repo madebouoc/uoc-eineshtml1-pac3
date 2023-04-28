@@ -27,8 +27,7 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logo.png" alt="logo sitio web"></a>
-                <h1><%= header.titulo %></h1>
+                <h1><a href="index.html"><%= header.titulo %></a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
@@ -40,20 +39,21 @@
 
             <!--Cuerpo del menu principal-->
             <nav class="mainMenuContent">
-                <ul>
-                    <li><i class="bi bi-house"></i><a href="/<%= currentLanguage %>"><%= header.inicio %></a></li>
+                <!-- De momento lo quito <i class="bi bi-house"> <i class="bi bi-buildings"> <i class="bi bi-eye"> <i class="bi bi-journal">-->
+                <ul class="home">
+                    <li><a href="/<%= currentLanguage %>"><%= header.inicio %></a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-buildings"></i><a href="sagrada_familia.html"><%= sagradaFamilia.titulo %></a></li>
-                    <li><i class="bi bi-buildings"></i><a href="parque_guell.html"><%= parqueGuell.titulo %></a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_mila.html"><%= casaMila.titulo %></a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_batllo.html"><%= casaBatllo.titulo %></a></li>
-                    <li><i class="bi bi-buildings"></i><a href="palacio_guell.html"><%= palacioGuell.titulo %></a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_vicens.html"><%= casaVicens.titulo %></a></li>
+                <ul class="locations">
+                    <li><a href="sagrada_familia.html"><%= sagradaFamilia.titulo %></a></li>
+                    <li><a href="parque_guell.html"><%= parqueGuell.titulo %></a></li>
+                    <li><a href="casa_mila.html"><%= casaMila.titulo %></a></li>
+                    <li><a href="casa_batllo.html"><%= casaBatllo.titulo %></a></li>
+                    <li><a href="palacio_guell.html"><%= palacioGuell.titulo %></a></li>
+                    <li><a href="casa_vicens.html"><%= casaVicens.titulo %></a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-eye"></i><a href="locations.html"><%= locations.titulo %></a></li>
-                    <li><i class="bi bi-journal"></i><a href="acerca_de.html"><%= acercaDe.titulo %></a></li>
+                <ul class="others">
+                    <li><a href="locations.html"><%= locations.titulo %></a></li>
+                    <li><a href="acerca_de.html"><%= acercaDe.titulo %></a></li>
                 </ul>
             </nav>
 
@@ -63,7 +63,7 @@
                     <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div><%= header.catalan %></div></a></li>
                     <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div><%= header.spanish %></div></a></li>
                     <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div><%= header.english %></div></a></li>
-                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div><%= header.french %></div></a></li>
+                    <!--<li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div><%= header.french %></div></a></li>-->
                 </ul>
             </nav>
         </div>

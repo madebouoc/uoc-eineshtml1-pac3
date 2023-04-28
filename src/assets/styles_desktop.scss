@@ -1,7 +1,7 @@
 @media (min-width: 1200px) {
 
 	html {
-		font-size: 18px;
+		font-size: 20px;
 
 		/* ===================================================================== */
 		/* == HEADER =========================================================== */
@@ -45,60 +45,52 @@
 				/* -- 1. TITULO ------------------------------------------------------ */
 				div.title {
 					order: 1;
-					flex-grow: 4;
 					display: flex;
 					flex-direction: row;
 					justify-content: start;
 					align-items: start;
 					height: 100%;
-
-					a, img {
-						color: lightgrey;
-						position: relative;
-						height: 100%;
-						top: 50%;
-						transform: translate(0, calc(-50% - 3px));
-						margin: 0;
-					}
+					width: 70%;
 
 					h1 {
 						font-size: 2rem;
 						color: lightgrey;
-						position: relative;
-						top: 50%;
-						transform: translate(0, calc(-50% - 3px));
-						margin: 0;
+						margin-top: 10px;
 					}
 				}
 
 				/* -- 2. SELECTOR IDIOMA ----------------------------------- */
 				.langSelectorContent {
 					order: 2;
-					background-color: rgba(60, 0, 0, 1);
-					box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
 					margin: 0;
 					vertical-align: bottom;
 					overflow: hidden;
+					width: 30%;
 					ul {
 						display: flex;
 						flex-direction: row;
 						flex-wrap: wrap;
 						justify-content: space-evenly;
-						margin: 0;
+						margin: 24px 0 0 0;
 						list-style: none;
 						padding: 0;
-
+						font-size: 0.8rem;
 						li {
-							width: 75px;
-							margin: 0;
+							width: 30px;
+							margin: 0 0 12px 0;
 							padding: 0;
 							display: flex;
 							flex-direction: row;
 							flex-wrap: wrap;
 							justify-content: space-evenly;
-
+							text-align: center;
 							img {
-								width: 100%;
+								width: 30px;
+								height: 20px;
+								object-fit: cover;
+							}
+							div{
+								margin: 0px auto 12px auto;
 							}
 						}
 					}
@@ -108,25 +100,48 @@
 				/* -- 3. MENU PRINCIPAL ----------------------------------- */
 				.mainMenuContent {
 					order: 3;
-					width: 80vw;
+					width: 100%;
 					margin: 0;
 					vertical-align: bottom;
 					overflow: hidden;
 					background-color: rgba(60, 0, 0, 1);
-					box-shadow: 4px 4px 4px rgba(100, 0, 0, 0.5);
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
 					ul{
 						list-style-type: none;
 						display: inline-block;
+						box-sizing: border-box;
+						padding: 0 24px 0 24px;
 						li{
 							margin-right: 10px;
 							list-style-type: none;
 							display: inline-block;
 							ul{
 								li{
-									margin-right: 10px;
+									margin-right: 50px;
+
 								}
 							}
 						}
+					}
+					.home{
+						order: 1;
+						width: 50%;
+					}
+					.locations{
+						order: 3;
+						width: 100%;
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+					}
+					.others{
+						order: 2;
+						width: 50%;
+						text-align: right;
 					}
 				}
 
@@ -180,8 +195,8 @@
 		}
 
 		.banner {
-			margin-top: 50px !important;
-			height: 360px;
+			margin-top: 230px !important;
+			height: 50vh;
 			width: 100%;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -222,23 +237,24 @@
 
 				article {
 					position: relative;
-					height: calc(100vw - 12px - 12px);
+					height: 50%;
+					width: 50%;
 
 					img {
 						position: absolute;
 						top: 0;
 						left: 0;
-						width: 100%;
-						height: 100%;
+						width: 50%;
+						height: 50%;
 						object-fit: cover;
-						z-index: -1; /* Coloca la imagen detrás del contenido */
+						z-index: -1;
 					}
 
 					div {
 						position: absolute;
 						bottom: 0;
 						width: 100%;
-						height: 70%;
+						height: 100%;
 						background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 						padding: 10px;
 						box-sizing: border-box;
@@ -263,8 +279,74 @@
 						border: none;
 					}
 				}
-				&:not(.frontpage){
+
+				button{
+					background: none;
+					border: none;
+					margin: 24px auto;
+					a{
+						color: $color-botones-fg;
+						background-color: $color-botones-bg;
+						border-radius: 4px;
+						text-align: center;
+						font-size: 1.5rem;
+						font-weight: bolder;
+						padding: 12px;
+						border: none;
+						text-decoration: none;
+						&:hover,&:active{
+							color: $color-botones-fg-hover;
+							background-color: $color-botones-bg-hover;
+						}
+					}
+
+				}
+				&.frontpage{
+					text-align: center;
+				}
+				&.locationList{
 					margin-top: 50px;
+					text-align: justify;
+					h3{
+						margin: 6px 0 6px 0;
+						font-size: 1.5rem;
+						font-weight: 900;
+					}
+					p{
+						margin: 0px 0 6px 0;
+						font-size: 1.2rem;
+						line-height: 2rem;
+					}
+				}
+				&.location, &.about{
+					margin-top: 250px;
+					text-align: justify;
+					h3{
+						margin: 12px 0 12px 0;
+						font-size: 2rem;
+					}
+					h4{
+						margin: 24px 0 6px 0;
+						font-size: 1.5rem;
+					}
+					p{
+						margin: 0px 0 6px 0;
+						font-size: 1.2rem;
+						line-height: 2rem;
+					}
+					figure{
+						width: 50%;
+						margin: 0 auto;
+						padding: 12px;
+						background-color: white;
+						box-sizing: border-box;
+						img{
+							width: 100%;
+						}
+						figurecaption{
+							font-size: 0.8rem;
+						}
+					}
 				}
 			}
 		}
@@ -278,9 +360,30 @@
 			background-color: $color-footer-bg;
 
 			.container {
-				height: 100%;
-				margin: 0 auto;
+				padding: 12px 12px 24px 12px;
 				max-width: 1200px;
+				margin: 0 auto;
+				p{
+					margin: 12px auto;
+					a{
+						text-decoration: underline;
+						text-decoration-style: dotted;
+						color: $color-footer-fg;
+						font-weight: bolder;
+						&:hover, &:active{
+							color: $color-footer-link;
+						}
+					}
+				}
+				hr{
+					border-width: 1px;
+					border-style: solid;
+					border-color: $color-header-bg;
+				}
+				p.copyright{
+					font-size: 0.7rem;
+					color: gray;
+				}
 			}
 		}
 

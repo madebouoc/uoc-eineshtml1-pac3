@@ -383,8 +383,31 @@
 		footer {
 			color: $color-footer-fg;
 			background-color: $color-footer-bg;
-		.container {
 
+		.container {
+			padding: 12px 12px 24px 12px;
+			text-align: center;
+			p{
+				margin: 4px auto;
+				a{
+					text-decoration: underline;
+					text-decoration-style: dotted;
+					color: $color-footer-fg;
+					font-weight: bolder;
+					&:hover, &:active{
+						color: $color-footer-link;
+					}
+				}
+			}
+			hr{
+				border-width: 1px;
+				border-style: solid;
+				border-color: $color-header-bg;
+			}
+			p.copyright{
+				font-size: 0.8rem;
+				color: gray;
+			}
 		}
 	}
 

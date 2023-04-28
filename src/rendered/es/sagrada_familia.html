@@ -27,8 +27,7 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logo.png" alt="logo sitio web"></a>
-                <h1>Ruta Gaudí en Barcelona</h1>
+                <h1><a href="index.html">Ruta Gaudí en Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
@@ -40,20 +39,21 @@
 
             <!--Cuerpo del menu principal-->
             <nav class="mainMenuContent">
-                <ul>
-                    <li><i class="bi bi-house"></i><a href="/es">INICIO</a></li>
+                <!-- De momento lo quito <i class="bi bi-house"> <i class="bi bi-buildings"> <i class="bi bi-eye"> <i class="bi bi-journal">-->
+                <ul class="home">
+                    <li><a href="/es">INICIO</a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-buildings"></i><a href="sagrada_familia.html">La Sagrada Familia</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="parque_guell.html">Parque Güell</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_batllo.html">Casa Batlló</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="palacio_guell.html">Palacio Güell</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_vicens.html">Casa Vicens</a></li>
+                <ul class="locations">
+                    <li><a href="sagrada_familia.html">La Sagrada Familia</a></li>
+                    <li><a href="parque_guell.html">Parque Güell</a></li>
+                    <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                    <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                    <li><a href="palacio_guell.html">Palacio Güell</a></li>
+                    <li><a href="casa_vicens.html">Casa Vicens</a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-eye"></i><a href="locations.html">Explora la Ruta Gaudí</a></li>
-                    <li><i class="bi bi-journal"></i><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                <ul class="others">
+                    <li><a href="locations.html">Explora la Ruta Gaudí</a></li>
+                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
                 </ul>
             </nav>
 
@@ -63,7 +63,7 @@
                     <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div>Català</div></a></li>
                     <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div>Español</div></a></li>
                     <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div>English</div></a></li>
-                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>Français</div></a></li>
+                    <!--<li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>Français</div></a></li>-->
                 </ul>
             </nav>
         </div>
@@ -122,15 +122,11 @@
 
             <footer>
                 <div class="container">
-                    <h5>Enlaces de interés</h5>
-                    <h6>Enlaces de interés</h6>
-
-
                     <p>Trabajo académico elaborado para la UOC</p>
-                    <p>Diseñado por marcdelgado</p>
-                    <p>marcdelgado@gmail.com</p>
-
-                    <p></p><i class="bi bi-globe2"/>
+                    <p>Diseñado por <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                    <p><a href="presentacion.html">Nota legal y bibliografía</a></p>
+                    <hr>
+                    <p class="copyright">Este contenido está protegido por derechos de autor bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</p>
                 </div>
             </footer>
             </body>

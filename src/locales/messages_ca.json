@@ -18,13 +18,12 @@
     "fuente": "Font: "
   },
   "footer": {
-    "nota1": "Dissenyat per ",
-    "nota2": " com a treball acadèmic per a la Universitat Oberta de Catalunya (UOC).",
-    "contacta": "Contacta amb mi:",
+    "queEs": "Treball acadèmic elaborat per a la UOC",
+    "por": "Dissenyat per",
     "autor": "Marc Delgado",
+    "legal": "Nota legal i bibliografia",
     "email": "madebo@uoc.edu",
-    "copyright": "Aquest contingut està protegit per drets d'autor sota la llicència Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
-  },
+    "copyright": "Aquest contingut està protegit per drets d'autor sota la llicència Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"  },
   "parqueGuell": {
     "titulo": "Parc Güell",
     "cabezal": "Submergeix-te en el màgic Parc Güell, obra mestra de Gaudí que combina art, natura i arquitectura en un espai únic.",

@@ -27,8 +27,7 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logo.png" alt="logo sitio web"></a>
-                <h1>Gaudí Route in Barcelona</h1>
+                <h1><a href="index.html">Gaudí Route in Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
@@ -40,20 +39,21 @@
 
             <!--Cuerpo del menu principal-->
             <nav class="mainMenuContent">
-                <ul>
-                    <li><i class="bi bi-house"></i><a href="/en">HOME</a></li>
+                <!-- De momento lo quito <i class="bi bi-house"> <i class="bi bi-buildings"> <i class="bi bi-eye"> <i class="bi bi-journal">-->
+                <ul class="home">
+                    <li><a href="/en">HOME</a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-buildings"></i><a href="sagrada_familia.html">La Sagrada Familia</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="parque_guell.html">Park Güell</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_batllo.html">Casa Batlló</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="palacio_guell.html">Palau Güell</a></li>
-                    <li><i class="bi bi-buildings"></i><a href="casa_vicens.html">Casa Vicens</a></li>
+                <ul class="locations">
+                    <li><a href="sagrada_familia.html">La Sagrada Familia</a></li>
+                    <li><a href="parque_guell.html">Park Güell</a></li>
+                    <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                    <li><a href="casa_batllo.html">Casa Batlló</a></li>
+                    <li><a href="palacio_guell.html">Palau Güell</a></li>
+                    <li><a href="casa_vicens.html">Casa Vicens</a></li>
                 </ul>
-                <ul>
-                    <li><i class="bi bi-eye"></i><a href="locations.html">Explore the Gaudi Route</a></li>
-                    <li><i class="bi bi-journal"></i><a href="acerca_de.html">About the architect</a></li>
+                <ul class="others">
+                    <li><a href="locations.html">Explore the Gaudi Route</a></li>
+                    <li><a href="acerca_de.html">About the architect</a></li>
                 </ul>
             </nav>
 
@@ -63,7 +63,7 @@
                     <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div>Català</div></a></li>
                     <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div>Español</div></a></li>
                     <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div>English</div></a></li>
-                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>Français</div></a></li>
+                    <!--<li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>Français</div></a></li>-->
                 </ul>
             </nav>
         </div>
@@ -130,15 +130,11 @@
 </main>
             <footer>
                 <div class="container">
-                    <h5>Enlaces de interés</h5>
-                    <h6>Enlaces de interés</h6>
-
-
-                    <p>Trabajo académico elaborado para la UOC</p>
-                    <p>Diseñado por marcdelgado</p>
-                    <p>madebo@uoc.edu</p>
-
-                    <p></p><i class="bi bi-globe2"/>
+                    <p>Academic work prepared for UOC</p>
+                    <p>Designed by <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                    <p><a href="presentacion.html">Legal notice and bibliography</a></p>
+                    <hr>
+                    <p class="copyright">This content is protected by copyright under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license</p>
                 </div>
             </footer>
             </body>

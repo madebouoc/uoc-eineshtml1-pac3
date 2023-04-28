@@ -23,11 +23,11 @@
     "fuente": "Fuente: "
   },
   "footer" : {
-    "nota1" : "Diseñado por ",
-    "nota2" : " como trabajo académico para la Universitat Oberta de Catalunya (UOC).",
-    "contacta" : "Contacta conmigo:",
+    "queEs" : "Trabajo académico elaborado para la UOC",
+    "por" : "Diseñado por",
     "autor": "Marc Delgado",
-    "email": "marcdelgado@gmail.com",
+    "legal": "Nota legal y bibliografía",
+    "email": "madebo@uoc.edu",
     "copyright": "Este contenido está protegido por derechos de autor bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
   },
 
