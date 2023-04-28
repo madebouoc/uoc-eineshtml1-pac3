@@ -3,21 +3,45 @@
 <main>
     <div class="container location">
         <h3><%= casaVicens.titulo %></h3>
-
+        <figure>
+            <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>" alt="<%= casaVicens.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= casaVicens.imagenes.intro_link %>" target="_blank"><%= casaVicens.imagenes.intro_about %></a></figurecaption>
+        </figure>
         <p><%= casaVicens.descripcion.intro %></p>
 
+        
         <h4><%= casaVicens.descripcion.plantaBaja_title %></h4>
+        <figure>
+            <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.plantaBaja_img %>" alt="<%= casaVicens.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= casaVicens.imagenes.plantaBaja_link %>" target="_blank"><%= casaVicens.imagenes.plantaBaja_about %></a></figurecaption>
+        </figure>
         <p><%= casaVicens.descripcion.plantaBaja_text %></p>
 
+        
         <h4><%= casaVicens.descripcion.primeraPlanta_title %></h4>
+        <figure>
+            <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.primeraPlanta_img %>" alt="<%= casaVicens.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= casaVicens.imagenes.primeraPlanta_link %>" target="_blank"><%= casaVicens.imagenes.primeraPlanta_about %></a></figurecaption>
+        </figure>
         <p><%= casaVicens.descripcion.primeraPlanta_text %></p>
 
+        
         <h4><%= casaVicens.descripcion.segundaPlanta_title %></h4>
+        <figure>
+            <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.segundaPlanta_img %>" alt="<%= casaVicens.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= casaVicens.imagenes.segundaPlanta_link %>" target="_blank"><%= casaVicens.imagenes.segundaPlanta_about %></a></figurecaption>
+        </figure>
         <p><%= casaVicens.descripcion.segundaPlanta_text %></p>
 
+        
         <h4><%= casaVicens.descripcion.terraza_title %></h4>
+        <figure>
+            <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.terraza_img %>" alt="<%= casaVicens.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= casaVicens.imagenes.terraza_link %>" target="_blank"><%= casaVicens.imagenes.terraza_about %></a></figurecaption>
+        </figure>
         <p><%= casaVicens.descripcion.terraza_text %></p>
 
+        
         <div class="googlemaps">
            <iframe src="<%= casaVicens.referencias.direccion_mapa %>" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

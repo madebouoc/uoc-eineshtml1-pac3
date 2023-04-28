@@ -27,7 +27,7 @@
   },
   "parqueGuell": {
     "titulo": "Parc Güell",
-    "cabezal": "El Parc Güell, situat a Barcelona, és una obra mestra del famós arquitecte modernista Antoni Gaudí. Amb la seva combinació única d'elements naturals i arquitectònics, el parc ofereix una experiència màgica als visitants.",
+    "cabezal": "Submergeix-te en el màgic Parc Güell, obra mestra de Gaudí que combina art, natura i arquitectura en un espai únic.",
     "descripcion": {
       "intro": "El Parc Güell és un dels parcs més famosos i icònics de Barcelona, Espanya. Dissenyat pel reconegut arquitecte modernista Antoni Gaudí al segle XIX, el parc és un exemple impressionant de la creativitat i la visió artística de l'arquitecte. El parc es troba en una colina amb vistes panoràmiques de la ciutat i compta amb jardins preciosos, escultures extravagants i edificis impressionants. L'arquitectura del parc es caracteritza per les seves formes orgàniques i sinuoses, i la seva barreja única d'estils arquitectònics, que inclouen influències del gòtic, el romànic i l'islàmic. El Parc Güell és una atracció turística popular i un símbol distintiu de la ciutat de Barcelona.",
       "entrada_title": "Entrada",
@@ -54,7 +54,7 @@
   },
   "palacioGuell": {
     "titulo": "Palau Güell",
-    "cabezal": "El Palau Güell, una de les primeres obres mestres de Gaudí, és un palau urbà situat al cor de Barcelona. Amb la seva impressionant arquitectura modernista i la seva rica història, el Palau Güell és un lloc imprescindible per visitar.",
+    "cabezal": "Visita l'impressionant Palau Güell, una joia del modernisme que fusiona elements gòtics, mudèjars i la creativitat de Gaudí.",
     "descripcion": {
       "intro": "El Palau Güell és una obra mestra de l'arquitectura modernista situada al barri del Raval de Barcelona, Espanya. Dissenyat per Antoni Gaudí al segle XIX, el palau és un impressionant exemple de la creativitat i la visió artística de l'arquitecte català. L'edifici compta amb detalls extravagants i una barreja única d'estils arquitectònics, incloent influències gòtiques, mudèjars i bizantines. L'interior del palau també és impressionant, amb sostres ornamentats i una gran quantitat de detalls decoratius elaborats. El Palau Güell és un símbol distintiu de la ciutat de Barcelona i és una de les atraccions turístiques més populars de la ciutat.",
       "vestibulo_title": "Vestíbul",
@@ -69,7 +69,7 @@
   },
   "casaMila": {
     "titulo": "La Pedrera - Casa Milà",
-    "cabezal": "La Casa Milà, també coneguda com La Pedrera, és un edifici modernista a Barcelona dissenyat per Gaudí. La seva façana ondulada i la seva teulada amb impressionants xemeneies fan de La Pedrera una de les obres més reconegudes de Gaudí.",
+    "cabezal": "Admira l'innovadora Casa Milà, coneguda com La Pedrera, un emblemàtic i revolucionari edifici de Gaudí a Barcelona.",
     "descripcion": {
       "intro": "La Casa Milà, també coneguda com La Pedrera, és una de les obres més icòniques del famós arquitecte català Antoni Gaudí a Barcelona, Espanya. Construïda al segle XIX, la Casa Milà és un impressionant exemple de l'arquitectura modernista i una de les obres més innovadores de l'arquitecte. L'edifici compta amb formes ondulants i corbes, així com amb detalls decoratius elaborats, com les xemeneies i la façana de pedra tallada a mà. L'interior de la casa és igual de impressionant, amb una barreja única d'elements arquitectònics i decoratius que reflecteixen la visió artística única de Gaudí. La Casa Milà és una de les atraccions turístiques més visitades de Barcelona i un símbol distintiu de la ciutat.",
       "azotea_title": "Terrat",
@@ -86,7 +86,7 @@
   },
   "casaVicens": {
     "titulo": "Casa Vicens",
-    "cabezal": "La Casa Vicens, la primera obra important de Gaudí, és una casa residencial situada al barri de Gracia a Barcelona. Amb el seu disseny original i el seu bonic jardí, la Casa Vicens és un exemple excepcional de l'arquitectura modernista catalana.",
+    "cabezal": "Contempla la primera obra mestra de Gaudí, la colorida i singular Casa Vicens, on l'arquitecte desplega el seu talent creatiu.",
     "descripcion": {
       "intro": "La Casa Vicens és una obra arquitectònica única situada al barri de Gràcia a Barcelona, Espanya. Va ser dissenyada per l'arquitecte català Antoni Gaudí el 1883 com la residència d'estiu de la família Vicens i és considerada una de les primeres obres mestres de l'arquitecte. La casa és un impressionant exemple de l'arquitectura modernista, amb una façana colorida i ornamentada que combina elements tradicionals espanyols amb influències de l'art islàmic. L'interior de la casa també és impressionant, amb una barreja d'elements decoratius i arquitectònics que reflecteixen la visió artística única de Gaudí. La Casa Vicens és una atracció turística popular a Barcelona i un símbol distintiu de l'estil arquitectònic modernista de la ciutat.",
       "plantaBaja_title": "Planta baixa",
@@ -101,7 +101,7 @@
   },
   "sagradaFamilia": {
     "titulo": "La Sagrada Família",
-    "cabezal": "La Sagrada Família és l'obra més coneguda i emblemàtica de Gaudí. Aquesta impressionant església catòlica, encara en construcció, és una obra mestra de l'arquitectura modernista. El seu disseny únic i el seu enorme tamany la converteixen en un dels llocs més visitats de Barcelona.",
+    "cabezal": "Assaboreix la monumental i emblemàtica Sagrada Família, obra cimera i etern llegat del genial arquitecte Antoni Gaudí.",
     "descripcion": {
       "intro": "La Sagrada Família és l'obra culminant de l'arquitecte Antoni Gaudí i un dels monuments més emblemàtics de Barcelona, Espanya. La construcció va començar el 1882 i encara està en procés de construcció, la qual cosa la converteix en un dels projectes de construcció més llargs del món. L'església és un impressionant exemple de l'arquitectura modernista i combina elements religiosos amb una visió artística única de Gaudí. La façana de l'església és extremadament detallada i presenta escenes bíbliques i figures religioses tallades a mà. L'interior de l'església és igualment impressionant, amb una barreja d'elements arquitectònics i decoratius que reflecteixen la visió artística única de Gaudí. La Sagrada Família és una atracció turística popular a Barcelona i un símbol distintiu de la ciutat.",
       "naveCentral_title": "Nau central",
@@ -116,7 +116,7 @@
   },
   "casaBatllo": {
     "titulo": "Casa Batlló",
-    "cabezal": "La Casa Batlló és un edifici modernista ubicat al centre de Barcelona. Amb la seva façana colorida i orgànica i el seu disseny innovador, és una de les obres més famoses de Gaudí. La Casa Batlló és un exemple impressionant de la creativitat i l'originalitat de l'arquitecte català.",
+    "cabezal": "Descobreix la fascinant Casa Batlló, un deslumbrant exemple del geni creatiu de Gaudí i la seva habilitat per reinventar l'espai.",
     "descripcion": {
       "intro": "La Casa Batlló és una de les obres més conegudes de l'arquitecte Antoni Gaudí a Barcelona, Espanya. Construïda a principis del segle XX, la casa és un impressionant exemple de l'arquitectura modernista i és coneguda per la seva façana ondulant i corba, que s'assembla a un llac de color blau intens. La façana està adornada amb una barreja de mosaic de vidre i ceràmica, i les finestres tenen una forma irregular i orgànica. L'interior de la casa és igualment impressionant, amb una barreja única d'elements decoratius i arquitectònics que reflecteixen la visió artística única de Gaudí. La Casa Batlló és una atracció turística popular a Barcelona i un símbol distintiu de l'estil arquitectònic modernista de la ciutat.",
       "fachada_title": "Façana",

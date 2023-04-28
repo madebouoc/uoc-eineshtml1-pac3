@@ -2,7 +2,10 @@
 <main>
     <div class="container about">
         <h3><%= acercaDe.titulo %></h3>
-
+        <figure>
+            <img src="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>" alt="<%= acercaDe.titulo %>">
+            <figurecaption><%= locations.fuente %> <a href="<%= acercaDe.imagenes.intro_link %>" target="_blank"><%= acercaDe.imagenes.intro_about %></a></figurecaption>
+        </figure>
         <p><%= acercaDe.descripcion.intro %></p>
 
         <h4><%= acercaDe.descripcion.infanciaEducacion_title %></h4>
