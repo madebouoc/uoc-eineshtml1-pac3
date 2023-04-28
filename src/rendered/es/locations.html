@@ -34,37 +34,36 @@
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
             <button id="mainMenuButton"><i class="bi bi-list"/></button>
-            <input type="checkbox" id="mainMenuCheckbox">
+            <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
             <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-            <input type="checkbox" id="langSelectorCheckbox">
+            <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
             <nav class="mainMenuContent">
                 <ul>
-                    <li><a href="/es">INICIO</a></li>
-                    <li>
-                        Obras en Barcelona
-                        <ul class="childMenu">
-                            <li><a href="parque_guell.html">Parque Güell</a></li>
-                            <li><a href="palacio_guell.html">Palacio Güell</a></li>
-                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="otras_obras.html">Otras obras</a></li>
-                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                    <li><i class="bi bi-house"></i><a href="/es">INICIO</a></li>
+                </ul>
+                <ul>
+                    <li><i class="bi bi-buildings"></i><a href="sagrada_familia.html">La Sagrada Familia</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="parque_guell.html">Parque Güell</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="palacio_guell.html">Palacio Güell</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_batllo.html">Casa Batlló</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_vicens.html">Casa Vicens</a></li>
+                </ul>
+                <ul>
+                    <li><i class="bi bi-eye"></i><a href="locations.html">Explora la Ruta Gaudí</a></li>
+                    <li><i class="bi bi-journal"></i><a href="acerca_de.html">Acerca del arquitecto</a></li>
                 </ul>
             </nav>
 
             <!--Cuerpo del menu de idioma-->
             <nav class="langSelectorContent">
                 <ul >
-                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div>Catalan</div></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div>Spanish</div></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div>English</div></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>French</div></a></li>
                 </ul>
             </nav>
         </div>
@@ -76,20 +75,20 @@
 <main>
     <div class="container locationList">
         <article>
-            <a href="parque_guell.html">
-                <img src="../../assets/photos/parque_guell/intro.jpg" alt="Parque Güell">
+            <a href="sagrada_familia.html">
+                <img src="../../assets/photos/sagrada_familia/intro.jpg" alt="La Sagrada Familia">
                 <div>
-                    <h3>Parque Güell</h3>
-                    <p>El Parque Güell, ubicado en Barcelona, es una obra maestra del famoso arquitecto modernista Antonio Gaudí. Con su combinación única de elementos naturales y arquitectónicos, el parque ofrece una experiencia mágica a los visitantes</p>
+                    <h3>La Sagrada Familia</h3>
+                    <p>La Sagrada Familia es la obra más conocida y emblemática de Gaudí. Esta impresionante iglesia católica, aún en construcción, es una obra maestra de la arquitectura modernista. Su diseño único y su enorme tamaño la convierten en uno de los lugares más visitados de Barcelona</p>
                 </div>
             </a>
         </article>
         <article>
-            <a href="palacio_guell.html">
-                <img src="../../assets/photos/palacio_guell/intro.jpg" alt="Palacio Güell">
+             <a href="parque_guell.html">
+                <img src="../../assets/photos/parque_guell/intro.jpg" alt="Parque Güell">
                 <div>
-                    <h3>Palacio Güell</h3>
-                    <p>El Palacio Güell, una de las primeras obras maestras de Gaudí, es un palacio urbano situado en el corazón de Barcelona. Con su impresionante arquitectura modernista y su rica historia, el Palacio Güell es un lugar imprescindible para visitar</p>
+                    <h3>Parque Güell</h3>
+                    <p>El Parque Güell, ubicado en Barcelona, es una obra maestra del famoso arquitecto modernista Antonio Gaudí. Con su combinación única de elementos naturales y arquitectónicos, el parque ofrece una experiencia mágica a los visitantes</p>
                 </div>
             </a>
         </article>
@@ -103,29 +102,29 @@
             </a>
         </article>
         <article>
-            <a href="casa_vicens.html">
-                <img src="../../assets/photos/casa_vicens/casa_vicens.jpg" alt="Casa Vicens">
-                <div>
-                    <h3>Casa Vicens</h3>
-                    <p>La Casa Vicens, la primera obra importante de Gaudí, es una casa residencial ubicada en el barrio de Gracia en Barcelona. Con su diseño original y su hermoso jardín, la Casa Vicens es un ejemplo excepcional de la arquitectura modernista catalana</p>
-                </div>
-            </a>
-        </article>
-        <article>
-            <a href="sagrada_familia.html">
-                <img src="../../assets/photos/sagrada_familia/intro.jpg" alt="Templo de la Sagrada Familia">
-                <div>
-                    <h3>Templo de la Sagrada Familia</h3>
-                    <p>La Sagrada Familia es la obra más conocida y emblemática de Gaudí. Esta impresionante iglesia católica, aún en construcción, es una obra maestra de la arquitectura modernista. Su diseño único y su enorme tamaño la convierten en uno de los lugares más visitados de Barcelona</p>
-                </div>
-            </a>
-        </article>
-        <article>
             <a href="casa_batllo.html">
                 <img src="../../assets/photos/casa_batllo/intro.jpg" alt="Casa Batlló">
                 <div>
                     <h3>Casa Batlló</h3>
                     <p>La Casa Batlló es un edificio modernista ubicado en el centro de Barcelona. Con su fachada colorida y orgánica y su diseño innovador, es una de las obras más famosas de Gaudí. La Casa Batlló es un ejemplo impresionante de la creatividad y la originalidad del arquitecto catalán</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="palacio_guell.html">
+                <img src="../../assets/photos/palacio_guell/intro.jpg" alt="Palacio Güell">
+                <div>
+                    <h3>Palacio Güell</h3>
+                    <p>El Palacio Güell, una de las primeras obras maestras de Gaudí, es un palacio urbano situado en el corazón de Barcelona. Con su impresionante arquitectura modernista y su rica historia, el Palacio Güell es un lugar imprescindible para visitar</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <a href="casa_vicens.html">
+                <img src="../../assets/photos/casa_vicens/casa_vicens.jpg" alt="Casa Vicens">
+                <div>
+                    <h3>Casa Vicens</h3>
+                    <p>La Casa Vicens, la primera obra importante de Gaudí, es una casa residencial ubicada en el barrio de Gracia en Barcelona. Con su diseño original y su hermoso jardín, la Casa Vicens es un ejemplo excepcional de la arquitectura modernista catalana</p>
                 </div>
             </a>
         </article>

@@ -1,28 +1,28 @@
-<%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-<main>
-    <div class="container location">
-        <h3><%= palacioGuell.titulo %></h3>
+    <main>
+        <div class="container location">
+            <h3><%= palacioGuell.titulo %></h3>
 
-        <p><%= palacioGuell.descripcion.intro %></p>
+            <p><%= palacioGuell.descripcion.intro %></p>
 
-        <h4><%= palacioGuell.descripcion.vestibulo_title %></h4>
-        <p><%= palacioGuell.descripcion.vestibulo_text %></p>
+            <h4><%= palacioGuell.descripcion.vestibulo_title %></h4>
+            <p><%= palacioGuell.descripcion.vestibulo_text %></p>
 
-        <h4><%= palacioGuell.descripcion.salaConfianza_title %></h4>
-        <p><%= palacioGuell.descripcion.salaConfianza_text %></p>
+            <h4><%= palacioGuell.descripcion.salaConfianza_title %></h4>
+            <p><%= palacioGuell.descripcion.salaConfianza_text %></p>
 
-        <h4><%= palacioGuell.descripcion.patioCentral_title %></h4>
-        <p><%= palacioGuell.descripcion.patioCentral_text %></p>
+            <h4><%= palacioGuell.descripcion.patioCentral_title %></h4>
+            <p><%= palacioGuell.descripcion.patioCentral_text %></p>
 
-        <h4><%= palacioGuell.descripcion.terraza_title %></h4>
-        <p><%= palacioGuell.descripcion.terraza_text %></p>
+            <h4><%= palacioGuell.descripcion.terraza_title %></h4>
+            <p><%= palacioGuell.descripcion.terraza_text %></p>
 
-        <div class="googlemaps">
-            <iframe src="<%= palacioGuell.referencias.direccion_mapa %>" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="googlemaps">
+                <iframe src="<%= palacioGuell.referencias.direccion_mapa %>" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
+    </main>
 
-    </div>
-</main>
-
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>

@@ -1,3 +1,8 @@
+document.addEventListener('pageshow', function() {
+    document.getElementById("mainMenuCheckbox").checked = false;
+    document.getElementById("langSelectorCheckbox").checked = false;
+});
+
 document.getElementById("mainMenuButton").addEventListener("click", function() {
     let button = document.getElementById("langSelectorCheckbox");
     button.checked = false;

@@ -5,14 +5,19 @@
     "titulo": "Ruta Gaudí en Barcelona",
     "subtitulo": "El legado arquitectónico de un genio",
     "descripcion": "Explora la ciudad de Barcelona con nuestro sitio web turístico de Gaudí, descubre la arquitectura modernista del arquitecto catalán y aprende sobre su legado cultural e histórico en la ciudad",
-    "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernismo catalán, Sagrada Familia, Parque Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turismo en Barcelona, Guía turística de Barcelona, Arte y arquitectura en Barcelona, Atracciones turísticas en Barcelona, Diseño arquitectónico en Barcelona"
+    "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernismo catalán, Sagrada Familia, Parque Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turismo en Barcelona, Guía turística de Barcelona, Arte y arquitectura en Barcelona, Atracciones turísticas en Barcelona, Diseño arquitectónico en Barcelona",
+    "inicio" : "INICIO"
   },
   "frontpage": {
-    "intro1" : "Déjate cautivar por la magia del Modernismo catalán mientras te adentras en el universo arquitectónico de Gaudí, un genio cuya visión única y creatividad sin límites transformaron el paisaje urbano y lo convirtieron en un símbolo de la ciudad.",
-    "intro2" : "¿Estás listo para explorar la Ruta Gaudí en Barcelona? ¡Acompáñanos en este viaje mágico y maravilloso que cambiará para siempre tu perspectiva sobre el arte, la arquitectura y el legado de un genio inmortal!",
+    "intro1" : "Déjate cautivar por la magia del Modernismo catalán mientras te adentras en el universo arquitectónico de Gaudí.",
+    "intro2" : "¡Acompáñanos en este viaje mágico y maravilloso que cambiará para siempre tu perspectiva sobre el arte, la arquitectura y el legado de un genio inmortal!",
+    "intro3" : "¿Estás listo para explorar la Ruta Gaudí en Barcelona?",
     "vamosAlla" : "¡Vamos allá!"
   },
-
+  "locations": {
+    "titulo": "Explora la Ruta Gaudí",
+    "fuente": "Fuente: "
+  },
   "footer" : {
     "nota1" : "Diseñado por ",
     "nota2" : " como trabajo académico para la Universitat Oberta de Catalunya (UOC).",
@@ -54,19 +59,22 @@
       "pabellones_img": "pabellones.jpg",
       "pabellones_about": "Wikimedia - Canaan",
       "pabellones_link": "https://commons.wikimedia.org/wiki/File:G%C3%BCell_Pavellons_entrada.jpg",
-      "salaHipostila_img":"salaHipostila.jpg",
+      "escalinata_img": "escalinata.jpg",
+      "escalinata_about": "Wikimedia - Canaan",
+      "escalinata_link": "https://commons.wikimedia.org/wiki/File:Parc_G%C3%BCell_27-2-12.jpg",
+      "salaHipostila_img":"sala_hipostila.jpg",
       "salaHipostila_about":"Wikimedia - Canaan",
       "salaHipostila_link":"https://commons.wikimedia.org/wiki/File:Sala_hip%C3%B2stila_G%C3%BCell.jpg",
       "laPlaza_img": "plaza.jpg",
       "laPlaza_about": "Wikimedia - Amadalvarez",
       "laPlaza_link": "https://commons.wikimedia.org/wiki/File:BCN-ParcGuell-4898.jpg",
-      "caminosYviaductos_img":"viaductoAlgarrobo.jpg",
+      "caminosYviaductos_img":"viaducto_algarrobo.jpg",
       "caminosYviaductos_about":"Wikimedia - Canaan",
       "caminosYviaductos_link":"https://commons.wikimedia.org/wiki/File:Viaducto_del_Algarrobo.jpg",
       "elCalvario_img":"calvario.jpg",
       "elCalvario_about":"Wikimedia - Canaan",
       "elCalvario_link":"https://commons.wikimedia.org/wiki/File:Tres_Creus.jpg",
-      "casaMuseo_img":"casaMuseo.jpg",
+      "casaMuseo_img":"casa_museo.jpg",
       "casaMuseo_about":"Wikimedia - Canaan",
       "casaMuseo_link":"https://commons.wikimedia.org/wiki/File:Casa-Museo_Gaud%C3%AD.jpg"
     },
@@ -194,7 +202,7 @@
     }
   },
   "sagradaFamilia": {
-    "titulo" : "Templo de la Sagrada Familia",
+    "titulo" : "La Sagrada Familia",
     "cabezal" : "La Sagrada Familia es la obra más conocida y emblemática de Gaudí. Esta impresionante iglesia católica, aún en construcción, es una obra maestra de la arquitectura modernista. Su diseño único y su enorme tamaño la convierten en uno de los lugares más visitados de Barcelona",
     "descripcion": {
       "intro" : "La Sagrada Familia es la obra cumbre del arquitecto Antoni Gaudí y uno de los monumentos más emblemáticos de Barcelona, España. La construcción comenzó en 1882 y todavía está en proceso de construcción, lo que la convierte en uno de los proyectos de construcción más largos del mundo. La iglesia es un impresionante ejemplo de la arquitectura modernista y combina elementos religiosos con una visión artística única de Gaudí. La fachada de la iglesia es extremadamente detallada y presenta escenas bíblicas y figuras religiosas talladas a mano. El interior de la iglesia es igual de impresionante, con una mezcla de elementos arquitectónicos y decorativos que reflejan la visión artística única de Gaudí. La Sagrada Familia es una atracción turística popular en Barcelona y un símbolo distintivo de la ciudad.",
@@ -219,7 +227,7 @@
       "abside_img": "abside.jpg",
       "abside_about": "Wikimedia - Canaan",
       "abside_link": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_8-12-21_(6).jpg",
-      "torres_img": "torre.jpg",
+      "torres_img": "torres.jpg",
       "torres_about": "Wikimedia - C messier",
       "torres_link": "https://commons.wikimedia.org/wiki/File:%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_3382.jpg",
       "criptas_img": "cripta.jpg",

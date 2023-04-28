@@ -4,14 +4,18 @@
     "titulo": "Ruta Gaudí a Barcelona",
     "subtitulo": "El llegat arquitectònic d'un geni",
     "descripcion": "Explora la ciutat de Barcelona amb el nostre lloc web turístic de Gaudí, descobreix l'arquitectura modernista de l'arquitecte català i aprèn sobre el seu llegat cultural i històric a la ciutat",
-    "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernisme català, Sagrada Família, Parc Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turisme a Barcelona, Guia turística de Barcelona, Art i arquitectura a Barcelona, Atraccions turístiques a Barcelona, Disseny arquitectònic a Barcelona"
+    "keywords": "Antoni Gaudí, Barcelona, Arquitectura modernista, Modernisme català, Sagrada Família, Parc Güell, Casa Batlló, Casa Milà, Casa Vicens, Ruta de Gaudí, Turisme a Barcelona, Guia turística de Barcelona, Art i arquitectura a Barcelona, Atraccions turístiques a Barcelona, Disseny arquitectònic a Barcelona",
+    "inicio" : "INICI"
   },
   "frontpage": {
-    "intro1": "Deixa't captivar per la màgia del Modernisme català mentre t'endinses en l'univers arquitectònic de Gaudí, un geni la visió únic i creativitat sense límits van transformar el paisatge urbà i el van convertir en un símbol de la ciutat.",
-    "intro2": "Estàs llest per explorar la Ruta Gaudí a Barcelona? Acompanya'ns en aquest viatge màgic i meravellós que canviarà per sempre la teva perspectiva sobre l'art, l'arquitectura i el llegat d'un geni immortal!",
+    "intro1": "Deixa't captivar per la màgia del Modernisme català mentre t'endinses en l'univers arquitectònic de Gaudí.",
+    "intro2": "Acompanya'ns en aquest viatge màgic i meravellós que canviarà per sempre la teva perspectiva sobre l'art, l'arquitectura i el llegat d'un geni immortal!",
+    "intro3": "Estàs llest per explorar la Ruta Gaudí a Barcelona?",
     "vamosAlla": "Som-hi!"
   },
   "locations": {
+    "titulo": "Explora la Ruta Gaudí",
+    "fuente": "Font: "
   },
   "footer": {
     "nota1": "Dissenyat per ",
@@ -96,7 +100,7 @@
     }
   },
   "sagradaFamilia": {
-    "titulo": "Temple de la Sagrada Família",
+    "titulo": "La Sagrada Família",
     "cabezal": "La Sagrada Família és l'obra més coneguda i emblemàtica de Gaudí. Aquesta impressionant església catòlica, encara en construcció, és una obra mestra de l'arquitectura modernista. El seu disseny únic i el seu enorme tamany la converteixen en un dels llocs més visitats de Barcelona.",
     "descripcion": {
       "intro": "La Sagrada Família és l'obra culminant de l'arquitecte Antoni Gaudí i un dels monuments més emblemàtics de Barcelona, Espanya. La construcció va començar el 1882 i encara està en procés de construcció, la qual cosa la converteix en un dels projectes de construcció més llargs del món. L'església és un impressionant exemple de l'arquitectura modernista i combina elements religiosos amb una visió artística única de Gaudí. La façana de l'església és extremadament detallada i presenta escenes bíbliques i figures religioses tallades a mà. L'interior de l'església és igualment impressionant, amb una barreja d'elements arquitectònics i decoratius que reflecteixen la visió artística única de Gaudí. La Sagrada Família és una atracció turística popular a Barcelona i un símbol distintiu de la ciutat.",

@@ -263,10 +263,9 @@
 						border: none;
 					}
 				}
-			}
-
-			& > :not(.container.frontage) {
-				margin-top: 50px;
+				&:not(.frontpage){
+					margin-top: 50px;
+				}
 			}
 		}
 

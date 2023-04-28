@@ -5,16 +5,19 @@
     "titulo": "Gaudí Route in Barcelona",
     "subtitulo": "The Architectural Legacy of a Genius",
     "descripcion": "Explore the city of Barcelona with our Gaudí tourist website, discover the modernist architecture of the Catalan architect, and learn about his cultural and historical legacy in the city.",
-    "keywords": "Antoni Gaudí, Barcelona, Modernist architecture, Catalan modernism, Sagrada Familia, Park Güell, Casa Batlló, Casa Milà, Casa Vicens, Gaudí Route, Tourism in Barcelona, Barcelona Tourist Guide, Art and architecture in Barcelona, Tourist attractions in Barcelona, Architectural design in Barcelona"
+    "keywords": "Antoni Gaudí, Barcelona, Modernist architecture, Catalan modernism, Sagrada Familia, Park Güell, Casa Batlló, Casa Milà, Casa Vicens, Gaudí Route, Tourism in Barcelona, Barcelona Tourist Guide, Art and architecture in Barcelona, Tourist attractions in Barcelona, Architectural design in Barcelona",
+    "inicio" : "HOME"
   },
   "frontpage": {
-    "intro1": "Let yourself be captivated by the magic of Catalan Modernism as you delve into Gaudí's architectural universe, a genius whose unique vision and limitless creativity transformed the urban landscape and turned it into a symbol of the city.",
-    "intro2": "Are you ready to explore the Gaudí Route in Barcelona? Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!",
+    "intro1": "Let yourself be captivated by the magic of Catalan Modernism as you delve into Gaudí's architectural universe.",
+    "intro2": "Join us on this magical and wonderful journey that will forever change your perspective on art, architecture, and the legacy of an immortal genius!",
+    "intro3": "Are you ready to explore the Gaudí Route in Barcelona?",
     "vamosAlla" : "Let's go!"
   },
 
   "locations": {
-
+    "titulo": "Explore the Gaudi Route",
+    "fuente": "Font: "
   },
 
   "footer" : {

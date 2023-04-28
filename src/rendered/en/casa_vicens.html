@@ -34,37 +34,36 @@
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
             <button id="mainMenuButton"><i class="bi bi-list"/></button>
-            <input type="checkbox" id="mainMenuCheckbox">
+            <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
             <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
-            <input type="checkbox" id="langSelectorCheckbox">
+            <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
             <nav class="mainMenuContent">
                 <ul>
-                    <li><a href="/en">INICIO</a></li>
-                    <li>
-                        Obras en Barcelona
-                        <ul class="childMenu">
-                            <li><a href="parque_guell.html">Park Güell</a></li>
-                            <li><a href="palacio_guell.html">Palau Güell</a></li>
-                            <li><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
-                            <li><a href="casa_vicens.html">Casa Vicens</a></li>
-                            <li><a href="sagrada_familia.html">Templo de la Sagrada Familia</a></li>
-                            <li><a href="casa_batllo.html">Casa Batlló</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="otras_obras.html">Otras obras</a></li>
-                    <li><a href="acerca_de.html">Acerca del arquitecto</a></li>
+                    <li><i class="bi bi-house"></i><a href="/en">HOME</a></li>
+                </ul>
+                <ul>
+                    <li><i class="bi bi-buildings"></i><a href="sagrada_familia.html">La Sagrada Familia</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="parque_guell.html">Park Güell</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_mila.html">La Pedrera - Casa Milà</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="palacio_guell.html">Palau Güell</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_batllo.html">Casa Batlló</a></li>
+                    <li><i class="bi bi-buildings"></i><a href="casa_vicens.html">Casa Vicens</a></li>
+                </ul>
+                <ul>
+                    <li><i class="bi bi-eye"></i><a href="locations.html">Explore the Gaudi Route</a></li>
+                    <li><i class="bi bi-journal"></i><a href="acerca_de.html">Acerca del arquitecto</a></li>
                 </ul>
             </nav>
 
             <!--Cuerpo del menu de idioma-->
             <nav class="langSelectorContent">
                 <ul >
-                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><span>Catalan</span></a></li>
-                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><span>Spanish</span></a></li>
-                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><span>English</span></a></li>
-                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><span>French</span></a></li>
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div>Catalan</div></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div>Spanish</div></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div>English</div></a></li>
+                    <li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>French</div></a></li>
                 </ul>
             </nav>
         </div>
