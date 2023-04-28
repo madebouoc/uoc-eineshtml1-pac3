@@ -311,6 +311,17 @@
       "intro_about": "Wikimedia - Pablo Audouard Deglaire",
       "intro_link": "https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_(1878).jpg"
     }
+  },
+  "notaLegal": {
+    "mensaje1": "En este sitio web, he utilizado texto generado con ChatGPT, una avanzada tecnología de inteligencia artificial, para ayudarme a crear contenido de alta calidad y relevancia. También he consultado y obtenido información de diversos artículos de Wikipedia, la enciclopedia colaborativa en línea de acceso libre, con el objetivo de enriquecer y respaldar el contenido que presento. Al combinar estos recursos, busco proporcionar información precisa y confiable para mis visitantes, promoviendo el acceso al conocimiento y la colaboración.",
+    "mensaje2": "Los enlaces de consulta son los siguientes:",
+    "link1_url": "https://es.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+    "link2_url": "https://es.wikipedia.org/wiki/Templo_Expiatorio_de_la_Sagrada_Familia",
+    "link3_url": "https://es.wikipedia.org/wiki/Casa_Mil%C3%A0",
+    "link4_url": "https://es.wikipedia.org/wiki/Casa_Batll%C3%B3",
+    "link5_url": "https://es.wikipedia.org/wiki/Palacio_G%C3%BCell",
+    "link6_url": "https://es.wikipedia.org/wiki/Parque_G%C3%BCell",
+    "link7_url": "https://es.wikipedia.org/wiki/Casa_Vicens"
   }
 
 }

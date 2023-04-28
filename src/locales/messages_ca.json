@@ -148,5 +148,17 @@
       "legadoReconocimiento_title": "Llegat i reconeixement",
       "legadoReconocimiento_text": "El llegat de Gaudí continua avui en dia, amb les seves obres sent reconegudes com algunes de les obres arquitectòniques més importants i influents del segle XX. La Sagrada Família, en particular, és considerada la seva obra mestra i continua sent un projecte en curs en l'actualitat. Gaudí és reconegut com un dels arquitectes més influents de la història i el seu estil arquitectònic continua sent una font d'inspiració per als arquitectes de tot el món."
     }
+  },
+  "notaLegal": {
+    "mensaje1": "En aquest lloc web, he utilitzat text generat amb ChatGPT, una avançada tecnologia d'intel·ligència artificial, per ajudar-me a crear contingut d'alta qualitat i rellevància. També he consultat i obtingut informació de diversos articles de Viquipèdia, l'enciclopèdia col·laborativa en línia d'accés lliure, amb l'objectiu d'enriquir i donar suport al contingut que presento. Combinant aquests recursos, cerco proporcionar informació precisa i fiable per als meus visitants, promovent l'accés al coneixement i la col·laboració.",
+    "mensaje2": "Els enllaços de consulta són els següents:",
+    "link1_url": "https://es.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+    "link2_url": "https://es.wikipedia.org/wiki/Templo_Expiatorio_de_la_Sagrada_Familia",
+    "link3_url": "https://es.wikipedia.org/wiki/Casa_Mil%C3%A0",
+    "link4_url": "https://es.wikipedia.org/wiki/Casa_Batll%C3%B3",
+    "link5_url": "https://es.wikipedia.org/wiki/Palacio_G%C3%BCell",
+    "link6_url": "https://es.wikipedia.org/wiki/Parque_G%C3%BCell",
+    "link7_url": "https://es.wikipedia.org/wiki/Casa_Vicens"
   }
+
 }

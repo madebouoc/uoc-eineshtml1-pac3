@@ -173,6 +173,18 @@
       "estiloArquitectonico_text": "Gaudí's architectural style is unique and personal, with the use of organic forms and the incorporation of nature into his designs. It is also characterized by attention to detail and extravagant decoration, with unique decorative elements and precious materials.",
       "legadoReconocimiento_title": "Legacy and recognition",
       "legadoReconocimiento_text": "Gaudí's legacy continues today, with his works being recognized as some of the most important and influential architectural works of the 20th century. Sagrada Familia, in particular, is considered his magnum opus and remains an ongoing project to this day. Gaudí is recognized as one of the most influential architects in history, and his architectural style continues to be a source of inspiration for architects around the world."    }
+  },
+  "notaLegal": {
+    "mensaje1": "On this website, I have used text generated with ChatGPT, an advanced artificial intelligence technology, to help me create high-quality and relevant content. I have also consulted and obtained information from various Wikipedia articles, the collaborative online encyclopedia with free access, with the aim of enriching and supporting the content I present. By combining these resources, I seek to provide accurate and reliable information for my visitors, promoting access to knowledge and collaboration.",
+    "mensaje2": "The consultation links are as follows:",
+    "link1_url": "https://es.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+    "link2_url": "https://es.wikipedia.org/wiki/Templo_Expiatorio_de_la_Sagrada_Familia",
+    "link3_url": "https://es.wikipedia.org/wiki/Casa_Mil%C3%A0",
+    "link4_url": "https://es.wikipedia.org/wiki/Casa_Batll%C3%B3",
+    "link5_url": "https://es.wikipedia.org/wiki/Palacio_G%C3%BCell",
+    "link6_url": "https://es.wikipedia.org/wiki/Parque_G%C3%BCell",
+    "link7_url": "https://es.wikipedia.org/wiki/Casa_Vicens"
   }
+
 
 }
