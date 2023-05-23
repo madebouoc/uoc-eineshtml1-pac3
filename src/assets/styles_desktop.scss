@@ -50,15 +50,18 @@
 					order: 1;
 					display: flex;
 					flex-direction: row;
-					justify-content: start;
-					align-items: start;
-					height: 100%;
 					width: 70%;
 
-					h1 {
+					img{
+						height: 80px;
+						margin: 10px 20px 10px 0;
+					}
+
+					h1, h1 a {
 						font-size: 2rem;
-						color: lightgrey;
-						margin-top: 10px;
+						font-weight: 400;
+						color: $color-header-fg-hover;
+						margin-top: 20px;
 					}
 				}
 
@@ -107,7 +110,7 @@
 					margin: 0;
 					vertical-align: bottom;
 					overflow: hidden;
-					background-color: rgba(60, 0, 0, 1);
+					background-color: rgba(0, 0, 0, 0.4);
 					border-top-left-radius: 20px;
 					border-top-right-radius: 20px;
 					display: flex;
@@ -118,7 +121,7 @@
 						list-style-type: none;
 						display: inline-block;
 						box-sizing: border-box;
-						padding: 12px 24px 12px 24px;
+						padding: 12px 36px 12px 36px;
 						margin: 0;
 						li{
 							margin-right: 10px;
@@ -313,7 +316,14 @@
 
 				}
 				&.frontpage{
+					margin: 24px auto 48px auto;
 					text-align: center;
+					max-width: 50%;
+					p{
+						font-size: 1.4rem;
+						line-height: 1.5;
+						margin-bottom: 16px;
+					}
 				}
 				&.locationList{
 					margin-top: 220px;
@@ -376,31 +386,55 @@
 			background-position: center top;
 			background-repeat: repeat;
 
+			.smooth{
+				background-color: rgba(0,0,0,0.5);
+				height: 50px;
+				line-height: 50px;
+				width: 100%;
+				border-top-color: $color-header-bg;
+				border-top-width: 3px;
+				border-top-style: solid;
+				p.copyright{
+					text-align: center;
+					font-size: 0.7rem;
+					color: gray;
+					vertical-align: center;
+				}
 
+			}
 			.container {
 				padding: 12px 12px 24px 12px;
 				max-width: 1200px;
 				margin: 0 auto;
-				p{
-					margin: 12px auto;
-					a{
-						text-decoration: underline;
-						text-decoration-style: dotted;
-						color: $color-footer-fg;
-						font-weight: bolder;
-						&:hover, &:active{
-							color: $color-footer-link;
-						}
+
+				.columnas{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
+				img{
+					height: 150px;
+				}
+				.locations, .others{
+					font-size: 0.75rem;
+
+				}
+				li{
+					list-style: none;
+					margin-bottom: 10px;
+				}
+				a{
+					text-decoration: underline;
+					text-decoration-style: dotted;
+					color: $color-footer-fg;
+					font-weight: bolder;
+					&:hover, &:active{
+						color: $color-footer-link;
 					}
 				}
-				hr{
-					border-width: 1px;
-					border-style: solid;
-					border-color: $color-header-bg;
-				}
-				p.copyright{
-					font-size: 0.7rem;
-					color: gray;
+				p{
+					margin: 12px auto;
 				}
 			}
 		}
