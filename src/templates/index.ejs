@@ -1,15 +1,25 @@
 <%- include('partials/header') %>
 
-<div class="banner"></div>
+<div class="banner">
+    <picture>
+        <source srcset="../../assets/banner_desktop_1200.jpeg 1200w, ../../assets/banner_desktop_1920.jpeg 1920w, ../../assets/banner_desktop_2560.jpeg 2560w"
+                media="(min-width: 1200px), (min-aspect-ratio: 1/2)">
+        <source srcset="../../assets/banner_mobile_300.jpeg 300w, ../../assets/banner_mobile_600.jpeg 600w"
+                media="(max-width: 1199px) and (max-aspect-ratio: 0.999/2)">
+        <img src="../../assets/banner_desktop.jpeg" alt="Banner"
+             srcset="../../assets/banner_mobile_300.jpeg 300w, ../../assets/banner_mobile_600.jpeg 600w, ../../assets/banner_desktop_1200.jpeg 1200w, ../../assets/banner_desktop_1920.jpeg 1920w, ../../assets/banner_desktop_2560.jpeg 2560w">
+    </picture>
+
+</div>
 
 <main>
     <div class="container frontpage">
         <p><%= frontpage.intro1 %></p>
         <p><%= frontpage.intro2 %></p>
         <p><%= frontpage.intro3 %></p>
-
         <button><a href="locations.html"><%= frontpage.vamosAlla %></a></button>
 
     </div>
 </main>
+
 <%- include('partials/footer') %>

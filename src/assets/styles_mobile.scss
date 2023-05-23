@@ -208,37 +208,13 @@
 		/* == BANNER =========================================================== */
 		/* ===================================================================== */
 		/* Diferentes imágenes según si el viewport es landscape o portrait */
-		@media (max-aspect-ratio: 0.999/2) {
-			.banner {
-				background-image: url("banner_lagarto.jpeg");
-			}
-		}
-		@media (min-aspect-ratio: 1/2) {
-			.banner {
-				background-image: url("banner_balcon.jpeg");
+		.banner{
+			margin-top: 50px;
+			img{
+				width: 100%;
 			}
 		}
 
-		.banner {
-			margin-top: 50px !important;
-			height: 360px;
-			width: 100%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-
-			h1 {
-				font-size: 1.3rem;
-				text-align: center;
-				color: $color-banner-h1;
-			}
-
-			h2 {
-				font-size: 1rem;
-				text-align: center;
-				color: $color-banner-h2;
-			}
-		}
 
 
 		/* ===================================================================== */

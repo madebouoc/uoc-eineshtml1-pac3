@@ -8,7 +8,10 @@
 		/* ===================================================================== */
 
 		header {
-			background-color: rgba(100, 0, 0, 1);
+			/*background-color: rgba(100, 0, 0, 1);*/
+			background-image: url("bg_header_desktop.jpeg");
+			background-position: center;
+			background-repeat: repeat;
 			box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
 			border-bottom: 3px solid red;
 			z-index: 900;
@@ -190,39 +193,12 @@
 		/* ===================================================================== */
 		/* == BANNER =========================================================== */
 		/* ===================================================================== */
-		/* Diferentes imágenes según si el viewport es landscape o portrait */
-		@media (max-aspect-ratio: 0.999/2) {
-			.banner {
-				background-image: url("banner_lagarto.jpeg");
+		.banner{
+			margin-top: 206px;
+			img{
+				width: 100%;
 			}
 		}
-		@media (min-aspect-ratio: 1/2) {
-			.banner {
-				background-image: url("banner_balcon.jpeg");
-			}
-		}
-
-		.banner {
-			margin-top: 206px !important;
-			height: 50vh;
-			width: 100%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-
-			h1 {
-				font-size: 1.3rem;
-				text-align: center;
-				color: $color-banner-h1;
-			}
-
-			h2 {
-				font-size: 1rem;
-				text-align: center;
-				color: $color-banner-h2;
-			}
-		}
-
 
 		/* ===================================================================== */
 		/* == MAIN ============================================================= */
@@ -234,10 +210,43 @@
 			flex-grow: 1;
 
 			.container.locationList{
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: space-between;
+				.background{
+					width: 100%;
+					height: 100%;
+					max-width: 1200px;
+					margin: 0 auto;
+					top: -180px; /* revisar la interacción con su padre */
+					opacity: 0.5;
+					@keyframes fadeIn {
+						0% {opacity: 0;}
+						100% {opacity: 1;}
+					}
+
+					path {
+						animation-name: fadeIn;
+						animation-duration: 0.5s;
+						animation-fill-mode: both;
+					}
+				}
+
+				h2{
+					margin: 580px 0px 50px 130px;
+					font-size: 2.5rem;
+					font-weight: 900;
+					color: $color-banner-h1;
+					animation: fadeIn 1s ease-in 4s both;
+				}
+				.articles{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					h3{
+						color: $color-body-fg;
+					}
+					animation: fadeIn 1s ease-in 5s both;
+				}
+
 			}
 
 			.container {
@@ -353,13 +362,20 @@
 			}
 		}
 
+
+
+
 		/* ===================================================================== */
 		/* == FOOTER =========================================================== */
 		/* ===================================================================== */
 
 		footer {
 			color: $color-footer-fg;
-			background-color: $color-footer-bg;
+			/*background-color: $color-footer-bg;*/
+			background-image: url("bg_footer_desktop.jpeg");
+			background-position: center top;
+			background-repeat: repeat;
+
 
 			.container {
 				padding: 12px 12px 24px 12px;

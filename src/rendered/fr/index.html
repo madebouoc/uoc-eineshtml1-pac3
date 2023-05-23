@@ -73,20 +73,31 @@
     <button id="boton-top"><i class="bi bi-arrow-up"/></button>
 
 
-<div class="banner"></div>
+<div class="banner">
+    <picture>
+        <source srcset="../../assets/banner_desktop_1200.jpeg 1200w, ../../assets/banner_desktop_1920.jpeg 1920w, ../../assets/banner_desktop_2560.jpeg 2560w"
+                media="(min-width: 1200px), (min-aspect-ratio: 1/2)">
+        <source srcset="../../assets/banner_mobile_300.jpeg 300w, ../../assets/banner_mobile_600.jpeg 600w"
+                media="(max-width: 1199px) and (max-aspect-ratio: 0.999/2)">
+        <img src="../../assets/banner_desktop.jpeg" alt="Banner"
+             srcset="../../assets/banner_mobile_300.jpeg 300w, ../../assets/banner_mobile_600.jpeg 600w, ../../assets/banner_desktop_1200.jpeg 1200w, ../../assets/banner_desktop_1920.jpeg 1920w, ../../assets/banner_desktop_2560.jpeg 2560w">
+    </picture>
+
+</div>
 
 <main>
     <div class="container frontpage">
         <p>Déjate cautivar por la magia del Modernismo catalán mientras te adentras en el universo arquitectónico de Gaudí.</p>
         <p>¡Acompáñanos en este viaje mágico y maravilloso que cambiará para siempre tu perspectiva sobre el arte, la arquitectura y el legado de un genio inmortal!</p>
         <p>¿Estás listo para explorar la Ruta Gaudí en Barcelona?</p>
-
         <button><a href="locations.html">¡Vamos allá!</a></button>
 
     </div>
 </main>
+
             <footer>
                 <div class="container">
+                    <img src="../../assets/bicho_desktop.gif">
                     <p>Trabajo académico elaborado para la UOC</p>
                     <p>Diseñado por <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
                     <p><a href="nota_legal.html">Nota legal y bibliografía</a></p>

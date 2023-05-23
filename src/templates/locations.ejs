@@ -1,62 +1,111 @@
 <%- include('partials/header') %>
 
 <main>
+
+
+
     <div class="container locationList">
-        <article>
-            <a href="sagrada_familia.html">
-                <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>" alt="<%= sagradaFamilia.titulo %>">
-                <div>
-                    <h3><%= sagradaFamilia.titulo %></h3>
-                    <p><%= sagradaFamilia.cabezal %></p>
-                </div>
-            </a>
-        </article>
-        <article>
-             <a href="parque_guell.html">
-                <img src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>" alt="<%= parqueGuell.titulo %>">
-                <div>
-                    <h3><%= parqueGuell.titulo %></h3>
-                    <p><%= parqueGuell.cabezal %></p>
-                </div>
-            </a>
-        </article>
-        <article>
-            <a href="casa_mila.html">
-                <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>" alt="<%= casaMila.titulo %>">
-                <div>
-                    <h3><%= casaMila.titulo %></h3>
-                    <p><%= casaMila.cabezal %></p>
-                </div>
-            </a>
-        </article>
-        <article>
-            <a href="casa_batllo.html">
-                <img src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>" alt="<%= casaBatllo.titulo %>">
-                <div>
-                    <h3><%= casaBatllo.titulo %></h3>
-                    <p><%= casaBatllo.cabezal %></p>
-                </div>
-            </a>
-        </article>
-        <article>
-            <a href="palacio_guell.html">
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>" alt="<%= palacioGuell.titulo %>">
-                <div>
-                    <h3><%= palacioGuell.titulo %></h3>
-                    <p><%= palacioGuell.cabezal %></p>
-                </div>
-            </a>
-        </article>
-        <article>
-            <a href="casa_vicens.html">
-                <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>" alt="<%= casaVicens.titulo %>">
-                <div>
-                    <h3><%= casaVicens.titulo %></h3>
-                    <p><%= casaVicens.cabezal %></p>
-                </div>
-            </a>
-        </article>
+        <div class="background locationList"><%- include('../assets/routeSeq.svg') %></div>
+        <h2><%= locations.titulo %></h2>
+        <div class="articles">
+            <article>
+                <a href="sagrada_familia.html">
+                    <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>" alt="<%= sagradaFamilia.titulo %>">
+                    <div>
+                        <h3><%= sagradaFamilia.titulo %></h3>
+                        <p><%= sagradaFamilia.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                 <a href="parque_guell.html">
+                    <img src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>" alt="<%= parqueGuell.titulo %>">
+                    <div>
+                        <h3><%= parqueGuell.titulo %></h3>
+                        <p><%= parqueGuell.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="casa_mila.html">
+                    <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>" alt="<%= casaMila.titulo %>">
+                    <div>
+                        <h3><%= casaMila.titulo %></h3>
+                        <p><%= casaMila.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="casa_batllo.html">
+                    <img src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>" alt="<%= casaBatllo.titulo %>">
+                    <div>
+                        <h3><%= casaBatllo.titulo %></h3>
+                        <p><%= casaBatllo.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="palacio_guell.html">
+                    <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>" alt="<%= palacioGuell.titulo %>">
+                    <div>
+                        <h3><%= palacioGuell.titulo %></h3>
+                        <p><%= palacioGuell.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="casa_vicens.html">
+                    <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>" alt="<%= casaVicens.titulo %>">
+                    <div>
+                        <h3><%= casaVicens.titulo %></h3>
+                        <p><%= casaVicens.cabezal %></p>
+                    </div>
+                </a>
+            </article>
+        </div>
     </div>
 </main>
+
+<script>
+    /*
+    window.onload = function() {
+        let paths = Array.from(document.querySelectorAll("path"));
+        // ordena los paths por ID
+        paths.sort((a, b) => parseInt(a.id.replace("id", "")) - parseInt(b.id.replace("id", "")));
+
+        for(let i = 0; i < paths.length; i++) {
+            // establece un retraso de animación basado en el índice
+            paths[i].style.animationDelay = `${i * 0.1}s`;
+        }
+    }
+    */
+
+    window.onload = function() {
+        let paths = Array.from(document.querySelectorAll("path"));
+        paths.sort((a, b) => {
+            // Extrae la parte numérica y la parte "bis" de los IDs
+            let matchA = a.id.match(/^id(\d+)(\w*)$/);
+            let matchB = b.id.match(/^id(\d+)(\w*)$/);
+            let numA = parseInt(matchA[1]);
+            let numB = parseInt(matchB[1]);
+            let bisA = matchA[2];
+            let bisB = matchB[2];
+
+            // Compara primero los números
+            if(numA != numB) {
+                return numA - numB;
+            }
+            // Si los números son iguales, compara la parte "bis"
+            else {
+                return bisA.localeCompare(bisB);
+            }
+        });
+
+        for(let i = 0; i < paths.length; i++) {
+            paths[i].style.animationDelay = `${i * 0.015}s`;
+        }
+    }
+</script>
+
 
 <%- include('partials/footer') %>
