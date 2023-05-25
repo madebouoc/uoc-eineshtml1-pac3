@@ -5,7 +5,7 @@
 
 
     <div class="container locationList">
-        <div class="background locationList"><%- include('../assets/routeSeq.svg') %></div>
+        <div class="background"><%- include('../assets/routeSeq.svg') %></div>
         <h2><%= locations.titulo %></h2>
         <div class="articles">
             <article>
@@ -67,7 +67,6 @@
 </main>
 
 <script>
-    /*
     window.onload = function() {
         let paths = Array.from(document.querySelectorAll("path"));
         // ordena los paths por ID
@@ -75,33 +74,6 @@
 
         for(let i = 0; i < paths.length; i++) {
             // establece un retraso de animación basado en el índice
-            paths[i].style.animationDelay = `${i * 0.1}s`;
-        }
-    }
-    */
-
-    window.onload = function() {
-        let paths = Array.from(document.querySelectorAll("path"));
-        paths.sort((a, b) => {
-            // Extrae la parte numérica y la parte "bis" de los IDs
-            let matchA = a.id.match(/^id(\d+)(\w*)$/);
-            let matchB = b.id.match(/^id(\d+)(\w*)$/);
-            let numA = parseInt(matchA[1]);
-            let numB = parseInt(matchB[1]);
-            let bisA = matchA[2];
-            let bisB = matchB[2];
-
-            // Compara primero los números
-            if(numA != numB) {
-                return numA - numB;
-            }
-            // Si los números son iguales, compara la parte "bis"
-            else {
-                return bisA.localeCompare(bisB);
-            }
-        });
-
-        for(let i = 0; i < paths.length; i++) {
             paths[i].style.animationDelay = `${i * 0.015}s`;
         }
     }

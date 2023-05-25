@@ -229,6 +229,46 @@
 			width: 100%;
 			flex-grow: 1;
 
+			.container.locationList{
+				.background{
+					max-width: 1200px;
+					margin: 0 auto;
+					opacity: 0.5;
+					position: relative;
+					width: calc(100% - 40px);
+					@keyframes fadeIn {
+						0% {opacity: 0;}
+						100% {opacity: 1;}
+					}
+
+					path {
+						animation-name: fadeIn;
+						animation-duration: 0.5s;
+						animation-fill-mode: both;
+					}
+				}
+
+				h2{
+					margin: 0px auto 20px auto;
+					font-size: 2rem;
+					font-weight: 900;
+					color: $color-banner-h1;
+					animation: fadeIn 1s ease-in 4s both;
+				}
+				.articles{
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					gap: 24px;
+					justify-content: space-between;
+					h3{
+						color: $color-body-fg;
+					}
+					animation: fadeIn 1s ease-in 5s both;
+				}
+
+			}
+
 			.container {
 				padding: 24px 12px 36px 12px;
 				display: flex;
@@ -341,7 +381,6 @@
 						0% {opacity: 0;}
 						100% {opacity: 1;}
 					}
-
 					path {
 						animation-name: fadeIn;
 						animation-duration: 0.5s;
@@ -403,40 +442,6 @@
 		/* == FOOTER =========================================================== */
 		/* ===================================================================== */
 
-		/*
-		footer {
-			color: $color-footer-fg;
-			background-color: $color-footer-bg;
-
-		.container {
-			padding: 12px 12px 24px 12px;
-			text-align: center;
-			p{
-				margin: 4px auto;
-				a{
-					text-decoration: underline;
-					text-decoration-style: dotted;
-					color: $color-footer-fg;
-					font-weight: bolder;
-					&:hover, &:active{
-						color: $color-footer-link;
-					}
-				}
-			}
-			hr{
-				border-width: 1px;
-				border-style: solid;
-				border-color: $color-header-bg;
-			}
-			p.copyright{
-				font-size: 0.8rem;
-				color: gray;
-			}
-		}
-
-	}
-	*/
-
 		footer {
 			color: $color-footer-fg;
 			/*background-color: $color-footer-bg;*/
@@ -447,7 +452,7 @@
 			.smooth{
 				background-color: rgba(0,0,0,0.5);
 				min-height: 50px;
-				line-height: 50px;
+				line-height: 25px;
 				width: 100%;
 				border-top-color: $color-header-bg;
 				border-top-width: 3px;
