@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const imagesFolderPath = './src/assets';
+const imagesFolderPath = './src/assets/banner';
 
 async function processImageFile(filePath) {
     const directory = path.dirname(filePath);
