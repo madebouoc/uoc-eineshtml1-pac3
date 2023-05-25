@@ -213,11 +213,10 @@
 
 			.container.locationList{
 				.background{
-					width: 100%;
-					height: 100%;
 					max-width: 1200px;
+					width: 100%;
 					margin: 0 auto;
-					top: -180px; /* revisar la interacción con su padre */
+					position: relative;
 					opacity: 0.5;
 					@keyframes fadeIn {
 						0% {opacity: 0;}
@@ -232,7 +231,7 @@
 				}
 
 				h2{
-					margin: 580px 0px 50px 130px;
+					margin: 0px auto 20px auto;
 					font-size: 2.5rem;
 					font-weight: 900;
 					color: $color-banner-h1;
@@ -254,6 +253,7 @@
 			.container {
 				max-width: 1200px;
 				margin: 0 auto;
+				padding: 50px 0 100px 0;
 
 				article {
 					width: 590px;
@@ -345,6 +345,15 @@
 						margin: 0px 0 6px 0;
 						font-size: 1.2rem;
 						line-height: 2rem;
+					}
+					@keyframes fadeIn {
+						0% {opacity: 0;}
+						100% {opacity: 1;}
+					}
+					path {
+						animation-name: fadeIn;
+						animation-duration: 0.5s;
+						animation-fill-mode: both;
 					}
 				}
 				&.location, &.about{
