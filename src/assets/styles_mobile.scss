@@ -13,6 +13,9 @@
 		/* == HEADER =========================================================== */
 		/* ===================================================================== */
 		header {
+			background-image: url("bg_header_desktop.jpeg");
+			background-position: center;
+			background-repeat: repeat;
 			position: fixed;
 			top: 0;
 			width: 100%;
@@ -233,6 +236,8 @@
 				justify-content: flex-end;
 				gap: 12px;
 				margin-top: 0px;
+				word-wrap: break-word;
+				overflow-wrap: break-word;
 
 				article {
 					position: relative;
@@ -301,6 +306,23 @@
 				}
 				&.frontpage{
 					text-align: center;
+					p{
+						font-size: 1.4rem;
+						line-height: 1.5;
+						margin: 0 10% 16px 10%;
+					}
+					.flores{
+						width: 100%;
+						display: flex;
+						justify-content: center;
+						flex-wrap: wrap;
+						img{
+							width: 160px;
+							height: 160px;
+							margin: 20px;
+						}
+
+					}
 				}
 				&.locationList{
 					margin-top: 50px;
@@ -314,6 +336,16 @@
 						margin: 0px 0 6px 0;
 						font-size: 1.2rem;
 						line-height: 2rem;
+					}
+					@keyframes fadeIn {
+						0% {opacity: 0;}
+						100% {opacity: 1;}
+					}
+
+					path {
+						animation-name: fadeIn;
+						animation-duration: 0.5s;
+						animation-fill-mode: both;
 					}
 				}
 				&.location, &.about{
@@ -348,6 +380,21 @@
 				}
 			}
 
+			.mask-flower {
+				width: 200px;
+				height: 200px;
+				mask-image: url("mask-flower.svg");
+				mask-size: cover;
+				filter: saturate(0%);
+				transition: filter 1s ease-in-out;
+			}
+
+			.mask-flower:hover{
+				filter: saturate(300%);
+				transition: filter 0.5s ease-in-out;
+			}
+
+
 
 		}
 
@@ -356,6 +403,7 @@
 		/* == FOOTER =========================================================== */
 		/* ===================================================================== */
 
+		/*
 		footer {
 			color: $color-footer-fg;
 			background-color: $color-footer-bg;
@@ -385,7 +433,78 @@
 				color: gray;
 			}
 		}
+
 	}
+	*/
+
+		footer {
+			color: $color-footer-fg;
+			/*background-color: $color-footer-bg;*/
+			background-image: url("bg_footer_desktop.jpeg");
+			background-position: center top;
+			background-repeat: repeat;
+
+			.smooth{
+				background-color: rgba(0,0,0,0.5);
+				min-height: 50px;
+				line-height: 50px;
+				width: 100%;
+				border-top-color: $color-header-bg;
+				border-top-width: 3px;
+				border-top-style: solid;
+				p.copyright{
+					text-align: center;
+					font-size: 0.7rem;
+					color: gray;
+					vertical-align: center;
+				}
+
+			}
+			.container {
+				padding: 12px 12px 24px 12px;
+				max-width: 1200px;
+				margin: 0 auto;
+
+				.columnas{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					div{
+						width: 100%;
+						text-align: center;
+					}
+				}
+				img{
+					height: 30vw;
+				}
+				.locations, .others{
+					font-size: 1rem;
+
+				}ul {
+					 list-style: none;
+					 margin: 0;
+					 padding: 0;
+					 li{
+						 margin-bottom: 10px;
+						 margin: 6px 0;
+						 padding: 0;
+					 }
+				 }
+				a{
+					text-decoration: underline;
+					text-decoration-style: dotted;
+					color: $color-footer-fg;
+					font-weight: bolder;
+					&:hover, &:active{
+						color: $color-footer-link;
+					}
+				}
+				p{
+					margin: 12px auto;
+				}
+			}
+		}
 
 
 	}
