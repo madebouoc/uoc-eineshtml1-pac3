@@ -317,10 +317,8 @@
 				}
 
 				button{
-					background: none;
 					border: none;
 					margin: 24px auto;
-					a{
 						color: $color-botones-fg;
 						background-color: $color-botones-bg;
 						border-radius: 4px;
@@ -334,7 +332,6 @@
 							color: $color-botones-fg-hover;
 							background-color: $color-botones-bg-hover;
 						}
-					}
 
 				}
 				&.frontpage{
