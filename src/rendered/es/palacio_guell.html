@@ -20,6 +20,7 @@
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
                 <h1><a href="index.html">Ruta Gaudí en Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -70,47 +71,67 @@
         </div>
     </header>
 
-    <button id="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
 
 
     <main>
         <div class="container location">
             <h3>Palacio Güell</h3>
             <figure>
-                <img src="../../assets/photos/palacio_guell/intro.jpg" alt="Palacio Güell">
-                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Palau_G%C3%BCell_Gaud%C3%AD.jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+                <img src="../../assets/photos/palacio_guell/intro.jpg" alt="Palacio Güell"
+                     srcset="../../assets/photos/palacio_guell/intro.jpg 1200w,
+                         ../../assets/photos/palacio_guell/intro_600.jpg 600w
+                         ../../assets/photos/palacio_guell/intro_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Palau_G%C3%BCell_Gaud%C3%AD" target="_blank">Wikimedia - Canaan</a></figurecaption>
             </figure>
             <p>El Palacio Güell es una obra maestra de la arquitectura modernista ubicada en el barrio de El Raval en Barcelona, España. Diseñado por Antoni Gaudí en el siglo XIX, el palacio es un impresionante ejemplo de la creatividad y la visión artística del arquitecto catalán. El edificio cuenta con detalles extravagantes y una mezcla única de estilos arquitectónicos, incluyendo influencias góticas, mudéjares y bizantinas. El interior del palacio también es impresionante, con techos ornamentados y una gran cantidad de detalles decorativos elaborados. El Palacio Güell es un símbolo distintivo de la ciudad de Barcelona y es una de las atracciones turísticas más populares de la ciudad.</p>
 
 
             <h4>Vestíbulo</h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/vestibulo.jpg" alt="Palacio Güell">
-                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:C%C3%BApula_Palau_G%C3%BCell.JPG" target="_blank">Wikimedia - Canaan</a></figurecaption>
+                <img src="../../assets/photos/palacio_guell/vestibulo.jpg" alt="Palacio Güell"
+                     srcset="../../assets/photos/palacio_guell/vestibulo.jpg 1200w,
+                         ../../assets/photos/palacio_guell/vestibulo_600.jpg 600w
+                         ../../assets/photos/palacio_guell/vestibulo_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:C%C3%BApula_Palau_G%C3%BCell" target="_blank">Wikimedia - Canaan</a></figurecaption>
             </figure>
             <p>El vestíbulo del Palacio Güell de Barcelona es la entrada principal del edificio y una impresionante obra de arte arquitectónica diseñada por Antoni Gaudí. El vestíbulo cuenta con una gran bóveda de cristal, que inunda la sala con luz natural. El suelo está cubierto de mosaicos de colores y las paredes están revestidas con mármoles y piedras nobles, creando un ambiente luminoso y elegante. Además, hay una escalera monumental que conduce a las plantas superiores del palacio.</p>
 
 
             <h4>Sala de la Confianza</h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/sala_confianza.jpg" alt="Palacio Güell">
-                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Vitrall_Palau_G%C3%BCell.JPG" target="_blank">Wikimedia - Canaan</a></figurecaption>
+                <img src="../../assets/photos/palacio_guell/sala_confianza.jpg" alt="Palacio Güell"
+                     srcset="../../assets/photos/palacio_guell/sala_confianza.jpg 1200w,
+                         ../../assets/photos/palacio_guell/sala_confianza_600.jpg 600w
+                         ../../assets/photos/palacio_guell/sala_confianza_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Vitrall_Palau_G%C3%BCell" target="_blank">Wikimedia - Canaan</a></figurecaption>
             </figure>
             <p>La Sala de la Confianza en el Palacio Güell es un espacio privado diseñado por Antoni Gaudí para que Eusebi Güell y sus invitados pudieran hablar en confianza. Está en el segundo piso del palacio, es de forma circular, está revestida con madera tallada y una bóveda de ladrillo visto. En su interior, hay un banco de madera tallada en la pared, pequeñas ventanas que permiten ver el exterior sin ser visto, así como una mesa con una campana para llamar a los criados.</p>
 
 
             <h4>Patio central</h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/patio.jpg" alt="Palacio Güell">
-                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:WLM14ES_-_Barcelona_Interior_1205_06_de_julio_de_2011_-_.jpg" target="_blank">Wikimedia - Turol Jones</a></figurecaption>
+                <img src="../../assets/photos/palacio_guell/patio.jpg" alt="Palacio Güell"
+                     srcset="../../assets/photos/palacio_guell/patio.jpg 1200w,
+                         ../../assets/photos/palacio_guell/patio_600.jpg 600w
+                         ../../assets/photos/palacio_guell/patio_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:WLM14ES_-_Barcelona_Interior_1205_06_de_julio_de_2011_-_" target="_blank">Wikimedia - Turol Jones</a></figurecaption>
             </figure>
             <p>El patio central del Palacio Güell es el corazón del edificio y está decorado con columnas, mosaicos y esculturas. El patio es un espacio al aire libre rodeado por las diferentes plantas del palacio, y es una de las partes más impresionantes del edificio. El patio cuenta con columnas de piedra talladas y una fuente central decorada con mosaicos de colores. Además, hay varias esculturas en todo el patio que añaden un toque artístico y único a la decoración.</p>
 
 
             <h4>Terraza</h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/azotea.jpg" alt="Palacio Güell">
-                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Azotea_G%C3%BCell.JPG" target="_blank">Wikimedia - Canaan</a></figurecaption>
+                <img src="../../assets/photos/palacio_guell/azotea.jpg" alt="Palacio Güell"
+                     srcset="../../assets/photos/palacio_guell/azotea.jpg 1200w,
+                         ../../assets/photos/palacio_guell/azotea_600.jpg 600w
+                         ../../assets/photos/palacio_guell/azotea_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Azotea_G%C3%BCell" target="_blank">Wikimedia - Canaan</a></figurecaption>
             </figure>
             <p>La terraza del Palacio Güell es una amplia terraza ubicada en la azotea del edificio, que ofrece vistas panorámicas de la ciudad de Barcelona. La terraza es un lugar ideal para disfrutar del sol y las vistas de la ciudad, y cuenta con una serie de chimeneas decoradas en forma de setas que se han convertido en un icono del edificio. Además, hay una estructura de hierro diseñada por Gaudí en la terraza que permite que la luz natural penetre en el interior del palacio.</p>
 
@@ -126,11 +147,11 @@
                     <div class="columnas">
                         <div>
                             <p>Trabajo académico elaborado para la UOC</p>
-                            <p>Diseñado por <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                            <p>Diseñado por <a href="mailto:madebo@uoc.edu">Marc Delgado</a></p>
                             <p><a href="nota_legal.html">Nota legal y bibliografía</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
                         </div>
                         <div>
                             <ul class="locations">

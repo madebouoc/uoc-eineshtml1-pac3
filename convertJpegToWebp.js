@@ -14,6 +14,7 @@ function processImageFile(filePath, outputPath) {
         .metadata()
         .then(function() {
             return sharp(filePath)
+                .removeAlpha()
                 .webp({ quality: 95 })
                 .toFile(outputPath.replace('.jpeg','.webp').replace('.jpg','.webp'));
         })

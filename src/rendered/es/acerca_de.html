@@ -20,6 +20,7 @@
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
                 <h1><a href="index.html">Ruta Gaudí en Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -70,14 +71,18 @@
         </div>
     </header>
 
-    <button id="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
 
 <main>
     <div class="container about">
         <h3>Acerca del arquitecto</h3>
         <figure>
-            <img src="../../assets/photos/acerca_de/intro.jpg" alt="Acerca del arquitecto">
-            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_(1878).jpg" target="_blank">Wikimedia - Pablo Audouard Deglaire</a></figurecaption>
+            <img src="../../assets/photos/acerca_de/intro.jpg" alt="Acerca del arquitecto"
+                 srcset="../../assets/photos/acerca_de/intro.jpg 1200w,
+                         ../../assets/photos/acerca_de/intro_600.jpg 600w
+                         ../../assets/photos/acerca_de/intro_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_(1878)" target="_blank">Wikimedia - Pablo Audouard Deglaire</a></figurecaption>
         </figure>
         <p>Antoni Gaudí (1852-1926) fue un arquitecto catalán que es considerado uno de los arquitectos más influyentes del siglo XX. Nació en Reus, España, y estudió arquitectura en la Escuela Técnica Superior de Arquitectura de Barcelona. Gaudí desarrolló un estilo arquitectónico único y personal que se caracteriza por el uso de formas orgánicas, la incorporación de la naturaleza en sus diseños y la atención al detalle.</p>
 
@@ -102,11 +107,11 @@
                     <div class="columnas">
                         <div>
                             <p>Trabajo académico elaborado para la UOC</p>
-                            <p>Diseñado por <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                            <p>Diseñado por <a href="mailto:madebo@uoc.edu">Marc Delgado</a></p>
                             <p><a href="nota_legal.html">Nota legal y bibliografía</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
                         </div>
                         <div>
                             <ul class="locations">

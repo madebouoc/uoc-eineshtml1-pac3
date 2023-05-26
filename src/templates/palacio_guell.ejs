@@ -4,7 +4,11 @@
         <div class="container location">
             <h3><%= palacioGuell.titulo %></h3>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>" alt="<%= palacioGuell.titulo %>">
+                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                 <figurecaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.intro_link %>" target="_blank"><%= palacioGuell.imagenes.intro_about %></a></figurecaption>
             </figure>
             <p><%= palacioGuell.descripcion.intro %></p>
@@ -12,7 +16,11 @@
 
             <h4><%= palacioGuell.descripcion.vestibulo_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>" alt="<%= palacioGuell.titulo %>">
+                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                 <figurecaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.vestibulo_link %>" target="_blank"><%= palacioGuell.imagenes.vestibulo_about %></a></figurecaption>
             </figure>
             <p><%= palacioGuell.descripcion.vestibulo_text %></p>
@@ -20,7 +28,11 @@
 
             <h4><%= palacioGuell.descripcion.salaConfianza_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>" alt="<%= palacioGuell.titulo %>">
+                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                 <figurecaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.salaConfianza_link %>" target="_blank"><%= palacioGuell.imagenes.salaConfianza_about %></a></figurecaption>
             </figure>
             <p><%= palacioGuell.descripcion.salaConfianza_text %></p>
@@ -28,7 +40,11 @@
 
             <h4><%= palacioGuell.descripcion.patioCentral_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>" alt="<%= palacioGuell.titulo %>">
+                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                 <figurecaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.patioCentral_link %>" target="_blank"><%= palacioGuell.imagenes.patioCentral_about %></a></figurecaption>
             </figure>
             <p><%= palacioGuell.descripcion.patioCentral_text %></p>
@@ -36,7 +52,11 @@
 
             <h4><%= palacioGuell.descripcion.terraza_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>" alt="<%= palacioGuell.titulo %>">
+                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>_300.jpg 300w"
+                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                 <figurecaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.terraza_link %>" target="_blank"><%= palacioGuell.imagenes.terraza_about %></a></figurecaption>
             </figure>
             <p><%= palacioGuell.descripcion.terraza_text %></p>

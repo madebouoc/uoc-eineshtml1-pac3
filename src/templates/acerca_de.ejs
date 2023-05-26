@@ -3,7 +3,11 @@
     <div class="container about">
         <h3><%= acercaDe.titulo %></h3>
         <figure>
-            <img src="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>" alt="<%= acercaDe.titulo %>">
+            <img src="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>.jpg" alt="<%= acercaDe.titulo %>"
+                 srcset="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
             <figurecaption><%= locations.fuente %> <a href="<%= acercaDe.imagenes.intro_link %>" target="_blank"><%= acercaDe.imagenes.intro_about %></a></figurecaption>
         </figure>
         <p><%= acercaDe.descripcion.intro %></p>

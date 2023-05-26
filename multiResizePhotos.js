@@ -19,6 +19,7 @@ async function processImageFile(filePath) {
     if (metadata.width > 300) {
         sharp(filePath)
             .resize({ width: 300, withoutEnlargement: true })
+            .jpeg({ quality: 95 })
             .toFile(outputPath300)
             .then((info) => {
                 console.log('Imagen redimensionada a 300px:', info);

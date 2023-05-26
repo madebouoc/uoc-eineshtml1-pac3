@@ -20,6 +20,7 @@
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
                 <h1><a href="index.html">Ruta Gaudí en Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -70,54 +71,78 @@
         </div>
     </header>
 
-    <button id="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
 
 <main>
     <div class="container location">
         <h3>Casa Batlló</h3>
         <figure>
-            <img src="../../assets/photos/casa_batllo/intro.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Batll%C3%B3.jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/intro.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/intro.jpg 1200w,
+                         ../../assets/photos/casa_batllo/intro_600.jpg 600w
+                         ../../assets/photos/casa_batllo/intro_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Batll%C3%B3" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La Casa Batlló es una de las obras más conocidas del arquitecto Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la casa es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y curva, que se asemeja a un lago de color azul intenso. La fachada está adornada con una mezcla de mosaicos de vidrio y cerámica, y las ventanas tienen una forma irregular y orgánica. El interior de la casa es igualmente impresionante, con una mezcla única de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Batlló es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad.</p>
 
         
         <h4>Fachada</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/fachada.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://upload.wikimedia.org/Wikimedia/commons/9/96/Casa_Batll%C3%B3_01.jpg" target="_blank">Wikimedia - Bernard Gagnon</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/fachada.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/fachada.jpg 1200w,
+                         ../../assets/photos/casa_batllo/fachada_600.jpg 600w
+                         ../../assets/photos/casa_batllo/fachada_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://upload.wikimedia.org/Wikimedia/commons/9/96/Casa_Batll%C3%B3_01" target="_blank">Wikimedia - Bernard Gagnon</a></figurecaption>
         </figure>
         <p>La fachada de la Casa Batlló es una de las más impresionantes del mundo, con un diseño ondulado y formas orgánicas. Los visitantes pueden apreciar los detalles únicos de la fachada y conocer más sobre la historia de la casa.</p>
 
         
         <h4>Piso principal</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/primer_piso.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:CasaBatll%C3%B3_NobleFloor_saloon_stainedglass.jpg" target="_blank">Wikimedia - Sara Terrones</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/primer_piso.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/primer_piso.jpg 1200w,
+                         ../../assets/photos/casa_batllo/primer_piso_600.jpg 600w
+                         ../../assets/photos/casa_batllo/primer_piso_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:CasaBatll%C3%B3_NobleFloor_saloon_stainedglass" target="_blank">Wikimedia - Sara Terrones</a></figurecaption>
         </figure>
         <p>El piso principal de la Casa Batlló es la joya de la arquitectura modernista catalana. Destaca por su impresionante fachada y sorprendentes detalles en su interior, como la escalera principal, la chimenea en la sala de estar y el techo en forma de arco. La mezcla de estilos modernistas y clásicos en las elegantes habitaciones son un ejemplo de la visión creativa de Gaudí. En resumen, el piso principal es una exhibición impresionante del ingenio de Gaudí en la creación de espacios únicos e inolvidables.</p>
 
         
         <h4>Patio de luces</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/patio_luces.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Pati_Batll%C3%B32.jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/patio_luces.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/patio_luces.jpg 1200w,
+                         ../../assets/photos/casa_batllo/patio_luces_600.jpg 600w
+                         ../../assets/photos/casa_batllo/patio_luces_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Pati_Batll%C3%B32" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>El patio de luces de la Casa Batlló es un impresionante espacio que cuenta con una claraboya única que permite la entrada de luz natural en la casa. Los visitantes pueden admirar los detalles decorativos del patio de luces y aprender sobre su importancia en el diseño de la casa.</p>
 
         
         <h4>Ático</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/atico.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://upload.wikimedia.org/Wikimedia/commons/3/3d/Barcelona%2C_Casa_Batll%C3%B3%2C_innen%2C_Dachboden.jpg" target="_blank">Wikimedia - Michael Stallbaum</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/atico.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/atico.jpg 1200w,
+                         ../../assets/photos/casa_batllo/atico_600.jpg 600w
+                         ../../assets/photos/casa_batllo/atico_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://upload.wikimedia.org/Wikimedia/commons/3/3d/Barcelona%2C_Casa_Batll%C3%B3%2C_innen%2C_Dachboden" target="_blank">Wikimedia - Michael Stallbaum</a></figurecaption>
         </figure>
         <p>En la Casa Batlló, el ático es una de las partes más interesantes de la casa, ya que cuenta con una estructura de arcos catenarios y ventanales que permiten la entrada de luz natural. Además, el ático también cuenta con una terraza con vistas a la ciudad de Barcelona.</p>
 
         
         <h4>Terraza</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/terraza.jpg" alt="Casa Batlló">
-            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Xemeneies_Batll%C3%B32.jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_batllo/terraza.jpg" alt="Casa Batlló"
+                 srcset="../../assets/photos/casa_batllo/terraza.jpg 1200w,
+                         ../../assets/photos/casa_batllo/terraza_600.jpg 600w
+                         ../../assets/photos/casa_batllo/terraza_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Fuente:  <a href="https://commons.wikimedia.org/wiki/File:Xemeneies_Batll%C3%B32" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La terraza de la Casa Batlló es una de las partes más impresionantes de la casa, con vistas panorámicas de la ciudad de Barcelona. Los visitantes pueden explorar la terraza y apreciar los detalles decorativos únicos y la arquitectura impresionante de Gaudí.</p>
 
@@ -134,11 +159,11 @@
                     <div class="columnas">
                         <div>
                             <p>Trabajo académico elaborado para la UOC</p>
-                            <p>Diseñado por <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                            <p>Diseñado por <a href="mailto:madebo@uoc.edu">Marc Delgado</a></p>
                             <p><a href="nota_legal.html">Nota legal y bibliografía</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
                         </div>
                         <div>
                             <ul class="locations">

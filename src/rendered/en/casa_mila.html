@@ -20,6 +20,7 @@
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
                 <h1><a href="index.html">Gaudí Route in Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -70,53 +71,77 @@
         </div>
     </header>
 
-    <button id="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
 
 <main>
     <div class="container location">
     <h3>La Pedrera - Casa Milà</h3>
         <figure>
-            <img src="../../assets/photos/casa_mila/intro.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Mil%C3%A0_28-2-12.jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/intro.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/intro.jpg 1200w,
+                         ../../assets/photos/casa_mila/intro_600.jpg 600w
+                         ../../assets/photos/casa_mila/intro_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Mil%C3%A0_28-2-12" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
     <p>Casa Milà, also known as La Pedrera, is one of the most iconic works of the famous Catalan architect Antoni Gaudí in Barcelona, Spain. Built in the 19th century, Casa Milà is an impressive example of modernist architecture and one of the architect&#39;s most innovative works. The building features undulating and curved forms, as well as elaborate decorative details such as the chimneys and the hand-carved stone facade. The interior of the house is equally impressive, with a unique blend of architectural and decorative elements that reflect Gaudí&#39;s unique artistic vision. Casa Milà is one of the most visited tourist attractions in Barcelona and a distinctive symbol of the city.</p>
 
     <h4>Rooftop</h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/azotea.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:La_Pedrera_003.jpg" target="_blank">Wikimedia - Jaume Meneses</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/azotea.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/azotea.jpg 1200w,
+                         ../../assets/photos/casa_mila/azotea_600.jpg 600w
+                         ../../assets/photos/casa_mila/azotea_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:La_Pedrera_003" target="_blank">Wikimedia - Jaume Meneses</a></figurecaption>
         </figure>
     <p>The rooftop of La Pedrera is one of the standout features of the building and offers panoramic views of Barcelona. The rooftop is decorated with sculptures and undulating chimneys, which are one of the most iconic features of the building. The view of the city from here is spectacular and offers a unique perspective of Barcelona&#39;s urban skyline.</p>
 
 
     <h4>The Attic</h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/atico.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:CasaMila-Voltes2.jpg" target="_blank">Wikimedia - Matthias Ott</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/atico.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/atico.jpg 1200w,
+                         ../../assets/photos/casa_mila/atico_600.jpg 600w
+                         ../../assets/photos/casa_mila/atico_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:CasaMila-Voltes2" target="_blank">Wikimedia - Matthias Ott</a></figurecaption>
         </figure>
     <p>The Attic of La Pedrera houses an exhibition dedicated to the work of Antoni Gaudí. Visitors can see models and original plans of some of his most famous buildings, as well as learn about his life and creative process. The space is decorated with modernist elements and features natural lighting that highlights its architectural beauty.</p>
 
 
     <h4>The Milà Family Apartment</h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/piso.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:CasaMila-Menjador.jpg" target="_blank">Wikimedia - Wohnzimmer</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/piso.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/piso.jpg 1200w,
+                         ../../assets/photos/casa_mila/piso_600.jpg 600w
+                         ../../assets/photos/casa_mila/piso_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:CasaMila-Menjador" target="_blank">Wikimedia - Wohnzimmer</a></figurecaption>
         </figure>
     <p>This space is decorated with period furniture and objects and allows visitors to imagine how affluent families lived in early 20th century Barcelona. Visitors can see the different types of rooms that existed at the time and how they were decorated. The vintage atmosphere is present in every detail and allows one to transport oneself back in time.</p>
 
 
     <h4>The Courtyard</h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/patio.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Dziedziniec_mila.jpg" target="_blank">Wikimedia - Centymetr</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/patio.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/patio.jpg 1200w,
+                         ../../assets/photos/casa_mila/patio_600.jpg 600w
+                         ../../assets/photos/casa_mila/patio_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Dziedziniec_mila" target="_blank">Wikimedia - Centymetr</a></figurecaption>
         </figure>
     <p>The interior courtyard of La Pedrera is a space filled with light and color, with a beautiful spiral staircase that leads to the different floors of the building. Visitors can appreciate the modernist architecture and its elegance in every detail. There is also an interactive exhibition that allows visitors to learn more about the history and architecture of the building.</p>
 
 
     <h4>The Ground Floor</h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/planta_baja.jpg" alt="La Pedrera - Casa Milà">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Front_gate_-_Casa_Mil%C3%A0_-_Barcelona_2014.jpg" target="_blank">Wikimedia - José Luiz Bernardes Ribeiro</a></figurecaption>
+            <img src="../../assets/photos/casa_mila/planta_baja.jpg" alt="La Pedrera - Casa Milà"
+                 srcset="../../assets/photos/casa_mila/planta_baja.jpg 1200w,
+                         ../../assets/photos/casa_mila/planta_baja_600.jpg 600w
+                         ../../assets/photos/casa_mila/planta_baja_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Front_gate_-_Casa_Mil%C3%A0_-_Barcelona_2014" target="_blank">Wikimedia - José Luiz Bernardes Ribeiro</a></figurecaption>
         </figure>
     <p>The ground floor of La Pedrera houses a gift shop and an exhibition dedicated to the work of Gaudí, as well as a projection room that shows a documentary about the history of the building and its creator. The exhibition features objects and models that allow visitors to learn more about Gaudí&#39;s work and his legacy in modern architecture.</p>
 
@@ -132,11 +157,11 @@
                     <div class="columnas">
                         <div>
                             <p>Academic work prepared for UOC</p>
-                            <p>Designed by <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                            <p>Designed by <a href="mailto:madebo@uoc.edu">Marc Delgado</a></p>
                             <p><a href="nota_legal.html">Legal notice and bibliography</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
                         </div>
                         <div>
                             <ul class="locations">

@@ -20,6 +20,7 @@
     <!-- Recursos -->
     <script type="module" src="../../assets/app.js"></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
                 <h1><a href="index.html">Ruta Gaudí a Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -70,47 +71,67 @@
         </div>
     </header>
 
-    <button id="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
 
 
 <main>
     <div class="container location">
         <h3>Casa Vicens</h3>
         <figure>
-            <img src="../../assets/photos/casa_vicens/intro.jpg" alt="Casa Vicens">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Vicens.JPG" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_vicens/intro.jpg" alt="Casa Vicens"
+                 srcset="../../assets/photos/casa_vicens/intro.jpg 1200w,
+                         ../../assets/photos/casa_vicens/intro_600.jpg 600w
+                         ../../assets/photos/casa_vicens/intro_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Vicens" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La Casa Vicens és una obra arquitectònica única situada al barri de Gràcia a Barcelona, Espanya. Va ser dissenyada per l&#39;arquitecte català Antoni Gaudí el 1883 com la residència d&#39;estiu de la família Vicens i és considerada una de les primeres obres mestres de l&#39;arquitecte. La casa és un impressionant exemple de l&#39;arquitectura modernista, amb una façana colorida i ornamentada que combina elements tradicionals espanyols amb influències de l&#39;art islàmic. L&#39;interior de la casa també és impressionant, amb una barreja d&#39;elements decoratius i arquitectònics que reflecteixen la visió artística única de Gaudí. La Casa Vicens és una atracció turística popular a Barcelona i un símbol distintiu de l&#39;estil arquitectònic modernista de la ciutat.</p>
 
         
         <h4>Planta baixa</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/planta_baja.jpg" alt="Casa Vicens">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Casa_Vicens_(2).jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_vicens/planta_baja.jpg" alt="Casa Vicens"
+                 srcset="../../assets/photos/casa_vicens/planta_baja.jpg 1200w,
+                         ../../assets/photos/casa_vicens/planta_baja_600.jpg 600w
+                         ../../assets/photos/casa_vicens/planta_baja_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Casa_Vicens_(2)" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>A la planta baixa, els visitants poden gaudir del vestíbul d&#39;entrada amb la seva impressionant decoració i elements arquitectònics. La sala d&#39;exposicions temporals ofereix una visió més ampla de l&#39;obra de Gaudí i la Casa Vicens en particular. La botiga de regals és un lloc perfecte per trobar records i recordatoris inspirats en la casa i l&#39;obra de Gaudí. Als jardins exteriors, els visitants poden relaxar-se i gaudir del bell entorn.</p>
 
         
         <h4>Primera planta</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/primera_planta.jpg" alt="Casa Vicens">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(10).jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_vicens/primera_planta.jpg" alt="Casa Vicens"
+                 srcset="../../assets/photos/casa_vicens/primera_planta.jpg 1200w,
+                         ../../assets/photos/casa_vicens/primera_planta_600.jpg 600w
+                         ../../assets/photos/casa_vicens/primera_planta_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(10)" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La primera planta és la zona de la casa on es rebien els convidats. Els visitants poden admirar la sala d&#39;estar, el menjador, la sala de música i una galeria d&#39;art que exhibeix obres d&#39;artistes que van influir en l&#39;obra de Gaudí. La decoració és rica i opulent, amb detalls únics i materials preciosos.</p>
 
         
         <h4>Segona planta</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/segunda_planta.jpg" alt="Casa Vicens">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(9).jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_vicens/segunda_planta.jpg" alt="Casa Vicens"
+                 srcset="../../assets/photos/casa_vicens/segunda_planta.jpg 1200w,
+                         ../../assets/photos/casa_vicens/segunda_planta_600.jpg 600w
+                         ../../assets/photos/casa_vicens/segunda_planta_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(9)" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La segona planta és la zona privada de la família Vicens. Els visitants poden explorar les habitacions privades de la família, incloent el dormitori principal i una habitació infantil. Les habitacions estan decorades amb detalls elegants i elements arquitectònics únics.</p>
 
         
         <h4>Terrassa</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/terraza.jpg" alt="Casa Vicens">
-            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(14).jpg" target="_blank">Wikimedia - Canaan</a></figurecaption>
+            <img src="../../assets/photos/casa_vicens/terraza.jpg" alt="Casa Vicens"
+                 srcset="../../assets/photos/casa_vicens/terraza.jpg 1200w,
+                         ../../assets/photos/casa_vicens/terraza_600.jpg 600w
+                         ../../assets/photos/casa_vicens/terraza_300.jpg 300w"
+                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+            <figurecaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(14)" target="_blank">Wikimedia - Canaan</a></figurecaption>
         </figure>
         <p>La terrassa de la Casa Vicens és un dels aspectes més destacats de l&#39;edifici. Amb una vista panoràmica de la ciutat de Barcelona, els visitants poden apreciar la barreja única d&#39;elements decoratius i arquitectònics que caracteritzen l&#39;obra de Gaudí. La ceràmica és una característica distintiva de la terrassa, amb mosaics únics que expliquen la història de la casa i la seva construcció.</p>
 
@@ -127,11 +148,11 @@
                     <div class="columnas">
                         <div>
                             <p>Treball acadèmic elaborat per a la UOC</p>
-                            <p>Dissenyat per <a href="mailto: madebo@uoc.edu">Marc Delgado</a></p>
+                            <p>Dissenyat per <a href="mailto:madebo@uoc.edu">Marc Delgado</a></p>
                             <p><a href="nota_legal.html">Nota legal i bibliografia</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
                         </div>
                         <div>
                             <ul class="locations">

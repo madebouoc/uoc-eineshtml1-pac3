@@ -10,7 +10,11 @@
         <div class="articles">
             <article>
                 <a href="sagrada_familia.html">
-                    <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>" alt="<%= sagradaFamilia.titulo %>">
+                    <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
+                         srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_300.jpg 300w"
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= sagradaFamilia.titulo %></h3>
                         <p><%= sagradaFamilia.cabezal %></p>
@@ -19,7 +23,11 @@
             </article>
             <article>
                  <a href="parque_guell.html">
-                    <img src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>" alt="<%= parqueGuell.titulo %>">
+                     <img src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>.jpg" alt="<%= parqueGuell.titulo %>"
+                          srcset="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>_300.jpg 300w"
+                          sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= parqueGuell.titulo %></h3>
                         <p><%= parqueGuell.cabezal %></p>
@@ -28,7 +36,11 @@
             </article>
             <article>
                 <a href="casa_mila.html">
-                    <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>" alt="<%= casaMila.titulo %>">
+                    <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg" alt="<%= casaMila.titulo %>"
+                         srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_300.jpg 300w"
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= casaMila.titulo %></h3>
                         <p><%= casaMila.cabezal %></p>
@@ -37,7 +49,11 @@
             </article>
             <article>
                 <a href="casa_batllo.html">
-                    <img src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>" alt="<%= casaBatllo.titulo %>">
+                    <img src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>.jpg" alt="<%= casaBatllo.titulo %>"
+                         srcset="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>_300.jpg 300w"
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= casaBatllo.titulo %></h3>
                         <p><%= casaBatllo.cabezal %></p>
@@ -46,7 +62,11 @@
             </article>
             <article>
                 <a href="palacio_guell.html">
-                    <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>" alt="<%= palacioGuell.titulo %>">
+                    <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg" alt="<%= palacioGuell.titulo %>"
+                         srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_300.jpg 300w"
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= palacioGuell.titulo %></h3>
                         <p><%= palacioGuell.cabezal %></p>
@@ -55,7 +75,11 @@
             </article>
             <article>
                 <a href="casa_vicens.html">
-                    <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>" alt="<%= casaVicens.titulo %>">
+                    <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>.jpg" alt="<%= casaVicens.titulo %>"
+                         srcset="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>.jpg 1200w,
+                         ../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>_600.jpg 600w
+                         ../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>_300.jpg 300w"
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
                     <div>
                         <h3><%= casaVicens.titulo %></h3>
                         <p><%= casaVicens.cabezal %></p>
@@ -67,13 +91,15 @@
 </main>
 
 <script>
+    //Script para el efecto de la imagen "Secuencia de Ruta".
+    //Cada path tiene un idNNN numerado en orden. Este script activa el "fade in" secuencialmente.
     window.onload = function() {
         let paths = Array.from(document.querySelectorAll("path"));
         // ordena los paths por ID
         paths.sort((a, b) => parseInt(a.id.replace("id", "")) - parseInt(b.id.replace("id", "")));
 
         for(let i = 0; i < paths.length; i++) {
-            // establece un retraso de animación basado en el índice
+            //Añadimos un lag entre punto y punto de la imagen.
             paths[i].style.animationDelay = `${i * 0.015}s`;
         }
     }
