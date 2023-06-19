@@ -18,6 +18,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
+			loading: lazy;
 
 			.container {
 				/* Formateo del aspecto general, posicionamiento y flexbox */
@@ -395,6 +396,7 @@
 				mask-size: cover;
 				filter: saturate(0%);
 				transition: filter 1s ease-in-out;
+				loading: lazy;
 			}
 
 			.mask-flower:hover{
@@ -418,6 +420,7 @@
 			background-image: url("bg_footer_desktop.webp");
 			background-position: center top;
 			background-repeat: repeat;
+			loading: lazy;
 
 			.smooth{
 				background-color: rgba(0,0,0,0.5);

@@ -24,6 +24,7 @@
 			background-color: $color-header-bg;
 			box-shadow: 0px 4px 4px rgba(100, 0, 0, 0.5);
 			border-bottom: 3px solid red;
+			loading: lazy;
 
 			.container {
 				/* Formateo del aspecto general, posicionamiento y flexbox */
@@ -416,6 +417,7 @@
 				mask-size: cover;
 				filter: saturate(0%);
 				transition: filter 1s ease-in-out;
+				loading: lazy;
 			}
 
 			.mask-flower:hover{
@@ -438,6 +440,7 @@
 			background-image: url("bg_footer_desktop.webp");
 			background-position: center top;
 			background-repeat: repeat;
+			loading: lazy;
 
 			.smooth{
 				background-color: rgba(0,0,0,0.5);

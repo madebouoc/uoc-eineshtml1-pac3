@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js"></script>
+    <script type="module" src="../../assets/app.js" async></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
     <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
 </head>
@@ -28,7 +28,7 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Ruta Gaudí en Barcelona</a></h1>
             </div>
 
@@ -62,9 +62,9 @@
             <!--Cuerpo del menu de idioma-->
             <nav class="langSelectorContent">
                 <ul >
-                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag"><div>Català</div></a></li>
-                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag"><div>Español</div></a></li>
-                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag"><div>English</div></a></li>
+                    <li><a href="../ca/index.html"><img src="../../assets/speech/ca.svg" alt="catalan flag" loading="lazy"><div>Català</div></a></li>
+                    <li><a href="../es/index.html"><img src="../../assets/speech/es.svg" alt="spanish flag" loading="lazy"><div>Español</div></a></li>
+                    <li><a href="../en/index.html"><img src="../../assets/speech/en.svg" alt="english flag" loading="lazy"><div>English</div></a></li>
                     <!--<li><a href="../fr/index.html"><img src="../../assets/speech/fr.svg" alt="french flag"><div>Français</div></a></li>-->
                 </ul>
             </nav>
@@ -1574,7 +1574,7 @@
                          srcset="../../assets/photos/sagrada_familia/intro.jpg 1200w,
                          ../../assets/photos/sagrada_familia/intro_600.jpg 600w
                          ../../assets/photos/sagrada_familia/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>La Sagrada Familia</h3>
                         <p>Asómbrate ante la monumental y emblemática Sagrada Familia, obra cumbre y eterno legado del genial arquitecto Antoni Gaudí</p>
@@ -1587,7 +1587,7 @@
                           srcset="../../assets/photos/parque_guell/intro.jpg 1200w,
                          ../../assets/photos/parque_guell/intro_600.jpg 600w
                          ../../assets/photos/parque_guell/intro_300.jpg 300w"
-                          sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                          sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>Parque Güell</h3>
                         <p>Sumérgete en el mágico Parque Güell, obra maestra de Gaudí que combina arte, naturaleza y arquitectura en un espacio único.</p>
@@ -1600,7 +1600,7 @@
                          srcset="../../assets/photos/casa_mila/intro.jpg 1200w,
                          ../../assets/photos/casa_mila/intro_600.jpg 600w
                          ../../assets/photos/casa_mila/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>La Pedrera - Casa Milà</h3>
                         <p>Admira la innovadora Casa Milà, conocida como La Pedrera, un emblemático y revolucionario edificio de Gaudí en Barcelona.</p>
@@ -1613,7 +1613,7 @@
                          srcset="../../assets/photos/casa_batllo/intro.jpg 1200w,
                          ../../assets/photos/casa_batllo/intro_600.jpg 600w
                          ../../assets/photos/casa_batllo/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>Casa Batlló</h3>
                         <p>Descubre la fascinante Casa Batlló, un deslumbrante ejemplo del genio creativo de Gaudí y su habilidad para reinventar el espacio.</p>
@@ -1626,7 +1626,7 @@
                          srcset="../../assets/photos/palacio_guell/intro.jpg 1200w,
                          ../../assets/photos/palacio_guell/intro_600.jpg 600w
                          ../../assets/photos/palacio_guell/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>Palacio Güell</h3>
                         <p>Visita el impresionante Palacio Güell, una joya del modernismo que fusiona elementos góticos, mudéjares y la creatividad de Gaudí.</p>
@@ -1639,7 +1639,7 @@
                          srcset="../../assets/photos/casa_vicens/intro.jpg 1200w,
                          ../../assets/photos/casa_vicens/intro_600.jpg 600w
                          ../../assets/photos/casa_vicens/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px">
+                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
                     <div>
                         <h3>Casa Vicens</h3>
                         <p>Contempla la primera obra maestra de Gaudí, la colorida y singular Casa Vicens, donde el arquitecto despliega su talento creativo.</p>
@@ -1675,7 +1675,7 @@
                             <p><a href="nota_legal.html">Nota legal y bibliografía</a></p>
                         </div>
                         <div class="about">
-                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís">
+                            <img src="../../assets/lagartoGaudi.gif" alt="lagarto trencadís" loading="lazy">
                         </div>
                         <div>
                             <ul class="locations">
