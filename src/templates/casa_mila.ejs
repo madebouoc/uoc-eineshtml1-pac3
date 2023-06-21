@@ -3,22 +3,46 @@
     <div class="container location">
     <h3><%= casaMila.titulo %></h3>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.intro_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.intro_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.intro_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.intro_img %>?width=300 300w,
+                             <%= casaMila.imagenes.intro_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.intro_link %>" target="_blank"><%= casaMila.imagenes.intro_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.intro %></p>
 
     <h4><%= casaMila.descripcion.azotea_title %></h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.azotea_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.azotea_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.azotea_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.azotea_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.azotea_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.azotea_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.azotea_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.azotea_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.azotea_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.azotea_img %>?width=300 300w,
+                             <%= casaMila.imagenes.azotea_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.azotea_link %>" target="_blank"><%= casaMila.imagenes.azotea_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.azotea_text %></p>
@@ -26,11 +50,23 @@
 
     <h4><%= casaMila.descripcion.atico_title %></h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.atico_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.atico_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.atico_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.atico_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.atico_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.atico_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.atico_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.atico_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.atico_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.atico_img %>?width=300 300w,
+                             <%= casaMila.imagenes.atico_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.atico_link %>" target="_blank"><%= casaMila.imagenes.atico_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.atico_text %></p>
@@ -38,11 +74,23 @@
 
     <h4><%= casaMila.descripcion.piso_title %></h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.piso_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.piso_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.piso_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.piso_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.piso_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.piso_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.piso_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.piso_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.piso_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.piso_img %>?width=300 300w,
+                             <%= casaMila.imagenes.piso_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.piso_link %>" target="_blank"><%= casaMila.imagenes.piso_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.piso_text %></p>
@@ -50,11 +98,23 @@
 
     <h4><%= casaMila.descripcion.patio_title %></h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.patio_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.patio_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.patio_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.patio_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.patio_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.patio_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.patio_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.patio_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.patio_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.patio_img %>?width=300 300w,
+                             <%= casaMila.imagenes.patio_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.patio_link %>" target="_blank"><%= casaMila.imagenes.patio_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.patio_text %></p>
@@ -62,11 +122,23 @@
 
     <h4><%= casaMila.descripcion.plantaBaja_title %></h4>
         <figure>
-            <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.plantaBaja_img %>.jpg" alt="<%= casaMila.titulo %>"
-                 srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.plantaBaja_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.plantaBaja_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.plantaBaja_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= casaMila.imagenes.plantaBaja_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.plantaBaja_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= casaMila.imagenes.plantaBaja_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.plantaBaja_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= casaMila.imagenes.plantaBaja_img %>?width=300"
+                     srcset="<%= casaMila.imagenes.plantaBaja_img %>?width=300 300w,
+                             <%= casaMila.imagenes.plantaBaja_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= casaMila.titulo %>"
+                     aria-label="<%= casaMila.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.plantaBaja_link %>" target="_blank"><%= casaMila.imagenes.plantaBaja_about %></a></figcaption>
         </figure>
     <p><%= casaMila.descripcion.plantaBaja_text %></p>

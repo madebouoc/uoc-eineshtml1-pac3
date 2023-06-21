@@ -2,15 +2,37 @@
 
 <div class="banner">
     <picture>
-        <source type="image/webp" srcset="../../assets/banner/banner_desktop_1200.webp 1200w, ../../assets/banner/banner_desktop_1920.webp 1920w, ../../assets/banner/banner_desktop_2560.webp 2560w"
+        <!-- Desktop -->
+        <source type="image/avif"
+                srcset="../../assets/banner/banner_desktop.jpg?as=avif&width=600 1200w,
+                        ../../assets/banner/banner_desktop.jpg?as=avif&width=1200 1920w"
                 media="(min-width: 1200px), (min-aspect-ratio: 1/2)"
-                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px" loading="lazy">
-        <source type="image/webp" srcset="../../assets/banner/banner_mobile_300.webp 300w, ../../assets/banner/banner_mobile_600.webp 600w"
+                sizes="(max-width: 1200px) 1200px, (min-width: 1201px) 1920px" >
+        <source type="image/webp"
+                srcset="../../assets/banner/banner_desktop.jpg?as=webp&width=600 1200w,
+                        ../../assets/banner/banner_desktop.jpg?as=webp&width=1200 1920w"
+                media="(min-width: 1200px), (min-aspect-ratio: 1/2)"
+                sizes="(max-width: 1200px) 1200px, (min-width: 1201px) 1920px" >
+        <!-- Mobile -->
+        <source type="image/avif"
+                srcset="../../assets/banner/banner_desktop.jpg?as=avif&width=1200 1200w,
+                        ../../assets/banner/banner_desktop.jpg?as=avif&width=600 600w,
+                        ../../assets/banner/banner_desktop.jpg?as=avif&width=300 300w"
                 media="(max-width: 1199px) and (max-aspect-ratio: 0.999/2)"
-                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px" loading="lazy">
-        <img src="../../assets/banner/banner_desktop.jpeg" alt="Banner"
-             srcset="../../assets/banner/banner_mobile_300.jpeg 300w, ../../assets/banner/banner_mobile_600.jpeg 600w, ../../assets/banner/banner_desktop_1200.jpeg 1200w, ../../assets/banner/banner_desktop_1920.jpeg 1920w, ../../assets/banner/banner_desktop_2560.jpeg 2560w"
-             sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px" loading="lazy">
+                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" >
+        <source type="image/webp"
+                srcset="../../assets/banner/banner_desktop.jpg?as=webp&width=1200 1200w,
+                        ../../assets/banner/banner_desktop.jpg?as=webp&width=600 600w,
+                        ../../assets/banner/banner_desktop.jpg?as=webp&width=300 300w"
+                media="(max-width: 1199px) and (max-aspect-ratio: 0.999/2)"
+                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" >
+
+        <img src="../../assets/banner/banner_desktop.jpg?width=1200" alt="Banner" aria-label="Banner" loading="lazy"
+             srcset="../../assets/banner/banner_desktop.jpg?width=1920 1920w,
+                     ../../assets/banner/banner_desktop.jpg?width=1200 1200w,
+                     ../../assets/banner/banner_desktop.jpg?width=600 600w,
+                     ../../assets/banner/banner_desktop.jpg?width=300 300w"
+             sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px" >
     </picture>
 
 </div>
@@ -23,12 +45,78 @@
 
 
         <div class="flores">
-            <a href="casa_batllo.html"><img class="mask-flower" src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
-            <a href="casa_mila.html"><img class="mask-flower" src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
-            <a href="casa_vicens.html"><img class="mask-flower" src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
-            <a href="palacio_guell.html"><img class="mask-flower" src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
-            <a href="parque_guell.html"><img class="mask-flower" src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
-            <a href="sagrada_familia.html"><img class="mask-flower" src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_300.jpg" alt="<%= casaVicens.titulo %>"></a>
+            <a href="casa_batllo.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= casaBatllo.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= casaBatllo.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= casaBatllo.imagenes.intro_img %>?width=300"
+                         alt="<%= casaBatllo.titulo %>"
+                         aria-label="<%= casaBatllo.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
+            <a href="casa_mila.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= casaMila.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= casaMila.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= casaMila.imagenes.intro_img %>?width=300"
+                         alt="<%= casaMila.titulo %>"
+                         aria-label="<%= casaMila.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
+            <a href="casa_vicens.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= casaVicens.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= casaVicens.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= casaVicens.imagenes.intro_img %>?width=300"
+                         alt="<%= casaVicens.titulo %>"
+                         aria-label="<%= casaVicens.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
+            <a href="palacio_guell.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= palacioGuell.imagenes.intro_img %>?width=300"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
+            <a href="parque_guell.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= parqueGuell.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= parqueGuell.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= parqueGuell.imagenes.intro_img %>?width=300"
+                         alt="<%= parqueGuell.titulo %>"
+                         aria-label="<%= parqueGuell.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
+            <a href="sagrada_familia.html">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=avif&width=300"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=webp&width=300"/>
+                    <img class="mask-flower" src="<%= sagradaFamilia.imagenes.intro_img %>?width=300"
+                         alt="<%= sagradaFamilia.titulo %>"
+                         aria-label="<%= sagradaFamilia.titulo %>"
+                         loading="lazy">
+                </picture>
+            </a>
         </div>
 
         <button name="locations" onclick="window.location.href='./locations.html'"><%= frontpage.vamosAlla %></button>

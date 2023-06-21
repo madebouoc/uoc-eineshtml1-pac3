@@ -4,11 +4,23 @@
         <div class="container location">
             <h3><%= palacioGuell.titulo %></h3>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_300.jpg 300w"
-                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.intro_img %>?as=avif&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.intro_img %>?as=webp&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <img src="<%= palacioGuell.imagenes.intro_img %>?width=300"
+                         srcset="<%= palacioGuell.imagenes.intro_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.intro_img %>?width=600 600w"
+                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.intro_link %>" target="_blank"><%= palacioGuell.imagenes.intro_about %></a></figcaption>
             </figure>
             <p><%= palacioGuell.descripcion.intro %></p>
@@ -16,11 +28,23 @@
 
             <h4><%= palacioGuell.descripcion.vestibulo_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.vestibulo_img %>_300.jpg 300w"
-                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.vestibulo_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.vestibulo_img %>?as=avif&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.vestibulo_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.vestibulo_img %>?as=webp&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <img src="<%= palacioGuell.imagenes.vestibulo_img %>?width=300"
+                         srcset="<%= palacioGuell.imagenes.vestibulo_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.vestibulo_img %>?width=600 600w"
+                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.vestibulo_link %>" target="_blank"><%= palacioGuell.imagenes.vestibulo_about %></a></figcaption>
             </figure>
             <p><%= palacioGuell.descripcion.vestibulo_text %></p>
@@ -28,11 +52,23 @@
 
             <h4><%= palacioGuell.descripcion.salaConfianza_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.salaConfianza_img %>_300.jpg 300w"
-                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.salaConfianza_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.salaConfianza_img %>?as=avif&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.salaConfianza_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.salaConfianza_img %>?as=webp&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <img src="<%= palacioGuell.imagenes.salaConfianza_img %>?width=300"
+                         srcset="<%= palacioGuell.imagenes.salaConfianza_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.salaConfianza_img %>?width=600 600w"
+                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.salaConfianza_link %>" target="_blank"><%= palacioGuell.imagenes.salaConfianza_about %></a></figcaption>
             </figure>
             <p><%= palacioGuell.descripcion.salaConfianza_text %></p>
@@ -40,11 +76,23 @@
 
             <h4><%= palacioGuell.descripcion.patioCentral_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.patioCentral_img %>_300.jpg 300w"
-                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.patioCentral_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.patioCentral_img %>?as=avif&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.patioCentral_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.patioCentral_img %>?as=webp&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <img src="<%= palacioGuell.imagenes.patioCentral_img %>?width=300"
+                         srcset="<%= palacioGuell.imagenes.patioCentral_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.patioCentral_img %>?width=600 600w"
+                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.patioCentral_link %>" target="_blank"><%= palacioGuell.imagenes.patioCentral_about %></a></figcaption>
             </figure>
             <p><%= palacioGuell.descripcion.patioCentral_text %></p>
@@ -52,11 +100,23 @@
 
             <h4><%= palacioGuell.descripcion.terraza_title %></h4>
             <figure>
-                <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                     srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.terraza_img %>_300.jpg 300w"
-                     sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                <picture>
+                    <source type="image/avif" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.terraza_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.terraza_img %>?as=avif&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <source type="image/webp" loading="lazy"
+                            srcset="<%= palacioGuell.imagenes.terraza_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.terraza_img %>?as=webp&width=600 600w"
+                            sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                    <img src="<%= palacioGuell.imagenes.terraza_img %>?width=300"
+                         srcset="<%= palacioGuell.imagenes.terraza_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.terraza_img %>?width=600 600w"
+                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                         alt="<%= palacioGuell.titulo %>"
+                         aria-label="<%= palacioGuell.titulo %>"
+                         loading="lazy">
+                </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= palacioGuell.imagenes.terraza_link %>" target="_blank"><%= palacioGuell.imagenes.terraza_about %></a></figcaption>
             </figure>
             <p><%= palacioGuell.descripcion.terraza_text %></p>

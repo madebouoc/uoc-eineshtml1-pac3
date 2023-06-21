@@ -10,11 +10,23 @@
         <div class="articles">
             <article>
                 <a href="sagrada_familia.html">
-                    <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                         srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.intro_img %>?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.intro_img %>?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="<%= sagradaFamilia.imagenes.intro_img %>?width=300"
+                             srcset="<%= sagradaFamilia.imagenes.intro_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.intro_img %>?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="<%= sagradaFamilia.titulo %>"
+                             aria-label="<%= sagradaFamilia.titulo %>"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3><%= sagradaFamilia.titulo %></h3>
                         <p><%= sagradaFamilia.cabezal %></p>
@@ -23,11 +35,23 @@
             </article>
             <article>
                  <a href="parque_guell.html">
-                     <img src="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>.jpg" alt="<%= parqueGuell.titulo %>"
-                          srcset="../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/parque_guell/<%= parqueGuell.imagenes.intro_img %>_300.jpg 300w"
-                          sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                     <picture>
+                         <source type="image/avif" loading="lazy"
+                                 srcset="<%= parqueGuell.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= parqueGuell.imagenes.intro_img %>?as=avif&width=600 600w"
+                                 sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                         <source type="image/webp" loading="lazy"
+                                 srcset="<%= parqueGuell.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= parqueGuell.imagenes.intro_img %>?as=webp&width=600 600w"
+                                 sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                         <img src="<%= parqueGuell.imagenes.intro_img %>?width=300"
+                              srcset="<%= parqueGuell.imagenes.intro_img %>?width=300 300w,
+                             <%= parqueGuell.imagenes.intro_img %>?width=600 600w"
+                              sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                              alt="<%= parqueGuell.titulo %>"
+                              aria-label="<%= parqueGuell.titulo %>"
+                              loading="lazy">
+                     </picture>
                     <div>
                         <h3><%= parqueGuell.titulo %></h3>
                         <p><%= parqueGuell.cabezal %></p>
@@ -36,11 +60,23 @@
             </article>
             <article>
                 <a href="casa_mila.html">
-                    <img src="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg" alt="<%= casaMila.titulo %>"
-                         srcset="../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/casa_mila/<%= casaMila.imagenes.intro_img %>_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="<%= casaMila.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= casaMila.imagenes.intro_img %>?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="<%= casaMila.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= casaMila.imagenes.intro_img %>?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="<%= casaMila.imagenes.intro_img %>?width=300"
+                             srcset="<%= casaMila.imagenes.intro_img %>?width=300 300w,
+                             <%= casaMila.imagenes.intro_img %>?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="<%= casaMila.titulo %>"
+                             aria-label="<%= casaMila.titulo %>"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3><%= casaMila.titulo %></h3>
                         <p><%= casaMila.cabezal %></p>
@@ -49,11 +85,23 @@
             </article>
             <article>
                 <a href="casa_batllo.html">
-                    <img src="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>.jpg" alt="<%= casaBatllo.titulo %>"
-                         srcset="../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/casa_batllo/<%= casaBatllo.imagenes.intro_img %>_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="<%= casaBatllo.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= casaBatllo.imagenes.intro_img %>?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="<%= casaBatllo.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= casaBatllo.imagenes.intro_img %>?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="<%= casaBatllo.imagenes.intro_img %>?width=300"
+                             srcset="<%= casaBatllo.imagenes.intro_img %>?width=300 300w,
+                             <%= casaBatllo.imagenes.intro_img %>?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="<%= casaBatllo.titulo %>"
+                             aria-label="<%= casaBatllo.titulo %>"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3><%= casaBatllo.titulo %></h3>
                         <p><%= casaBatllo.cabezal %></p>
@@ -62,11 +110,23 @@
             </article>
             <article>
                 <a href="palacio_guell.html">
-                    <img src="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg" alt="<%= palacioGuell.titulo %>"
-                         srcset="../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/palacio_guell/<%= palacioGuell.imagenes.intro_img %>_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="<%= palacioGuell.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= palacioGuell.imagenes.intro_img %>?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="<%= palacioGuell.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= palacioGuell.imagenes.intro_img %>?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="<%= palacioGuell.imagenes.intro_img %>?width=300"
+                             srcset="<%= palacioGuell.imagenes.intro_img %>?width=300 300w,
+                             <%= palacioGuell.imagenes.intro_img %>?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="<%= palacioGuell.titulo %>"
+                             aria-label="<%= palacioGuell.titulo %>"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3><%= palacioGuell.titulo %></h3>
                         <p><%= palacioGuell.cabezal %></p>
@@ -75,11 +135,23 @@
             </article>
             <article>
                 <a href="casa_vicens.html">
-                    <img src="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>.jpg" alt="<%= casaVicens.titulo %>"
-                         srcset="../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/casa_vicens/<%= casaVicens.imagenes.intro_img %>_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="<%= casaVicens.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= casaVicens.imagenes.intro_img %>?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="<%= casaVicens.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= casaVicens.imagenes.intro_img %>?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="<%= casaVicens.imagenes.intro_img %>?width=300"
+                             srcset="<%= casaVicens.imagenes.intro_img %>?width=300 300w,
+                             <%= casaVicens.imagenes.intro_img %>?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="<%= casaVicens.titulo %>"
+                             aria-label="<%= casaVicens.titulo %>"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3><%= casaVicens.titulo %></h3>
                         <p><%= casaVicens.cabezal %></p>

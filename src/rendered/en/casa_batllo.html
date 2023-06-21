@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Gaudí Route in Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,17 +71,29 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>
 
 <main>
     <div class="container location">
         <h3>Casa Batlló</h3>
         <figure>
-            <img src="../../assets/photos/casa_batllo/intro.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/intro.jpg 1200w,
-                         ../../assets/photos/casa_batllo/intro_600.jpg 600w
-                         ../../assets/photos/casa_batllo/intro_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/intro.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/intro.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/intro.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/intro.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/intro.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Batlló"
+                     aria-label="Casa Batlló"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Batll%C3%B3" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>La Casa Batlló es una de las obras más conocidas del arquitecto Antoni Gaudí en Barcelona, España. Construida a principios del siglo XX, la casa es un impresionante ejemplo de la arquitectura modernista y es conocida por su fachada ondulante y curva, que se asemeja a un lago de color azul intenso. La fachada está adornada con una mezcla de mosaicos de vidrio y cerámica, y las ventanas tienen una forma irregular y orgánica. El interior de la casa es igualmente impresionante, con una mezcla única de elementos decorativos y arquitectónicos que reflejan la visión artística única de Gaudí. La Casa Batlló es una atracción turística popular en Barcelona y un símbolo distintivo del estilo arquitectónico modernista de la ciudad.</p>
@@ -89,11 +101,23 @@
         
         <h4>Fachada</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/fachada.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/fachada.jpg 1200w,
-                         ../../assets/photos/casa_batllo/fachada_600.jpg 600w
-                         ../../assets/photos/casa_batllo/fachada_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/fachada.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/fachada.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/fachada.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/fachada.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/fachada.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/fachada.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/fachada.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Fachada"
+                     aria-label="Fachada"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://upload.wikimedia.org/Wikimedia/commons/9/96/Casa_Batll%C3%B3_01" target="_blank">Wikimedia - Bernard Gagnon</a></figcaption>
         </figure>
         <p>La fachada de la Casa Batlló es una de las más impresionantes del mundo, con un diseño ondulado y formas orgánicas. Los visitantes pueden apreciar los detalles únicos de la fachada y conocer más sobre la historia de la casa.</p>
@@ -101,11 +125,23 @@
         
         <h4>Main floor</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/primer_piso.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/primer_piso.jpg 1200w,
-                         ../../assets/photos/casa_batllo/primer_piso_600.jpg 600w
-                         ../../assets/photos/casa_batllo/primer_piso_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/primer_piso.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/primer_piso.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/primer_piso.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/primer_piso.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/primer_piso.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/primer_piso.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/primer_piso.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Main floor"
+                     aria-label="Main floor"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:CasaBatll%C3%B3_NobleFloor_saloon_stainedglass" target="_blank">Wikimedia - Sara Terrones</a></figcaption>
         </figure>
         <p>The main floor of Casa Batlló is the jewel of Catalan modernist architecture. It stands out for its impressive façade and surprising details inside, such as the main staircase, the fireplace in the living room, and the arched ceiling. The blend of modernist and classic styles in the elegant rooms is an example of Gaudi&#39;s creative vision. In summary, the main floor is an impressive display of Gaudi&#39;s ingenuity in creating unique and unforgettable spaces.</p>
@@ -113,11 +149,23 @@
         
         <h4>Courtyard of lights</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/patio_luces.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/patio_luces.jpg 1200w,
-                         ../../assets/photos/casa_batllo/patio_luces_600.jpg 600w
-                         ../../assets/photos/casa_batllo/patio_luces_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/patio_luces.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/patio_luces.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/patio_luces.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/patio_luces.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/patio_luces.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/patio_luces.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/patio_luces.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Courtyard of lights"
+                     aria-label="Courtyard of lights"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Pati_Batll%C3%B32" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The courtyard of lights in Casa Batlló is an impressive space that features a unique skylight that allows natural light to enter the house. Visitors can admire the decorative details of the courtyard of lights and learn about its importance in the design of the house.</p>
@@ -125,11 +173,23 @@
         
         <h4>Attic</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/atico.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/atico.jpg 1200w,
-                         ../../assets/photos/casa_batllo/atico_600.jpg 600w
-                         ../../assets/photos/casa_batllo/atico_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/atico.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/atico.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/atico.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/atico.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/atico.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/atico.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/atico.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Attic"
+                     aria-label="Attic"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://upload.wikimedia.org/Wikimedia/commons/3/3d/Barcelona%2C_Casa_Batll%C3%B3%2C_innen%2C_Dachboden" target="_blank">Wikimedia - Michael Stallbaum</a></figcaption>
         </figure>
         <p>In Casa Batlló, the attic is one of the most interesting parts of the house, as it features a structure of catenary arches and large windows that allow natural light to enter. Moreover, the attic also includes a terrace with views of the city of Barcelona.</p>
@@ -137,20 +197,32 @@
         
         <h4>Terrace</h4>
         <figure>
-            <img src="../../assets/photos/casa_batllo/terraza.jpg" alt="Casa Batlló"
-                 srcset="../../assets/photos/casa_batllo/terraza.jpg 1200w,
-                         ../../assets/photos/casa_batllo/terraza_600.jpg 600w
-                         ../../assets/photos/casa_batllo/terraza_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/terraza.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/terraza.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_batllo/terraza.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/terraza.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_batllo/terraza.jpg?width=300"
+                     srcset="../../assets/photos/casa_batllo/terraza.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/terraza.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Terrace"
+                     aria-label="Terrace"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Xemeneies_Batll%C3%B32" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The terrace of Casa Batlló is one of the most impressive parts of the house, with panoramic views of the city of Barcelona. Visitors can explore the terrace and appreciate the unique decorative details and impressive architecture by Gaudí.</p>
 
-
+<!--
         <div class="googlemaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2993.187774572256!2d2.160442918539037!3d41.39172830464679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCasa%20Batll%C3%B3!5e0!3m2!1ses!2ses!4v1682350848294!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+-->
 
     </div>
 </main>

@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Ruta Gaudí a Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,7 +71,7 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>
 
 
 <main>
@@ -1570,11 +1570,23 @@
         <div class="articles">
             <article>
                 <a href="sagrada_familia.html">
-                    <img src="../../assets/photos/sagrada_familia/intro.jpg" alt="La Sagrada Família"
-                         srcset="../../assets/photos/sagrada_familia/intro.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/intro_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="../../assets/photos/sagrada_familia/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/intro.jpg?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="../../assets/photos/sagrada_familia/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/intro.jpg?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="../../assets/photos/sagrada_familia/intro.jpg?width=300"
+                             srcset="../../assets/photos/sagrada_familia/intro.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/intro.jpg?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="La Sagrada Família"
+                             aria-label="La Sagrada Família"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3>La Sagrada Família</h3>
                         <p>Assaboreix la monumental i emblemàtica Sagrada Família, obra cimera i etern llegat del genial arquitecte Antoni Gaudí.</p>
@@ -1583,11 +1595,23 @@
             </article>
             <article>
                  <a href="parque_guell.html">
-                     <img src="../../assets/photos/parque_guell/intro.jpg" alt="Parc Güell"
-                          srcset="../../assets/photos/parque_guell/intro.jpg 1200w,
-                         ../../assets/photos/parque_guell/intro_600.jpg 600w
-                         ../../assets/photos/parque_guell/intro_300.jpg 300w"
-                          sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                     <picture>
+                         <source type="image/avif" loading="lazy"
+                                 srcset="../../assets/photos/parque_guell/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/parque_guell/intro.jpg?as=avif&width=600 600w"
+                                 sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                         <source type="image/webp" loading="lazy"
+                                 srcset="../../assets/photos/parque_guell/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/parque_guell/intro.jpg?as=webp&width=600 600w"
+                                 sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                         <img src="../../assets/photos/parque_guell/intro.jpg?width=300"
+                              srcset="../../assets/photos/parque_guell/intro.jpg?width=300 300w,
+                             ../../assets/photos/parque_guell/intro.jpg?width=600 600w"
+                              sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                              alt="Parc Güell"
+                              aria-label="Parc Güell"
+                              loading="lazy">
+                     </picture>
                     <div>
                         <h3>Parc Güell</h3>
                         <p>Submergeix-te en el màgic Parc Güell, obra mestra de Gaudí que combina art, natura i arquitectura en un espai únic.</p>
@@ -1596,11 +1620,23 @@
             </article>
             <article>
                 <a href="casa_mila.html">
-                    <img src="../../assets/photos/casa_mila/intro.jpg" alt="La Pedrera - Casa Milà"
-                         srcset="../../assets/photos/casa_mila/intro.jpg 1200w,
-                         ../../assets/photos/casa_mila/intro_600.jpg 600w
-                         ../../assets/photos/casa_mila/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="../../assets/photos/casa_mila/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_mila/intro.jpg?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="../../assets/photos/casa_mila/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_mila/intro.jpg?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="../../assets/photos/casa_mila/intro.jpg?width=300"
+                             srcset="../../assets/photos/casa_mila/intro.jpg?width=300 300w,
+                             ../../assets/photos/casa_mila/intro.jpg?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="La Pedrera - Casa Milà"
+                             aria-label="La Pedrera - Casa Milà"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3>La Pedrera - Casa Milà</h3>
                         <p>Admira l&#39;innovadora Casa Milà, coneguda com La Pedrera, un emblemàtic i revolucionari edifici de Gaudí a Barcelona.</p>
@@ -1609,11 +1645,23 @@
             </article>
             <article>
                 <a href="casa_batllo.html">
-                    <img src="../../assets/photos/casa_batllo/intro.jpg" alt="Casa Batlló"
-                         srcset="../../assets/photos/casa_batllo/intro.jpg 1200w,
-                         ../../assets/photos/casa_batllo/intro_600.jpg 600w
-                         ../../assets/photos/casa_batllo/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="../../assets/photos/casa_batllo/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_batllo/intro.jpg?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="../../assets/photos/casa_batllo/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_batllo/intro.jpg?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="../../assets/photos/casa_batllo/intro.jpg?width=300"
+                             srcset="../../assets/photos/casa_batllo/intro.jpg?width=300 300w,
+                             ../../assets/photos/casa_batllo/intro.jpg?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="Casa Batlló"
+                             aria-label="Casa Batlló"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3>Casa Batlló</h3>
                         <p>Descobreix la fascinant Casa Batlló, un deslumbrant exemple del geni creatiu de Gaudí i la seva habilitat per reinventar l&#39;espai.</p>
@@ -1622,11 +1670,23 @@
             </article>
             <article>
                 <a href="palacio_guell.html">
-                    <img src="../../assets/photos/palacio_guell/intro.jpg" alt="Palau Güell"
-                         srcset="../../assets/photos/palacio_guell/intro.jpg 1200w,
-                         ../../assets/photos/palacio_guell/intro_600.jpg 600w
-                         ../../assets/photos/palacio_guell/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="../../assets/photos/palacio_guell/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/palacio_guell/intro.jpg?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="../../assets/photos/palacio_guell/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/palacio_guell/intro.jpg?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="../../assets/photos/palacio_guell/intro.jpg?width=300"
+                             srcset="../../assets/photos/palacio_guell/intro.jpg?width=300 300w,
+                             ../../assets/photos/palacio_guell/intro.jpg?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="Palau Güell"
+                             aria-label="Palau Güell"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3>Palau Güell</h3>
                         <p>Visita l&#39;impressionant Palau Güell, una joia del modernisme que fusiona elements gòtics, mudèjars i la creativitat de Gaudí.</p>
@@ -1635,11 +1695,23 @@
             </article>
             <article>
                 <a href="casa_vicens.html">
-                    <img src="../../assets/photos/casa_vicens/intro.jpg" alt="Casa Vicens"
-                         srcset="../../assets/photos/casa_vicens/intro.jpg 1200w,
-                         ../../assets/photos/casa_vicens/intro_600.jpg 600w
-                         ../../assets/photos/casa_vicens/intro_300.jpg 300w"
-                         sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+                    <picture>
+                        <source type="image/avif" loading="lazy"
+                                srcset="../../assets/photos/casa_vicens/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/intro.jpg?as=avif&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <source type="image/webp" loading="lazy"
+                                srcset="../../assets/photos/casa_vicens/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/intro.jpg?as=webp&width=600 600w"
+                                sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                        <img src="../../assets/photos/casa_vicens/intro.jpg?width=300"
+                             srcset="../../assets/photos/casa_vicens/intro.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/intro.jpg?width=600 600w"
+                             sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                             alt="Casa Vicens"
+                             aria-label="Casa Vicens"
+                             loading="lazy">
+                    </picture>
                     <div>
                         <h3>Casa Vicens</h3>
                         <p>Contempla la primera obra mestra de Gaudí, la colorida i singular Casa Vicens, on l&#39;arquitecte desplega el seu talent creatiu.</p>

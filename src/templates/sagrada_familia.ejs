@@ -4,11 +4,23 @@
     <div class="container location">
         <h3><%= sagradaFamilia.titulo %></h3>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                 srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.intro_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.intro_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.intro_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= sagradaFamilia.imagenes.intro_img %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.intro_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.intro_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= sagradaFamilia.titulo %>"
+                     aria-label="<%= sagradaFamilia.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= sagradaFamilia.imagenes.intro_link %>" target="_blank"><%= sagradaFamilia.imagenes.intro_about %></a></figcaption>
         </figure>
         <p><%= sagradaFamilia.descripcion.intro %></p>
@@ -16,11 +28,23 @@
         
         <h4><%= sagradaFamilia.descripcion.naveCentral_title %></h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.naveCentral_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                 srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.naveCentral_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.naveCentral_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.naveCentral_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.naveCentral %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.naveCentral %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.naveCentral %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.naveCentral %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= sagradaFamilia.imagenes.naveCentral %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.naveCentral %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.naveCentral %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= sagradaFamilia.titulo %>"
+                     aria-label="<%= sagradaFamilia.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= sagradaFamilia.imagenes.naveCentral_link %>" target="_blank"><%= sagradaFamilia.imagenes.naveCentral_about %></a></figcaption>
         </figure>
         <p><%= sagradaFamilia.descripcion.naveCentral_text %></p>
@@ -28,11 +52,23 @@
         
         <h4><%= sagradaFamilia.descripcion.abside_title %></h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.abside_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                 srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.abside_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.abside_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.abside_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.abside_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.abside_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.abside_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.abside_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= sagradaFamilia.imagenes.abside_img %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.abside_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.abside_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= sagradaFamilia.titulo %>"
+                     aria-label="<%= sagradaFamilia.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= sagradaFamilia.imagenes.abside_link %>" target="_blank"><%= sagradaFamilia.imagenes.abside_about %></a></figcaption>
         </figure>
         <p><%= sagradaFamilia.descripcion.abside_text %></p>
@@ -40,11 +76,23 @@
 
         <h4><%= sagradaFamilia.descripcion.torres_title %></h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.torres_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                 srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.torres_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.torres_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.torres_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.torres_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.torres_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.torres_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.torres_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= sagradaFamilia.imagenes.torres_img %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.torres_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.torres_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= sagradaFamilia.titulo %>"
+                     aria-label="<%= sagradaFamilia.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= sagradaFamilia.imagenes.torres_link %>" target="_blank"><%= sagradaFamilia.imagenes.torres_about %></a></figcaption>
         </figure>
         <p><%= sagradaFamilia.descripcion.torres_text %></p>
@@ -52,11 +100,23 @@
 
         <h4><%= sagradaFamilia.descripcion.criptas_title %></h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.criptas_img %>.jpg" alt="<%= sagradaFamilia.titulo %>"
-                 srcset="../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.criptas_img %>.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.criptas_img %>_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/<%= sagradaFamilia.imagenes.criptas_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.criptas_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.criptas_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= sagradaFamilia.imagenes.criptas_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.criptas_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= sagradaFamilia.imagenes.criptas_img %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.criptas_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.criptas_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= sagradaFamilia.titulo %>"
+                     aria-label="<%= sagradaFamilia.titulo %>"
+                     loading="lazy">
+            </picture>
             <figcaption><%= locations.fuente %> <a href="<%= sagradaFamilia.imagenes.criptas_link %>" target="_blank"><%= sagradaFamilia.imagenes.criptas_about %></a></figcaption>
         </figure>
         <p><%= sagradaFamilia.descripcion.criptas_text %></p>

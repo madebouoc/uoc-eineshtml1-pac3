@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html"><%= header.titulo %></a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,4 +71,4 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>

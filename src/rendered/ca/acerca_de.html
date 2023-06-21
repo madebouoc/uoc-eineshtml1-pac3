@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Ruta Gaudí a Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,19 +71,29 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>
 
 <main>
     <div class="container about">
         <h3>Sobre l&#39;arquitecte</h3>
         <figure>
-            <img src="../../assets/photos/acerca_de/intro.jpg" alt="Sobre l&#39;arquitecte"
-                 srcset="../../assets/photos/acerca_de/intro.jpg 1200w,
-                         ../../assets/photos/acerca_de/intro_600.jpg 600w
-                         ../../assets/photos/acerca_de/intro_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
-            <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_(1878)" target="_blank">Wikimedia - Pablo Audouard Deglaire</a></figcaption>
-        </figure>
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/acerca_de/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/acerca_de/intro.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/acerca_de/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/acerca_de/intro.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/acerca_de/intro.jpg?width=300"
+                     srcset="../../assets/photos/acerca_de/intro.jpg?width=300 300w,
+                             ../../assets/photos/acerca_de/intro.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Sobre l&#39;arquitecte" aria-label="Sobre l&#39;arquitecte" loading="lazy">
+            </picture>
+                <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_(1878)" target="_blank">Wikimedia - Pablo Audouard Deglaire</a></figcaption>
+       </figure>
         <p>Antoni Gaudí (1852-1926) va ser un arquitecte català que és considerat un dels arquitectes més influents del segle XX. Va néixer a Reus, Espanya, i va estudiar arquitectura a l&#39;Escola Tècnica Superior d&#39;Arquitectura de Barcelona. Gaudí va desenvolupar un estil arquitectònic únic i personal que es caracteritza per l&#39;ús de formes orgàniques, la incorporació de la natura en els seus dissenys i l&#39;atenció al detall.</p>
 
         <h4>Infància i educació</h4>

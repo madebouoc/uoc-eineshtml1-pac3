@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Gaudí Route in Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,18 +71,30 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>
 
 
 <main>
     <div class="container location">
         <h3>Casa Vicens</h3>
         <figure>
-            <img src="../../assets/photos/casa_vicens/intro.jpg" alt="Casa Vicens"
-                 srcset="../../assets/photos/casa_vicens/intro.jpg 1200w,
-                         ../../assets/photos/casa_vicens/intro_600.jpg 600w
-                         ../../assets/photos/casa_vicens/intro_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/intro.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/intro.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_vicens/intro.jpg?width=300"
+                     srcset="../../assets/photos/casa_vicens/intro.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/intro.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Vicens"
+                     aria-label="Casa Vicens"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Gaud%C3%AD_-_Casa_Vicens" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>Casa Vicens is a unique architectural work located in the Gracia neighborhood of Barcelona, Spain. It was designed by the Catalan architect Antoni Gaudí in 1883 as the summer residence for the Vicens family and is considered one of the architect&#39;s first masterpieces. The house is an impressive example of modernist architecture, with a colorful and ornate facade that combines traditional Spanish elements with influences from Islamic art. The interior of the house is also impressive, with a blend of decorative and architectural elements that reflect Gaudí&#39;s unique artistic vision. Casa Vicens is a popular tourist attraction in Barcelona and a distinctive symbol of the city&#39;s modernist architectural style.</p>
@@ -90,11 +102,23 @@
         
         <h4>Ground Floor</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/planta_baja.jpg" alt="Casa Vicens"
-                 srcset="../../assets/photos/casa_vicens/planta_baja.jpg 1200w,
-                         ../../assets/photos/casa_vicens/planta_baja_600.jpg 600w
-                         ../../assets/photos/casa_vicens/planta_baja_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/planta_baja.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/planta_baja.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/planta_baja.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/planta_baja.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_vicens/planta_baja.jpg?width=300"
+                     srcset="../../assets/photos/casa_vicens/planta_baja.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/planta_baja.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Vicens"
+                     aria-label="Casa Vicens"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Casa_Vicens_(2)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>On the ground floor, visitors can enjoy the entrance hall with its impressive decoration and architectural elements. The temporary exhibition room offers a broader view of Gaudí&#39;s work and Casa Vicens in particular. The gift shop is a perfect place to find souvenirs and mementos inspired by the house and Gaudí&#39;s work. In the exterior gardens, visitors can relax and enjoy the beautiful surroundings.</p>
@@ -102,11 +126,23 @@
         
         <h4>First floor</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/primera_planta.jpg" alt="Casa Vicens"
-                 srcset="../../assets/photos/casa_vicens/primera_planta.jpg 1200w,
-                         ../../assets/photos/casa_vicens/primera_planta_600.jpg 600w
-                         ../../assets/photos/casa_vicens/primera_planta_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/primera_planta.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/primera_planta.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/primera_planta.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/primera_planta.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_vicens/primera_planta.jpg?width=300"
+                     srcset="../../assets/photos/casa_vicens/primera_planta.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/primera_planta.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Vicens"
+                     aria-label="Casa Vicens"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(10)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The first floor is the area of the house where guests were received. Visitors can admire the living room, dining room, music room, and an art gallery that exhibits works by artists who influenced Gaudí&#39;s work. The decoration is rich and opulent, with unique details and precious materials.</p>
@@ -114,11 +150,23 @@
         
         <h4>Second floor</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/segunda_planta.jpg" alt="Casa Vicens"
-                 srcset="../../assets/photos/casa_vicens/segunda_planta.jpg 1200w,
-                         ../../assets/photos/casa_vicens/segunda_planta_600.jpg 600w
-                         ../../assets/photos/casa_vicens/segunda_planta_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/segunda_planta.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/segunda_planta.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/segunda_planta.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/segunda_planta.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_vicens/segunda_planta.jpg?width=300"
+                     srcset="../../assets/photos/casa_vicens/segunda_planta.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/segunda_planta.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Vicens"
+                     aria-label="Casa Vicens"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(9)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The second floor is the private area of the Vicens family. Visitors can explore the family&#39;s private rooms, including the master bedroom and a children&#39;s room. The rooms are decorated with elegant details and unique architectural elements.</p>
@@ -126,11 +174,23 @@
         
         <h4>Terrace</h4>
         <figure>
-            <img src="../../assets/photos/casa_vicens/terraza.jpg" alt="Casa Vicens"
-                 srcset="../../assets/photos/casa_vicens/terraza.jpg 1200w,
-                         ../../assets/photos/casa_vicens/terraza_600.jpg 600w
-                         ../../assets/photos/casa_vicens/terraza_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/terraza.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/casa_vicens/terraza.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/casa_vicens/terraza.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/casa_vicens/terraza.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/casa_vicens/terraza.jpg?width=300"
+                     srcset="../../assets/photos/casa_vicens/terraza.jpg?width=300 300w,
+                             ../../assets/photos/casa_vicens/terraza.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="Casa Vicens"
+                     aria-label="Casa Vicens"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Vicens_BCN_(14)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The terrace of Casa Vicens is one of the highlights of the building. With a panoramic view of the city of Barcelona, visitors can appreciate the unique mix of decorative and architectural elements that characterize Gaudí&#39;s work. Ceramics are a distinctive feature of the terrace, with unique mosaics that tell the story of the house and its construction.</p>

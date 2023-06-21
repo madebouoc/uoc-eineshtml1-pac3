@@ -3,13 +3,23 @@
     <div class="container about">
         <h3><%= acercaDe.titulo %></h3>
         <figure>
-            <img src="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>.jpg" alt="<%= acercaDe.titulo %>"
-                 srcset="../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>.jpg 1200w,
-                         ../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>_600.jpg 600w
-                         ../../assets/photos/acerca_de/<%= acercaDe.imagenes.intro_img %>_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
-            <figcaption><%= locations.fuente %> <a href="<%= acercaDe.imagenes.intro_link %>" target="_blank"><%= acercaDe.imagenes.intro_about %></a></figcaption>
-        </figure>
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="<%= acercaDe.imagenes.intro_img %>?as=avif&width=300 300w,
+                                <%= acercaDe.imagenes.intro_img %>?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="<%= acercaDe.imagenes.intro_img %>?as=webp&width=300 300w,
+                                <%= acercaDe.imagenes.intro_img %>?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="<%= acercaDe.imagenes.intro_img %>?width=300"
+                     srcset="<%= acercaDe.imagenes.intro_img %>?width=300 300w,
+                             <%= acercaDe.imagenes.intro_img %>?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="<%= acercaDe.titulo %>" aria-label="<%= acercaDe.titulo %>" loading="lazy">
+            </picture>
+                <figcaption><%= locations.fuente %> <a href="<%= acercaDe.imagenes.intro_link %>" target="_blank"><%= acercaDe.imagenes.intro_about %></a></figcaption>
+       </figure>
         <p><%= acercaDe.descripcion.intro %></p>
 
         <h4><%= acercaDe.descripcion.infanciaEducacion_title %></h4>

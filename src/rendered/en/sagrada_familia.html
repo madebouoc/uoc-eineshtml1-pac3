@@ -28,15 +28,15 @@
     <header>
         <div class="container">
             <div class="title">
-                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" loading="lazy"></a>
+                <a href="index.html"><img src="../../assets/logoGaudi-bolder.svg" alt="logo Gaudí" aria-label="logo Gaudí" loading="lazy"></a>
                 <h1><a href="index.html">Gaudí Route in Barcelona</a></h1>
             </div>
 
             <!--Botones MENU y LANG para mobile-->
             <!-- https://icons.getbootstrap.com/ -->
-            <button id="mainMenuButton" name="mainMenuButton"><i class="bi bi-list"/></button>
+            <button id="mainMenuButton" name="mainMenuButton" aria-label="Main Menu"><i class="bi bi-list"/></button>
             <input type="checkbox" id="mainMenuCheckbox" autocomplete="off">
-            <button id="langSelectorButton" name="langSelectorButton"><i class="bi bi-globe2"/></button>
+            <button id="langSelectorButton" name="langSelectorButton" aria-label="Language Selector"><i class="bi bi-globe2"/></button>
             <input type="checkbox" id="langSelectorCheckbox" autocomplete="off">
 
             <!--Cuerpo del menu principal-->
@@ -71,18 +71,30 @@
         </div>
     </header>
 
-    <button id="boton-top" name="boton-top"><i class="bi bi-arrow-up"/></button>
+    <button id="boton-top" name="boton-top" aria-label="Botón de uso interno"><i class="bi bi-arrow-up"/></button>
 
 
 <main>
     <div class="container location">
         <h3>La Sagrada Familia</h3>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/intro.jpg" alt="La Sagrada Familia"
-                 srcset="../../assets/photos/sagrada_familia/intro.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/intro_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/intro_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/intro.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/intro.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/intro.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/intro.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/sagrada_familia/intro.jpg?width=300"
+                     srcset="../../assets/photos/sagrada_familia/intro.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/intro.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="La Sagrada Familia"
+                     aria-label="La Sagrada Familia"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Sagrada_Familia_8-12-21_(1)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The Sagrada Familia is the crowning achievement of architect Antoni Gaudí and one of the most emblematic landmarks of Barcelona, Spain. Construction began in 1882 and is still ongoing, making it one of the longest construction projects in the world. The church is an impressive example of modernist architecture and combines religious elements with Gaudi&#39;s unique artistic vision. The church facade is extremely detailed and features hand-carved biblical scenes and religious figures. The interior of the church is equally impressive, with a blend of architectural and decorative elements that reflect Gaudi&#39;s unique artistic vision. The Sagrada Familia is a popular tourist attraction in Barcelona and a distinctive symbol of the city.</p>
@@ -90,11 +102,23 @@
         
         <h4>Central nave</h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/nave_central.jpg" alt="La Sagrada Familia"
-                 srcset="../../assets/photos/sagrada_familia/nave_central.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/nave_central_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/nave_central_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="?as=avif&width=300 300w,
+                                ?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="?as=webp&width=300 300w,
+                                ?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="?width=300"
+                     srcset="?width=300 300w,
+                             ?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="La Sagrada Familia"
+                     aria-label="La Sagrada Familia"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:SF_-_Detalle_de_la_b%C3%B3veda" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The central nave of the Sagrada Familia is impressive, with a height of over 45 meters and a series of unique columns that resemble trees. Visitors can admire the rich decoration and the natural light that enters through the colorful windows.</p>
@@ -102,11 +126,23 @@
         
         <h4>Apse</h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/abside.jpg" alt="La Sagrada Familia"
-                 srcset="../../assets/photos/sagrada_familia/abside.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/abside_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/abside_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/abside.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/abside.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/abside.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/abside.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/sagrada_familia/abside.jpg?width=300"
+                     srcset="../../assets/photos/sagrada_familia/abside.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/abside.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="La Sagrada Familia"
+                     aria-label="La Sagrada Familia"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Sagrada_Familia_8-12-21_(6)" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>The apse of the Sagrada Familia is the back part of the basilica and features several altars and chapels. Visitors can appreciate the rich decoration and sculptures representing biblical scenes.</p>
@@ -114,11 +150,23 @@
 
         <h4>Towers</h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/torres.jpg" alt="La Sagrada Familia"
-                 srcset="../../assets/photos/sagrada_familia/torres.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/torres_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/torres_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/torres.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/torres.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/torres.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/torres.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/sagrada_familia/torres.jpg?width=300"
+                     srcset="../../assets/photos/sagrada_familia/torres.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/torres.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="La Sagrada Familia"
+                     aria-label="La Sagrada Familia"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_3382" target="_blank">Wikimedia - C messier</a></figcaption>
         </figure>
         <p>The towers of the Sagrada Familia are impressive, with a height of over 100 meters. Visitors can climb the towers and enjoy a panoramic view of the city.</p>
@@ -126,11 +174,23 @@
 
         <h4>Criptas</h4>
         <figure>
-            <img src="../../assets/photos/sagrada_familia/cripta.jpg" alt="La Sagrada Familia"
-                 srcset="../../assets/photos/sagrada_familia/cripta.jpg 1200w,
-                         ../../assets/photos/sagrada_familia/cripta_600.jpg 600w
-                         ../../assets/photos/sagrada_familia/cripta_300.jpg 300w"
-                 sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px" loading="lazy">
+            <picture>
+                <source type="image/avif" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/cripta.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/cripta.jpg?as=avif&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <source type="image/webp" loading="lazy"
+                        srcset="../../assets/photos/sagrada_familia/cripta.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/cripta.jpg?as=webp&width=600 600w"
+                        sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
+                <img src="../../assets/photos/sagrada_familia/cripta.jpg?width=300"
+                     srcset="../../assets/photos/sagrada_familia/cripta.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/cripta.jpg?width=600 600w"
+                     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
+                     alt="La Sagrada Familia"
+                     aria-label="La Sagrada Familia"
+                     loading="lazy">
+            </picture>
             <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Cripta_SF" target="_blank">Wikimedia - Canaan</a></figcaption>
         </figure>
         <p>Las criptas de la Sagrada Familia son la última morada de varios personajes ilustres de Barcelona, incluyendo al propio Antoni Gaudí. Los visitantes pueden explorar las criptas y conocer más sobre la historia de la basílica.</p>
