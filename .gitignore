@@ -107,3 +107,7 @@ dist
 .parcel-cache/
 node_modules/
 .idea/
+dist/
+src/rendered/ca/
+src/rendered/es/
+src/rendered/en/
