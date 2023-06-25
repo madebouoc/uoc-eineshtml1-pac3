@@ -4,11 +4,11 @@
         <h3><%= acercaDe.titulo %></h3>
         <figure>
             <picture>
-                <source type="image/avif" loading="lazy"
+                <source type="image/avif"
                         srcset="<%= acercaDe.imagenes.intro_img %>?as=avif&width=300 300w,
                                 <%= acercaDe.imagenes.intro_img %>?as=avif&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
-                <source type="image/webp" loading="lazy"
+                <source type="image/webp"
                         srcset="<%= acercaDe.imagenes.intro_img %>?as=webp&width=300 300w,
                                 <%= acercaDe.imagenes.intro_img %>?as=webp&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
@@ -16,7 +16,7 @@
                      srcset="<%= acercaDe.imagenes.intro_img %>?width=300 300w,
                              <%= acercaDe.imagenes.intro_img %>?width=600 600w"
                      sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
-                     alt="<%= acercaDe.titulo %>" aria-label="<%= acercaDe.titulo %>" loading="lazy">
+                     alt="<%= acercaDe.titulo %>" aria-label="<%= acercaDe.titulo %>">
             </picture>
                 <figcaption><%= locations.fuente %> <a href="<%= acercaDe.imagenes.intro_link %>" target="_blank"><%= acercaDe.imagenes.intro_about %></a></figcaption>
        </figure>

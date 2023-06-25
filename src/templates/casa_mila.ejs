@@ -4,11 +4,11 @@
     <h3><%= casaMila.titulo %></h3>
         <figure>
             <picture>
-                <source type="image/avif" loading="lazy"
+                <source type="image/avif"
                         srcset="<%= casaMila.imagenes.intro_img %>?as=avif&width=300 300w,
                                 <%= casaMila.imagenes.intro_img %>?as=avif&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
-                <source type="image/webp" loading="lazy"
+                <source type="image/webp"
                         srcset="<%= casaMila.imagenes.intro_img %>?as=webp&width=300 300w,
                                 <%= casaMila.imagenes.intro_img %>?as=webp&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
@@ -17,8 +17,7 @@
                              <%= casaMila.imagenes.intro_img %>?width=600 600w"
                      sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
                      alt="<%= casaMila.titulo %>"
-                     aria-label="<%= casaMila.titulo %>"
-                     loading="lazy">
+                     aria-label="<%= casaMila.titulo %>">
             </picture>
             <figcaption><%= locations.fuente %> <a href="<%= casaMila.imagenes.intro_link %>" target="_blank"><%= casaMila.imagenes.intro_about %></a></figcaption>
         </figure>

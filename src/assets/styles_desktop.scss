@@ -197,10 +197,13 @@
 		/* == BANNER =========================================================== */
 		/* ===================================================================== */
 		.banner{
-			margin-top: 206px;
+			margin-top: 220px;
+			width: 100%;
+			height: 36%;
 			img{
 				width: 100%;
-				height: calc(100% * 0.44);
+				height: 100%;
+				/* Banner desktop hace 1920x636 */
 			}
 		}
 
@@ -450,7 +453,9 @@
 					align-items: center;
 				}
 				img{
-					height: 150px;
+					width: 100%;
+					height: 100%;
+					aspect-ratio: attr(width) / attr(height);
 				}
 				.locations, .others{
 					font-size: 0.75rem;
