@@ -1,13 +1,13 @@
 {
   "jpeg": {
-    "quality": 50,
+    "quality": 80,
     "chromaSubsampling": "4:4:4",
     "options.progressive": true
   },
   "webp": {
-    "quality": 50
+    "quality": 80
   },
   "avif": {
-    "quality": 45
+    "quality": 40
   }
 }
