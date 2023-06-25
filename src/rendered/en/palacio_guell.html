@@ -18,9 +18,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js" async></script>
+    <script type="module" src="../../assets/app.js" defer></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
-    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    <!-- https://escss.blogspot.com/2015/04/carga--css-sin-bloqueo-pagina.html -->
+    <link rel="stylesheet" href="../../assets/styles-lazy.scss" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../assets/styles-lazy.scss"/>
+        <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    </noscript>
 </head>
 
 <body>
@@ -194,10 +200,11 @@
                 <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Azotea_G%C3%BCell" target="_blank">Wikimedia - Canaan</a></figcaption>
             </figure>
             <p>The terrace of the Güell Palace is a spacious rooftop terrace that offers panoramic views of the city of Barcelona. The terrace is an ideal place to enjoy the sun and the views of the city, and features a series of chimney stacks decorated in the shape of mushrooms that have become an icon of the building. Additionally, there is an iron structure designed by Gaudí on the terrace that allows natural light to penetrate into the interior of the palace.</p>
-
+<!--
             <div class="googlemaps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0560044472566!2d2.173552454538609!3d41.37887266915887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25820d3f1dd%3A0x96a03ff19fc2a5a4!2sPalau%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1682351058845!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+-->
 
         </div>
     </main>

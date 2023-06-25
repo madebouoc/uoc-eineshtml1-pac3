@@ -30,16 +30,16 @@
         <figure>
             <picture>
                 <source type="image/avif" loading="lazy"
-                        srcset="<%= sagradaFamilia.imagenes.naveCentral %>?as=avif&width=300 300w,
-                                <%= sagradaFamilia.imagenes.naveCentral %>?as=avif&width=600 600w"
+                        srcset="<%= sagradaFamilia.imagenes.naveCentral_img %>?as=avif&width=300 300w,
+                                <%= sagradaFamilia.imagenes.naveCentral_img %>?as=avif&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
                 <source type="image/webp" loading="lazy"
-                        srcset="<%= sagradaFamilia.imagenes.naveCentral %>?as=webp&width=300 300w,
-                                <%= sagradaFamilia.imagenes.naveCentral %>?as=webp&width=600 600w"
+                        srcset="<%= sagradaFamilia.imagenes.naveCentral_img %>?as=webp&width=300 300w,
+                                <%= sagradaFamilia.imagenes.naveCentral_img %>?as=webp&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
-                <img src="<%= sagradaFamilia.imagenes.naveCentral %>?width=300"
-                     srcset="<%= sagradaFamilia.imagenes.naveCentral %>?width=300 300w,
-                             <%= sagradaFamilia.imagenes.naveCentral %>?width=600 600w"
+                <img src="<%= sagradaFamilia.imagenes.naveCentral_img %>?width=300"
+                     srcset="<%= sagradaFamilia.imagenes.naveCentral_img %>?width=300 300w,
+                             <%= sagradaFamilia.imagenes.naveCentral_img %>?width=600 600w"
                      sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
                      alt="<%= sagradaFamilia.titulo %>"
                      aria-label="<%= sagradaFamilia.titulo %>"
@@ -121,9 +121,11 @@
         </figure>
         <p><%= sagradaFamilia.descripcion.criptas_text %></p>
 
+<!--
         <div class="googlemaps">
             <iframe src="<%= sagradaFamilia.referencias.direccion_mapa %>" class="googlemaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+-->
 
     </div>
 </main>

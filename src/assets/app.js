@@ -57,7 +57,6 @@ function omitirTopDelHistorico(){
 
 document.addEventListener("DOMContentLoaded", function() {
     const botonTop = document.getElementById("boton-top");
-
     botonTop.addEventListener("click", scrollToTop);
 });
 

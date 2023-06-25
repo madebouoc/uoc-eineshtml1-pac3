@@ -18,9 +18,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js" async></script>
+    <script type="module" src="../../assets/app.js" defer></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
-    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    <!-- https://escss.blogspot.com/2015/04/carga--css-sin-bloqueo-pagina.html -->
+    <link rel="stylesheet" href="../../assets/styles-lazy.scss" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../assets/styles-lazy.scss"/>
+        <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    </noscript>
 </head>
 
 <body>
@@ -194,10 +200,11 @@
                 <figcaption>Font:  <a href="https://commons.wikimedia.org/wiki/File:Azotea_G%C3%BCell" target="_blank">Wikimedia - Canaan</a></figcaption>
             </figure>
             <p>La terrassa del Palau Güell és una àmplia terrassa situada a la teulada de l&#39;edifici, que ofereix vistes panoràmiques de la ciutat de Barcelona. La terrassa és un lloc ideal per gaudir del sol i les vistes de la ciutat, i compta amb una sèrie de xemeneies decorades en forma de bolets que s&#39;han convertit en un icona de l&#39;edifici. A més, hi ha una estructura de ferro dissenyada per Gaudí a la terrassa que permet que la llum natural penetri a l&#39;interior del palau.</p>
-
+<!--
             <div class="googlemaps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.0560044472566!2d2.173552454538609!3d41.37887266915887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25820d3f1dd%3A0x96a03ff19fc2a5a4!2sPalau%20G%C3%BCell!5e0!3m2!1ses!2ses!4v1682351058845!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+-->
 
         </div>
     </main>

@@ -18,9 +18,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js" async></script>
+    <script type="module" src="../../assets/app.js" defer></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
-    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    <!-- https://escss.blogspot.com/2015/04/carga--css-sin-bloqueo-pagina.html -->
+    <link rel="stylesheet" href="../../assets/styles-lazy.scss" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../assets/styles-lazy.scss"/>
+        <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    </noscript>
 </head>
 
 <body>
@@ -292,9 +298,11 @@
         <p>La Casa-Museo Gaudí es una sección del Parque Güell que se encuentra en la casa donde Antoni Gaudí vivió durante casi 20 años. Esta casa histórica cuenta con una colección única de objetos personales y artísticos del arquitecto, que incluyen fotografías, muebles y modelos arquitectónicos. Los visitantes pueden explorar las diferentes habitaciones de la casa, cada una con su propia decoración y estilo únicos, y aprender más sobre la vida y el legado de Gaudí. La Casa-Museo Gaudí es un destino popular para los aficionados a la arquitectura y el arte, y ofrece una visión fascinante de la vida y obra de uno de los arquitectos más importantes de la historia de Barcelona.</p>
 
 
+<!--
         <div class="googlemaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2992.1370717930354!2d2.1510744457549977!3d41.41454307612308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20guell!5e0!3m2!1ses!2ses!4v1682351117884!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+-->
 
     </div>
 </main>

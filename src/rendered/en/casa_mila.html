@@ -18,9 +18,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js" async></script>
+    <script type="module" src="../../assets/app.js" defer></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
-    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    <!-- https://escss.blogspot.com/2015/04/carga--css-sin-bloqueo-pagina.html -->
+    <link rel="stylesheet" href="../../assets/styles-lazy.scss" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../assets/styles-lazy.scss"/>
+        <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    </noscript>
 </head>
 
 <body>
@@ -217,10 +223,11 @@
         </figure>
     <p>The ground floor of La Pedrera houses a gift shop and an exhibition dedicated to the work of Gaudí, as well as a projection room that shows a documentary about the history of the building and its creator. The exhibition features objects and models that allow visitors to learn more about Gaudí&#39;s work and his legacy in modern architecture.</p>
 
+<!--
         <div class="googlemaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.418373306874!2d2.1606595457877242!3d41.3949340647628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a293998ae1d5%3A0xc49fa3624f371e6a!2sLa%20Pedrera%20-%20Casa%20Mil%C3%A0!5e0!3m2!1ses!2ses!4v1682351035073!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+-->
     </div>
 
 </main>

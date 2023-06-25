@@ -18,9 +18,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Recursos -->
-    <script type="module" src="../../assets/app.js" async></script>
+    <script type="module" src="../../assets/app.js" defer></script>
     <link rel="stylesheet" href="../../assets/styles.scss" />
-    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    <!-- https://escss.blogspot.com/2015/04/carga--css-sin-bloqueo-pagina.html -->
+    <link rel="stylesheet" href="../../assets/styles-lazy.scss" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../../assets/styles-lazy.scss"/>
+        <link rel="icon" type="image/svg+xml" href="../../assets/logoGaudi-bolder.svg">
+    </noscript>
 </head>
 
 <body>
@@ -104,16 +110,16 @@
         <figure>
             <picture>
                 <source type="image/avif" loading="lazy"
-                        srcset="?as=avif&width=300 300w,
-                                ?as=avif&width=600 600w"
+                        srcset="../../assets/photos/sagrada_familia/nave_central.jpg?as=avif&width=300 300w,
+                                ../../assets/photos/sagrada_familia/nave_central.jpg?as=avif&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
                 <source type="image/webp" loading="lazy"
-                        srcset="?as=webp&width=300 300w,
-                                ?as=webp&width=600 600w"
+                        srcset="../../assets/photos/sagrada_familia/nave_central.jpg?as=webp&width=300 300w,
+                                ../../assets/photos/sagrada_familia/nave_central.jpg?as=webp&width=600 600w"
                         sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"/>
-                <img src="?width=300"
-                     srcset="?width=300 300w,
-                             ?width=600 600w"
+                <img src="../../assets/photos/sagrada_familia/nave_central.jpg?width=300"
+                     srcset="../../assets/photos/sagrada_familia/nave_central.jpg?width=300 300w,
+                             ../../assets/photos/sagrada_familia/nave_central.jpg?width=600 600w"
                      sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px"
                      alt="La Sagrada Família"
                      aria-label="La Sagrada Família"
@@ -195,9 +201,11 @@
         </figure>
         <p>Les criptes de la Sagrada Família són l&#39;última morada de diversos personatges il·lustres de Barcelona, incloent-hi el mateix Antoni Gaudí. Els visitants poden explorar les criptes i conèixer més sobre la història de la basílica.</p>
 
+<!--
         <div class="googlemaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4232.236597705912!2d2.1687384071487124!3d41.40355443256409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2ses!4v1682350962945!5m2!1ses!2ses" class="googlemaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+-->
 
     </div>
 </main>
