@@ -1,12 +1,16 @@
 {
   "jpeg": {
-    "quality": 70,
-    "chromaSubsampling": "4:4:4"
+    "quality": 80,
+    "chromaSubsampling": "4:4:4",
+    "options.progressive": true
   },
   "webp": {
-    "nearLossless": true
+    "nearLossless": true,
+    "options.quality": 80
   },
   "png": {
-    "palette": true
+    "palette": true,
+    "options.progressive": true
+
   }
 }
