@@ -34,11 +34,6 @@ $fuente-primaria: 'Roboto', sans-serif;
   aspect-ratio: attr(width) / attr(height);
 }
 
-about img{
-  width: 450px;
-  height: 600px;
-  aspect-ratio: attr(width) / attr(height);
-}
 
 /* -- HOJAS POR MEDIA ------------------------------------------------------ */
 @import 'styles_desktop.scss';
